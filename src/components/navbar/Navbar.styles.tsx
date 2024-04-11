@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const smallViewport = "62rem";
 
 export const Header = styled.header`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   background: #fffbf5;
   position: fixed;
@@ -16,17 +18,24 @@ export const Header = styled.header`
 
   @media (max-width: ${smallViewport}) {
     flex-direction: column;
-    position: static;
-    top: auto;
-    width: auto;
-    z-index: auto;
+    height: 240px;
+
+    &.none-menu {
+      height: 77px;
+    }
   }
 `;
 
 export const Logo = styled.a`
   display: flex;
   align-items: center;
+  width: 223px;
   padding-left: 20px;
+
+  @media (max-width: ${smallViewport}) {
+    width: 130px;
+    padding-left: 10px;
+  }
 `;
 
 export const Menu = styled.nav`
@@ -36,9 +45,14 @@ export const Menu = styled.nav`
 
   @media (max-width: ${smallViewport}) {
     flex-direction: column;
-    align-items: center;
+    padding-top: 5px;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0;
-    padding: 0;
+
+    &.none-menu {
+      display: none;
+    }
   }
 `;
 
@@ -52,14 +66,13 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const Button = styled.button`
-  cursor: pointer;
-  outline: none;
-
-  border: 0;
+export const Button = styled(motion.button)`
   padding: 5px 10px;
   border-radius: 5%;
   background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 0;
 
   color: #a07d5a;
   font-size: 18px;
@@ -68,12 +81,28 @@ export const Button = styled.button`
     sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    width: 20px;
+    font-size: 16px;
   }
 
   &:hover {
     color: white;
     background-color: #a07d5a;
     opacity: 0.8;
+  }
+`;
+
+export const LogoContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+export const MoreButton = styled.button`
+  padding-right: 10px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background-color: transparent;
+
+  @media (min-width: ${smallViewport}) {
+    display: none;
   }
 `;
