@@ -1,7 +1,11 @@
-import AboutLayout from "../components/About/AboutLayout";
+import AboutLayout from "../components/about/AboutLayout";
 
-const About = () => {
-  return <AboutLayout />;
+interface AboutProps {
+  isMenuOpen: boolean;
+}
+
+const About = ({ isMenuOpen }: AboutProps) => {
+  return <AboutLayout isMenuOpen={isMenuOpen} />;
 };
 
 export default About;
