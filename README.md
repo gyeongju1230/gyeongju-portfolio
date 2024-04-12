@@ -1,4 +1,6 @@
 # 정경주 Jung Gyeongju
+
+## 🚧 추가중..
 👩🏻‍💻 Frontend Developer
 
 ## ✨Skills
