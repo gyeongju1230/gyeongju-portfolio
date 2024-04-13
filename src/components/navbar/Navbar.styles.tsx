@@ -4,21 +4,21 @@ import { motion } from "framer-motion";
 const smallViewport = "62rem";
 
 export const Header = styled.header`
+  position: fixed;
+  width: 100%;
+  height: 90px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: #fffbf5;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
-  height: 90px;
   z-index: 1000;
+  background-color: #fffbf5;
 
   @media (max-width: ${smallViewport}) {
-    flex-direction: column;
     height: 240px;
+    flex-direction: column;
 
     &.none-menu {
       height: 77px;
@@ -27,9 +27,9 @@ export const Header = styled.header`
 `;
 
 export const Logo = styled.a`
+  width: 223px;
   display: flex;
   align-items: center;
-  width: 223px;
   padding-left: 20px;
 
   @media (max-width: ${smallViewport}) {

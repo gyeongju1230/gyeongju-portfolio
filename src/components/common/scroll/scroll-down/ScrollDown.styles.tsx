@@ -4,9 +4,9 @@ const smallViewport = "62rem";
 
 export const DownLottieBox = styled.div`
   position: absolute;
-  display: flex;
   width: 100px;
   height: 103px;
+  display: flex;
   bottom: 0;
 
   @media (max-width: ${smallViewport}) {

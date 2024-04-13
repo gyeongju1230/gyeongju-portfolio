@@ -15,24 +15,26 @@ export const Container = styled.div`
   position: relative;
   width: 100vw;
   height: calc(100vh - 90px);
-  margin-top: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 90px;
 
   @media (max-width: ${smallViewport}) {
-    margin-top: 240px;
     height: calc(100vh - 240px);
+    margin-top: 240px;
 
     &.none-menu {
-      margin-top: 77px;
       height: calc(100vh - 77px);
+      margin-top: 77px;
     }
   }
 `;
 
 export const Title = styled.div`
+  position: relative;
   margin-top: -45px;
+  z-index: 2;
   text-align: center;
   color: #fffbf5;
   font-size: 145px;
@@ -41,8 +43,6 @@ export const Title = styled.div`
   font-family:
     Noto Sans KR,
     sans-serif;
-  z-index: 2;
-  position: relative;
   text-shadow:
     -2px -2px 0 #d8b28c,
     2px -2px 0 #d8b28c,
@@ -63,10 +63,10 @@ export const Title = styled.div`
   &:before {
     content: "Frontend Portfolio";
     position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     height: 100%;
+    left: 0;
+    top: 0;
     animation: ${waveAnimation} 2s infinite;
     overflow: hidden;
     color: transparent;
