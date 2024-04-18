@@ -7,7 +7,15 @@ export const DownLottieBox = styled.div`
   width: 100px;
   height: 103px;
   display: flex;
-  bottom: 0;
+  bottom: -77px;
+
+  &.home-scroll-down {
+    bottom: 0;
+  }
+
+  &.about-scroll-down {
+    bottom: -77px;
+  }
 
   @media (max-width: ${smallViewport}) {
     width: 50px;
