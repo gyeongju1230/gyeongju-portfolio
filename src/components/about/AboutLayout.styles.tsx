@@ -11,7 +11,6 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   margin-top: 90px;
-  background-color: #ffffff;
 
   @media (max-width: ${smallViewport}) {
     height: calc(100vh - 240px);
@@ -26,8 +25,8 @@ export const Container = styled.div`
 
 export const AboutTitle = styled.div`
   height: 160px;
-  margin-top: -40px;
   margin-bottom: 20px;
+  margin-top: 90px;
   text-align: center;
   color: #000;
   font-size: 22px;
@@ -35,26 +34,32 @@ export const AboutTitle = styled.div`
   font-family: SUITE, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    font-size: 18px;
-    line-height: 30px;
+    height: 100px;
+    margin-top: 120px;
+    font-size: 14px;
+    line-height: 25px;
+
+    &.none-menu {
+      height: 120px;
+      margin-top: 77px;
+      font-size: 18px;
+      line-height: 30px;
+    }
   }
 `;
 
 export const AboutContainer = styled.div`
-  //width: 791px;
-  width: 60%;
+  width: 70%;
   height: 382px;
   display: flex;
   gap: 30px;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
-  background-color: #fffbf5;
+  background-color: #ffffff;
 
   @media (max-width: ${smallViewport}) {
-    //width: 395.5px;
-    width: calc(100% - 10%);
-    height: 352px;
+    width: calc(100% - 15%);
     padding: 10px;
     flex-direction: column;
     gap: 10px;
@@ -72,8 +77,7 @@ export const ImageBox = styled.div`
   text-align: center;
 
   @media (max-width: ${smallViewport}) {
-    width: 100%;
-    height: 45%;
+    height: 90%;
   }
 `;
 
@@ -87,7 +91,11 @@ export const AboutBox = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 100%;
-    height: 55%;
+    height: 70%;
+
+    &.none-menu {
+      height: 50%;
+    }
   }
 `;
 
@@ -96,6 +104,11 @@ export const AboutContentIcon = styled.div`
   display: flex;
   margin-right: 15px;
   align-items: center;
+
+  @media (max-width: ${smallViewport}) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 export const AboutContent = styled.div`
@@ -106,13 +119,21 @@ export const AboutContent = styled.div`
   color: #000;
   font-size: 19px;
   line-height: 45px;
-  //font-weight: bold;
   font-family: Pretendard, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     width: 90%;
-    height: 22.5px;
-    margin-bottom: 10px;
-    line-height: 22.5px;
+    height: 12px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 12px;
+
+    &.none-menu {
+      width: 90%;
+      height: 22.5px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 22.5px;
+    }
   }
 `;
