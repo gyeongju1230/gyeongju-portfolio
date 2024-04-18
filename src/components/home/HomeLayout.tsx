@@ -1,11 +1,10 @@
 import * as styles from "./HomeLayout.styles";
 import HomeScrollDown from "../common/scroll/scroll-down/ScrollDown";
+import { useContext } from "react";
+import { MenuContext } from "../../context/MenuContext";
 
-interface HomeLayoutProps {
-  isMenuOpen: boolean;
-}
-
-const HomeLayout = ({ isMenuOpen }: HomeLayoutProps) => {
+const HomeLayout = () => {
+  const { isMenuOpen } = useContext(MenuContext);
   const scrollToAbout = () => {
     window.scrollTo({
       top: document.getElementById("about")?.offsetTop || 0,
@@ -19,7 +18,7 @@ const HomeLayout = ({ isMenuOpen }: HomeLayoutProps) => {
         Frontend <br />
         Portfolio
       </styles.Title>
-      <HomeScrollDown onClick={scrollToAbout} />
+      <HomeScrollDown className="home-scroll-down" onClick={scrollToAbout} />
     </styles.Container>
   );
 };

@@ -1,11 +1,7 @@
 import HomeLayout from "../components/home/HomeLayout";
 
-interface HomeProps {
-  isMenuOpen: boolean;
-}
-
-const Home = ({ isMenuOpen }: HomeProps) => {
-  return <HomeLayout isMenuOpen={isMenuOpen} />;
+const Home = () => {
+  return <HomeLayout />;
 };
 
 export default Home;

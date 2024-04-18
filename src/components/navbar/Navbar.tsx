@@ -1,14 +1,12 @@
 import * as styles from "./Navbar.styles";
 import { ReactComponent as Logo } from "../../assets/image/Logo.svg";
 import { ReactComponent as More } from "../../assets/icon/MoreButton.svg";
-import { Dispatch, SetStateAction } from "react";
+import { useContext } from "react";
+import { MenuContext } from "../../context/MenuContext";
 
-interface NavbarProps {
-  isMenuOpen: boolean;
-  setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
-}
+const Navbar = () => {
+  const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
 
-const Navbar = ({ isMenuOpen, setIsMenuOpen }: NavbarProps) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
