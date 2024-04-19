@@ -1,6 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const smallViewport = "62rem";
+
+const floatingAnimation = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+`;
 
 export const Container = styled.div`
   width: 60%;
@@ -31,11 +40,11 @@ export const Container = styled.div`
     height: 60%;
 
     .icon-next {
-      margin-top: -10px;
+      margin-top: 0;
     }
 
     .icon-react-native {
-      margin-bottom: -20px;
+      margin-bottom: 0;
     }
 
     .icon-styled-components {
@@ -44,7 +53,6 @@ export const Container = styled.div`
 
     .icon-prettier {
       margin-top: 0;
-      margin-right: 10px;
     }
   }
 `;
@@ -57,6 +65,8 @@ export const IconBox = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-right: 30px;
+  animation: ${floatingAnimation} 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    infinite;
 
   @media (max-width: ${smallViewport}) {
     width: 80px;
@@ -65,7 +75,7 @@ export const IconBox = styled.div`
 
     &.none-menu {
       width: 100px;
-      height: 72px;
+      height: 62px;
       margin-right: 15px;
     }
   }
@@ -86,8 +96,8 @@ export const Icon = styled.div`
     height: 30px;
 
     &.none-menu {
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
     }
   }
 `;

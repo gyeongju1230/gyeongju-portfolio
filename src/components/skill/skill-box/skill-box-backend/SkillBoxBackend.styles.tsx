@@ -1,6 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const smallViewport = "62rem";
+
+const floatingAnimation = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); 
+  }
+`;
 
 export const Container = styled.div`
   width: 60%;
@@ -42,6 +51,8 @@ export const IconBox = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-right: 50px;
+  animation: ${floatingAnimation} 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    infinite;
 
   @media (max-width: ${smallViewport}) {
     width: 100px;
