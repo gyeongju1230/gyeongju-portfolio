@@ -5,7 +5,7 @@ const smallViewport = "62rem";
 
 export const Container = styled.div`
   width: 40%;
-  height: 100%;
+  margin-top: 90px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -13,9 +13,16 @@ export const Container = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 100%;
-    height: 40%;
+    height: 20%;
+    margin-top: 240px;
     flex-direction: column;
     justify-content: center;
+
+    &.none-menu {
+      width: 100%;
+      height: 30%;
+      margin-top: 77px;
+    }
   }
 `;
 export const Box = styled.div`

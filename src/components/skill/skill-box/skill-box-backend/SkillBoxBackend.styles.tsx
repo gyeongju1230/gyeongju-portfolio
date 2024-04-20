@@ -13,7 +13,7 @@ const floatingAnimation = keyframes`
 
 export const Container = styled.div`
   width: 60%;
-  height: 60%;
+  margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,6 +22,7 @@ export const Container = styled.div`
   @media (max-width: ${smallViewport}) {
     width: 100%;
     height: 60%;
+    margin-top: 0;
 
     .icon-jsp {
       margin-top: 0;
@@ -50,13 +51,15 @@ export const IconBox = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-right: 50px;
+  padding: 15px;
+  margin-right: 30px;
   animation: ${floatingAnimation} 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     infinite;
 
   @media (max-width: ${smallViewport}) {
     width: 100px;
     height: 72px;
+    padding: 0;
     margin-right: 15px;
   }
 `;
