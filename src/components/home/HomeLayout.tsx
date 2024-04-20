@@ -18,7 +18,7 @@ const HomeLayout = () => {
         Frontend <br />
         Portfolio
       </styles.Title>
-      <HomeScrollDown className="home-scroll-down" onClick={scrollToAbout} />
+      <HomeScrollDown onClick={scrollToAbout} />
     </styles.Container>
   );
 };
