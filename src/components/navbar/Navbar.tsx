@@ -19,6 +19,14 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToSkill = () => {
+    window.scrollTo({
+      top: document.getElementById("skill")?.offsetTop || 0,
+      behavior: "smooth",
+    });
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <styles.Header className={isMenuOpen ? "" : "none-menu"}>
       <styles.LogoContainer>
@@ -41,7 +49,13 @@ const Navbar = () => {
           </styles.Button>
         </styles.MenuItem>
         <styles.MenuItem>
-          <styles.Button>&lt; SKILL /&gt;</styles.Button>
+          <styles.Button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={scrollToSkill}
+          >
+            &lt; SKILL /&gt;
+          </styles.Button>
         </styles.MenuItem>
         <styles.MenuItem>
           <styles.Button>&lt; PROJECT /&gt;</styles.Button>
