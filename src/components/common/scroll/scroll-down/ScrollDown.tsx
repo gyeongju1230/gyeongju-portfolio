@@ -3,13 +3,12 @@ import Lottie from "lottie-react";
 import ScrollDownLottie from "../../../../assets/lottie/Lottie_scroll_down.json";
 
 interface ScrollDownProps {
-  className?: string;
   onClick: () => void;
 }
 
-const ScrollDown = ({ className, onClick }: ScrollDownProps) => {
+const ScrollDown = ({ onClick }: ScrollDownProps) => {
   return (
-    <styles.DownLottieBox className={className}>
+    <styles.DownLottieBox>
       <styles.Button onClick={onClick}>
         <Lottie animationData={ScrollDownLottie} />
       </styles.Button>

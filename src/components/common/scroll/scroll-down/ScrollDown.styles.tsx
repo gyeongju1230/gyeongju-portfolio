@@ -4,22 +4,15 @@ const smallViewport = "62rem";
 
 export const DownLottieBox = styled.div`
   position: absolute;
-  width: 100px;
-  height: 103px;
+  width: 60px;
+  height: 63px;
   display: flex;
-  bottom: -77px;
-
-  &.home-scroll-down {
-    bottom: 0;
-  }
-
-  &.about-scroll-down {
-    bottom: -77px;
-  }
+  margin: 0;
+  bottom: 0;
 
   @media (max-width: ${smallViewport}) {
-    width: 50px;
-    height: 51.5px;
+    width: 40px;
+    height: 43px;
   }
 `;
 
