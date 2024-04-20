@@ -53,7 +53,7 @@ const AboutLayout = () => {
           }}
         />
       </styles.AboutTitle>
-      <styles.AboutContainer>
+      <styles.AboutContainer className={isMenuOpen ? "" : "none-menu"}>
         <styles.ImageBox>
           📸 <br />
           프로필 추가 필요
@@ -91,7 +91,7 @@ const AboutLayout = () => {
           </styles.AboutContent>
         </styles.AboutBox>
       </styles.AboutContainer>
-      <AboutScrollDown className="about-scroll-down" onClick={scrollToSkill} />
+      <AboutScrollDown onClick={scrollToSkill} />
     </styles.Container>
   );
 };

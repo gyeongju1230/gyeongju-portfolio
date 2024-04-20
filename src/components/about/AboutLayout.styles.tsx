@@ -5,52 +5,49 @@ const smallViewport = "62rem";
 export const Container = styled.div`
   position: relative;
   width: 100vw;
-  height: calc(100vh - 90px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 90px;
 
   @media (max-width: ${smallViewport}) {
-    height: calc(100vh - 240px);
-    margin-top: 240px;
+    height: 100vh;
 
     &.none-menu {
-      height: calc(100vh - 77px);
-      margin-top: 77px;
+      height: 100vh;
     }
   }
 `;
 
 export const AboutTitle = styled.div`
-  height: 160px;
-  margin-bottom: 20px;
+  height: 15%;
   margin-top: 90px;
+  margin-bottom: 10px;
   text-align: center;
   color: #000;
   font-size: 22px;
-  line-height: 40px;
+  line-height: 30px;
   font-family: SUITE, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    height: 100px;
-    margin-top: 120px;
-    font-size: 14px;
-    line-height: 25px;
+    height: 10%;
+    margin-top: 250px;
+    font-size: 12px;
+    line-height: 18px;
 
     &.none-menu {
-      height: 120px;
+      height: 15%;
       margin-top: 77px;
-      font-size: 18px;
-      line-height: 30px;
+      font-size: 15px;
+      line-height: 26px;
     }
   }
 `;
 
 export const AboutContainer = styled.div`
   width: 70%;
-  height: 382px;
+  height: 50%;
   display: flex;
   gap: 30px;
   padding: 10px;
@@ -60,9 +57,18 @@ export const AboutContainer = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: calc(100% - 15%);
+    height: 35%;
     padding: 10px;
     flex-direction: column;
     gap: 10px;
+
+    &.none-menu {
+      width: calc(100% - 15%);
+      height: 50%;
+      padding: 10px;
+      gap: 10px;
+      flex-direction: column;
+    }
   }
 `;
 
