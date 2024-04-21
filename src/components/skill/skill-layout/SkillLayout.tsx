@@ -17,7 +17,7 @@ const SkillLayout = () => {
 
   const scrollToProject = () => {
     window.scrollTo({
-      top: document.getElementById("home")?.offsetTop || 0,
+      top: document.getElementById("project")?.offsetTop || 0,
       behavior: "smooth",
     });
   };
