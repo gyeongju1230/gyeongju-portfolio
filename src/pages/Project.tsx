@@ -1,5 +1,7 @@
+import ProjectLayout from "../components/project/project-layout/ProjectLayout";
+
 const Project = () => {
-  return <div id="project">Project</div>;
+  return <ProjectLayout />;
 };
 
 export default Project;
