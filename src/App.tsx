@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Skill from "./pages/Skill";
 import { MenuProvider } from "./context/MenuContext";
+import Project from "./pages/Project";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Home />
         <About />
         <Skill />
+        <Project />
       </MenuProvider>
     </>
   );
