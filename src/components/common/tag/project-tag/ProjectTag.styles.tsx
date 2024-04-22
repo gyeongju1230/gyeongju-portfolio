@@ -17,4 +17,11 @@ export const TagContainer = styled.div`
     Noto Sans KR,
     sans-serif;
   line-height: 9px;
+
+  @media (max-width: ${smallViewport}) {
+    width: 73px;
+    height: 19px;
+    font-size: 12px;
+    line-height: 7px;
+  }
 `;
