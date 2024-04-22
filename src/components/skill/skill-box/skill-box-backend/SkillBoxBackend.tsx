@@ -9,41 +9,40 @@ import { ReactComponent as MySql } from "../../../../assets/icon/skill/MySql.svg
 
 const SkillBoxBackend = () => {
   const { isMenuOpen } = useContext(MenuContext);
+  const menuBar = isMenuOpen ? "" : "none-menu";
 
   return (
-    <styles.Container className={isMenuOpen ? "" : "none-menu"}>
-      <styles.IconBox className={`icon-php ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+    <styles.Container className={menuBar}>
+      <styles.IconBox className={`icon-php ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <PHP className="icon" />
         </styles.Icon>
         <styles.Name>PHP</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox
-        className={`icon-spring ${isMenuOpen ? "" : "none-menu"}`}
-      >
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-spring ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Spring className="icon" />
         </styles.Icon>
         <styles.Name>Spring</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox className={`icon-java ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-java ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Java className="icon" />
         </styles.Icon>
         <styles.Name>Java</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox className={`icon-jsp ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-jsp ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <JSP className="icon" />
         </styles.Icon>
         <styles.Name>JSP</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox className={`icon-mysql ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-mysql ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <MySql className="icon" />
         </styles.Icon>
         <styles.Name>MySql</styles.Name>

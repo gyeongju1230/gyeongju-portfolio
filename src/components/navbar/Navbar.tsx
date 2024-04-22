@@ -6,6 +6,7 @@ import { MenuContext } from "../../context/MenuContext";
 
 const Navbar = () => {
   const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
+  const menuBar = isMenuOpen ? "" : "none-menu";
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -36,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <styles.Header className={isMenuOpen ? "" : "none-menu"}>
+    <styles.Header className={menuBar}>
       <styles.LogoContainer>
         <styles.Logo href="/">
           <Logo />
@@ -46,7 +47,7 @@ const Navbar = () => {
         </styles.MoreButton>
       </styles.LogoContainer>
 
-      <styles.Menu className={isMenuOpen ? "" : "none-menu"}>
+      <styles.Menu className={menuBar}>
         <styles.MenuItem>
           <styles.Button
             whileHover={{ scale: 1.1 }}

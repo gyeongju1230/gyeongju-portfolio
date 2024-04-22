@@ -5,6 +5,8 @@ import { MenuContext } from "../../context/MenuContext";
 
 const HomeLayout = () => {
   const { isMenuOpen } = useContext(MenuContext);
+  const menuBar = isMenuOpen ? "" : "none-menu";
+
   const scrollToAbout = () => {
     window.scrollTo({
       top: document.getElementById("about")?.offsetTop || 0,
@@ -13,7 +15,7 @@ const HomeLayout = () => {
   };
 
   return (
-    <styles.Container className={isMenuOpen ? "" : "none-menu"}>
+    <styles.Container className={menuBar}>
       <styles.Title>
         Frontend <br />
         Portfolio

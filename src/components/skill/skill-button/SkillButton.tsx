@@ -11,10 +11,11 @@ const SkillButton = ({
   handleButtonClick,
 }: SkillButtonProps) => {
   const { isMenuOpen } = useContext(MenuContext);
+  const menuBar = isMenuOpen ? "" : "none-menu";
 
   return (
-    <styles.Container className={isMenuOpen ? "" : "none-menu"}>
-      <styles.Box className={isMenuOpen ? "" : "none-menu"}>
+    <styles.Container className={menuBar}>
+      <styles.Box className={menuBar}>
         {Array.from(Array(3).keys()).map(index => (
           <Fragment key={index}>
             {selectedButtonIndex === index ? (
@@ -31,7 +32,7 @@ const SkillButton = ({
                       stiffness: 260,
                       damping: 20,
                     }}
-                    className={isMenuOpen ? "" : "none-menu"}
+                    className={menuBar}
                   >
                     {index === 0 ? "FE" : index === 1 ? "BE" : "TOOL"}
                   </styles.ButtonBox>
@@ -42,7 +43,7 @@ const SkillButton = ({
                 onClick={() => handleButtonClick(index)}
                 className={selectedButtonIndex === index ? "selected" : ""}
               >
-                <styles.ButtonBox className={isMenuOpen ? "" : "none-menu"}>
+                <styles.ButtonBox className={menuBar}>
                   {index === 0 ? "FE" : index === 1 ? "BE" : "TOOL"}
                 </styles.ButtonBox>
               </styles.Button>

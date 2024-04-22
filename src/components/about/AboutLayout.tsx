@@ -11,6 +11,7 @@ import { MenuContext } from "../../context/MenuContext";
 
 const AboutLayout = () => {
   const { isMenuOpen } = useContext(MenuContext);
+  const menuBar = isMenuOpen ? "" : "none-menu";
 
   const scrollToSkill = () => {
     window.scrollTo({
@@ -20,8 +21,8 @@ const AboutLayout = () => {
   };
 
   return (
-    <styles.Container id="about" className={isMenuOpen ? "" : "none-menu"}>
-      <styles.AboutTitle className={isMenuOpen ? "" : "none-menu"}>
+    <styles.Container id="about" className={menuBar}>
+      <styles.AboutTitle className={menuBar}>
         {/*<Typewriter*/}
         {/*  options={{*/}
         {/*    strings: [*/}
@@ -53,13 +54,13 @@ const AboutLayout = () => {
           }}
         />
       </styles.AboutTitle>
-      <styles.AboutContainer className={isMenuOpen ? "" : "none-menu"}>
+      <styles.AboutContainer className={menuBar}>
         <styles.ImageBox>
           📸 <br />
           프로필 추가 필요
         </styles.ImageBox>
-        <styles.AboutBox className={isMenuOpen ? "" : "none-menu"}>
-          <styles.AboutContent className={isMenuOpen ? "" : "none-menu"}>
+        <styles.AboutBox className={menuBar}>
+          <styles.AboutContent className={menuBar}>
             <styles.AboutContentIcon>
               <Name />
             </styles.AboutContentIcon>

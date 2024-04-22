@@ -9,6 +9,7 @@ import SkillScrollDown from "../../common/scroll/scroll-down/ScrollDown";
 
 const SkillLayout = () => {
   const { isMenuOpen } = useContext(MenuContext);
+  const menuBar = isMenuOpen ? "" : "none-menu";
   const [selectedButtonIndex, setSelectedButtonIndex] = useState(0);
 
   const handleButtonClick = (index: number) => {
@@ -23,7 +24,7 @@ const SkillLayout = () => {
   };
 
   return (
-    <styles.Container id="skill" className={isMenuOpen ? "" : "none-menu"}>
+    <styles.Container id="skill" className={menuBar}>
       <styles.ContentBox>
         <SkillButton
           selectedButtonIndex={selectedButtonIndex}

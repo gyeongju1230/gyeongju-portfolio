@@ -15,92 +15,82 @@ import { ReactComponent as Notion } from "../../../../assets/icon/skill/Notion.s
 
 const SkillBoxTool = () => {
   const { isMenuOpen } = useContext(MenuContext);
+  const menuBar = isMenuOpen ? "" : "none-menu";
+
   return (
-    <styles.Container className={isMenuOpen ? "" : "none-menu"}>
-      <styles.IconBox
-        className={`icon-aws-amplify ${isMenuOpen ? "" : "none-menu"}`}
-      >
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+    <styles.Container className={menuBar}>
+      <styles.IconBox className={`icon-aws-amplify ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <AWSAmplify className="icon" />
         </styles.Icon>
         <styles.Name>AWS Amplify</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox className={`icon-git ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-git ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Git className="icon" />
         </styles.Icon>
         <styles.Name>Git</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox
-        className={`icon-github ${isMenuOpen ? "" : "none-menu"}`}
-      >
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-github ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <GitHub className="icon" />
         </styles.Icon>
         <styles.Name>GitHub</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox
-        className={`icon-postMan ${isMenuOpen ? "" : "none-menu"}`}
-      >
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-postMan ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <PostMan className="icon" />
         </styles.Icon>
         <styles.Name>PostMan</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox className={`icon-figma ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-figma ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Figma className="icon" />
         </styles.Icon>
         <styles.Name>Figma</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox
-        className={`icon-photoshop ${isMenuOpen ? "" : "none-menu"}`}
-      >
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-photoshop ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Photoshop className="icon" />
         </styles.Icon>
         <styles.Name>Photoshop</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox className={`icon-jira ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-jira ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Jira className="icon" />
         </styles.Icon>
         <styles.Name>Jira</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox className={`icon-jandi ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-jandi ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Jandi className="icon" />
         </styles.Icon>
         <styles.Name>JANDI</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox
-        className={`icon-confluence ${isMenuOpen ? "" : "none-menu"}`}
-      >
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-confluence ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Confluence className="icon" />
         </styles.Icon>
         <styles.Name>Confluence</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox className={`icon-slack ${isMenuOpen ? "" : "none-menu"}`}>
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-slack ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Slack className="icon" />
         </styles.Icon>
         <styles.Name>Slack</styles.Name>
       </styles.IconBox>
 
-      <styles.IconBox
-        className={`icon-notion ${isMenuOpen ? "" : "none-menu"}`}
-      >
-        <styles.Icon className={isMenuOpen ? "" : "none-menu"}>
+      <styles.IconBox className={`icon-notion ${menuBar}`}>
+        <styles.Icon className={menuBar}>
           <Notion className="icon" />
         </styles.Icon>
         <styles.Name>Notion</styles.Name>
