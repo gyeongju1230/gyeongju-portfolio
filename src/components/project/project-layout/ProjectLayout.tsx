@@ -13,7 +13,6 @@ const ProjectLayout = () => {
   return (
     <styles.Container id="project">
       <ProjectBox />
-
       <ProjectScrollDown onClick={scrollToContact} />
     </styles.Container>
   );
