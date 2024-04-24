@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const smallViewport = "62rem";
 
 export const ProjectBox = styled.div`
+  position: relative;
   width: 80%;
   height: 75%;
   display: flex;
@@ -24,7 +26,11 @@ export const ProjectBox = styled.div`
   }
 `;
 
-export const Project = styled.div`
+export const Project = styled.button`
+  cursor: pointer;
+  outline: none;
+  border: 0;
+
   width: 49%;
   height: 48%;
   display: flex;
