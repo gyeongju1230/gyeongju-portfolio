@@ -8,7 +8,7 @@ export const DownLottieBox = styled.div`
   height: 63px;
   display: flex;
   margin: 0;
-  bottom: 0;
+  bottom: 15px;
   z-index: 1;
   border-radius: 50%;
   box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
@@ -17,6 +17,7 @@ export const DownLottieBox = styled.div`
   @media (max-width: ${smallViewport}) {
     width: 40px;
     height: 43px;
+    bottom: 8px;
   }
 `;
 
