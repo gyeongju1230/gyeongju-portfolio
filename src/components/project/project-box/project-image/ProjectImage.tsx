@@ -10,7 +10,11 @@ const ProjectImage = ({ image }: ProjectImageProps) => {
   const menuBar = isMenuOpen ? "" : "none-menu";
 
   return (
-    <styles.ImageBox className={menuBar}>
+    <styles.ImageBox
+      className={menuBar}
+      whileHover={{ scale: 1.04 }}
+      whileTap={{ scale: 0.94 }}
+    >
       <styles.Image className={menuBar}>{image}</styles.Image>
     </styles.ImageBox>
   );

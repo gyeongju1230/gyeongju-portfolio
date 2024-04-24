@@ -1,8 +1,14 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const smallViewport = "62rem";
 
-export const ImageBox = styled.div`
+export const ImageBox = styled(motion.button)`
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+
   width: 42%;
   height: 90%;
   display: flex;
