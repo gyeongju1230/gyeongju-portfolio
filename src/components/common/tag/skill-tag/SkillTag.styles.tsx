@@ -38,6 +38,7 @@ export const TagBox = styled.div<SkillTagProps>`
   text-align: center;
   color: #787878;
   font-size: 14px;
+  font-weight: 400;
   line-height: 10px;
   font-family:
     Noto Sans KR,
