@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const smallViewport = "62rem";
 
@@ -24,11 +25,16 @@ export const ContentBox = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled(motion.button)`
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+
   margin-top: 30px;
   text-align: center;
   color: #787878;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   line-height: 18px;
   font-family:
@@ -37,28 +43,32 @@ export const Title = styled.div`
 
   @media (max-width: ${smallViewport}) {
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 10px;
 
     &.none-menu {
       margin-top: 10px;
       font-size: 16px;
+      line-height: 18px;
     }
+  }
+
+  &:hover {
+    color: #a07d5a;
+    opacity: 0.8;
   }
 `;
 
 export const Content = styled.div`
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
   white-space: pre-line;
   color: #787878;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 
   @media (max-width: ${smallViewport}) {
-    margin-top: 10px;
-    font-size: 16px;
-
     &.hide-description {
       display: none;
     }

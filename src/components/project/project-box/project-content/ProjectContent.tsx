@@ -1,7 +1,7 @@
 import * as styles from "./ProjectContent.styles";
 import ProjectTag from "../../../common/tag/project-tag/ProjectTag";
 import projectContentData from "../../../../data/ProjectContentData";
-import { useContext } from "react";
+import { Dispatch, SetStateAction, useContext, useState } from "react";
 import { MenuContext } from "../../../../context/MenuContext";
 import SkillTag from "../../../common/tag/skill-tag/SkillTag";
 
@@ -22,7 +22,13 @@ const ProjectContent = ({ id }: ProjectContentProps) => {
   return (
     <styles.ContentBox className={menuBar}>
       <ProjectTag text={tag} />
-      <styles.Title className={menuBar}>{title}</styles.Title>
+      <styles.Title
+        className={menuBar}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        {title}
+      </styles.Title>
       <styles.Content className="hide-description">{content}</styles.Content>
       <SkillTag />
     </styles.ContentBox>
