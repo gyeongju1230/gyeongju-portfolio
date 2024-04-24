@@ -13,7 +13,7 @@ export const Header = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 1;
   background-color: #fffbf5;
 
   @media (max-width: ${smallViewport}) {
@@ -85,7 +85,7 @@ export const Button = styled(motion.button)`
   }
 
   &:hover {
-    color: white;
+    color: #ffffff;
     background-color: #a07d5a;
     opacity: 0.8;
   }
