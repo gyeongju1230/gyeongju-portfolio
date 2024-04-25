@@ -1,7 +1,7 @@
 import * as styles from "./ProjectContent.styles";
 import ProjectTag from "../../../common/tag/project-tag/ProjectTag";
-import projectContentData from "../../../../data/ProjectContentData";
-import { Dispatch, SetStateAction, useContext, useState } from "react";
+import projectData from "../../../../data/ProjectData";
+import { useContext } from "react";
 import { MenuContext } from "../../../../context/MenuContext";
 import SkillTag from "../../../common/tag/skill-tag/SkillTag";
 
@@ -13,7 +13,7 @@ const ProjectContent = ({ id }: ProjectContentProps) => {
   const { isMenuOpen } = useContext(MenuContext);
   const menuBar = isMenuOpen ? "" : "none-menu";
 
-  const { tag, title, content } = projectContentData[id] || {
+  const { tag, title, content } = projectData[id] || {
     tag: "",
     title: "",
     content: "",

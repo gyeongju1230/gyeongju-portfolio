@@ -1,4 +1,4 @@
-const projectContentData = {
+const projectData = {
   reliable: {
     tag: "Team Project",
     title: "든붕이",
@@ -35,4 +35,4 @@ const projectContentData = {
   },
 };
 
-export default projectContentData;
+export default projectData;
