@@ -9,36 +9,43 @@ import { ReactComponent as Todo } from "../../../assets/image/project/Todo_Logo.
 import ProjectContent from "./project-content/ProjectContent";
 
 interface ProjectBoxProps {
-  isModalOpen: boolean;
-  setIsModalOpen: Dispatch<SetStateAction<boolean>>;
+  handelModalOpen: (id: string) => void;
 }
 
-const ProjectBox = ({ isModalOpen, setIsModalOpen }: ProjectBoxProps) => {
+const ProjectBox = ({ handelModalOpen }: ProjectBoxProps) => {
   const { isMenuOpen } = useContext(MenuContext);
   const menuBar = isMenuOpen ? "" : "none-menu";
 
-  const handelModalOpen = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
   return (
     <styles.ProjectBox className={menuBar}>
-      <styles.Project className={menuBar} onClick={handelModalOpen}>
+      <styles.Project
+        className={menuBar}
+        onClick={() => handelModalOpen("reliable")}
+      >
         <ProjectImage image={<ReliableKku className="icon" />} />
         <ProjectContent id="reliable" />
       </styles.Project>
 
-      <styles.Project className={menuBar} onClick={handelModalOpen}>
+      <styles.Project
+        className={menuBar}
+        onClick={() => handelModalOpen("sagopasam")}
+      >
         <ProjectImage image={<Sagopasam className="icon" />} />
         <ProjectContent id="sagopasam" />
       </styles.Project>
 
-      <styles.Project className={menuBar} onClick={handelModalOpen}>
+      <styles.Project
+        className={menuBar}
+        onClick={() => handelModalOpen("portfolio")}
+      >
         <ProjectImage image={<Portfolio className="icon" />} />
         <ProjectContent id="portfolio" />
       </styles.Project>
 
-      <styles.Project className={menuBar} onClick={handelModalOpen}>
+      <styles.Project
+        className={menuBar}
+        onClick={() => handelModalOpen("todo")}
+      >
         <ProjectImage image={<Todo className="icon" />} />
         <ProjectContent id="todo" />
       </styles.Project>

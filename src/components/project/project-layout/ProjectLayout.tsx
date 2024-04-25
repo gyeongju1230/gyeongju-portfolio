@@ -6,6 +6,7 @@ import ProjectModal from "../project-modal/ProjectModal";
 
 const ProjectLayout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalId, setModalId] = useState("");
 
   const scrollToContact = () => {
     window.scrollTo({
@@ -14,12 +15,17 @@ const ProjectLayout = () => {
     });
   };
 
+  const handelModalOpen = (id: string) => {
+    setIsModalOpen(!isModalOpen);
+    setModalId(id);
+  };
+
   return (
     <styles.Container id="project">
-      <ProjectBox isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <ProjectBox handelModalOpen={handelModalOpen} />
       <ProjectScrollDown onClick={scrollToContact} />
 
-      {isModalOpen && <ProjectModal />}
+      {isModalOpen && <ProjectModal id={modalId} />}
     </styles.Container>
   );
 };
