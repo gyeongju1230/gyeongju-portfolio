@@ -1,5 +1,5 @@
 const ProjectModalData = {
-  reliable: {
+  deunbung: {
     tag: "Team Project",
     title: "든붕이",
     contentTitle: "프로젝트 소개",
