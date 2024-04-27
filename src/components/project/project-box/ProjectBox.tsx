@@ -1,8 +1,8 @@
 import * as styles from "./ProjectBox.styles";
-import { Dispatch, SetStateAction, useContext, useState } from "react";
+import { useContext } from "react";
 import { MenuContext } from "../../../context/MenuContext";
 import ProjectImage from "../../project/project-box/project-image/ProjectImage";
-import { ReactComponent as ReliableKku } from "../../../assets/image/project/ReliableKku_Loge.svg";
+import { ReactComponent as Deunbung } from "../../../assets/image/project/deunbung/Deunbung_Loge.svg";
 import { ReactComponent as Sagopasam } from "../../../assets/image/project/Sagopasam_Logo.svg";
 import { ReactComponent as Portfolio } from "../../../assets/image/project/Portfolio_Logo.svg";
 import { ReactComponent as Todo } from "../../../assets/image/project/Todo_Logo.svg";
@@ -20,10 +20,10 @@ const ProjectBox = ({ handelModalOpen }: ProjectBoxProps) => {
     <styles.ProjectBox className={menuBar}>
       <styles.Project
         className={menuBar}
-        onClick={() => handelModalOpen("reliable")}
+        onClick={() => handelModalOpen("deunbung")}
       >
-        <ProjectImage image={<ReliableKku className="icon" />} />
-        <ProjectContent id="reliable" />
+        <ProjectImage image={<Deunbung className="icon" />} />
+        <ProjectContent id="deunbung" />
       </styles.Project>
 
       <styles.Project

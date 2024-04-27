@@ -1,5 +1,5 @@
 const projectData = {
-  reliable: {
+  deunbung: {
     tag: "Team Project",
     title: "든붕이",
     content:
