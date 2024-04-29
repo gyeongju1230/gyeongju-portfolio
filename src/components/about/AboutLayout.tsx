@@ -8,6 +8,7 @@ import { ReactComponent as GitHub } from "../../assets/icon/about/GitHubIcon.svg
 import { ReactComponent as Notion } from "../../assets/icon/about/NotionIcon.svg";
 import { useContext } from "react";
 import { MenuContext } from "../../context/MenuContext";
+import MyImage from "../../assets/image/Image.png";
 
 const AboutLayout = () => {
   const { isMenuOpen } = useContext(MenuContext);
@@ -56,8 +57,11 @@ const AboutLayout = () => {
       </styles.AboutTitle>
       <styles.AboutContainer className={menuBar}>
         <styles.ImageBox>
-          📸 <br />
-          프로필 추가 필요
+          <img
+            src={MyImage}
+            alt="MyImage"
+            style={{ width: "288px", height: "374px" }}
+          />
         </styles.ImageBox>
         <styles.AboutBox className={menuBar}>
           <styles.AboutContent className={menuBar}>
