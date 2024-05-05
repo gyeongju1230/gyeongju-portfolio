@@ -1,13 +1,13 @@
 import * as styles from "./ProjectModal.styles";
 import ProjectTag from "../../common/tag/project-tag/ProjectTag";
 import projectModalData from "../../../data/ProjectModalData";
-import { ReactComponent as AppStoreImage1 } from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage1.svg";
-import { ReactComponent as AppStoreImage2 } from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage2.svg";
-import { ReactComponent as AppStoreImage3 } from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage3.svg";
-import { ReactComponent as AppStoreImage4 } from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage4.svg";
-import { ReactComponent as AppStoreImage5 } from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage5.svg";
-import { ReactComponent as AppStoreImage6 } from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage6.svg";
-import { ReactComponent as AppStoreImage7 } from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage7.svg";
+import AppStoreImage1 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage1.png";
+import AppStoreImage2 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage2.png";
+import AppStoreImage3 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage3.png";
+import AppStoreImage4 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage4.png";
+import AppStoreImage5 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage5.png";
+import AppStoreImage6 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage6.png";
+import AppStoreImage7 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage7.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
@@ -24,13 +24,13 @@ const ProjectModal = ({ id }: ProjectModalProps) => {
   };
 
   const images = [
-    <AppStoreImage1 />,
-    <AppStoreImage2 />,
-    <AppStoreImage3 />,
-    <AppStoreImage4 />,
-    <AppStoreImage5 />,
-    <AppStoreImage6 />,
-    <AppStoreImage7 />,
+    AppStoreImage1,
+    AppStoreImage2,
+    AppStoreImage3,
+    AppStoreImage4,
+    AppStoreImage5,
+    AppStoreImage6,
+    AppStoreImage7,
   ];
 
   const swiperParams = {
@@ -53,7 +53,9 @@ const ProjectModal = ({ id }: ProjectModalProps) => {
           <styles.AppStoreImageContainer>
             <Swiper {...swiperParams}>
               {images.map((image, index) => (
-                <SwiperSlide key={index}>{image}</SwiperSlide>
+                <SwiperSlide key={index}>
+                  <img src={image} alt={`image ${index}`} />
+                </SwiperSlide>
               ))}
             </Swiper>
           </styles.AppStoreImageContainer>

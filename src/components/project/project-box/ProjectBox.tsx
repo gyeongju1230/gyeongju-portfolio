@@ -20,22 +20,6 @@ const ProjectBox = ({ handelModalOpen }: ProjectBoxProps) => {
     <styles.ProjectBox className={menuBar}>
       <styles.Project
         className={menuBar}
-        onClick={() => handelModalOpen("deunbung")}
-      >
-        <ProjectImage image={<Deunbung className="icon" />} />
-        <ProjectContent id="deunbung" />
-      </styles.Project>
-
-      <styles.Project
-        className={menuBar}
-        onClick={() => handelModalOpen("sagopasam")}
-      >
-        <ProjectImage image={<Sagopasam className="icon" />} />
-        <ProjectContent id="sagopasam" />
-      </styles.Project>
-
-      <styles.Project
-        className={menuBar}
         onClick={() => handelModalOpen("portfolio")}
       >
         <ProjectImage image={<Portfolio className="icon" />} />
@@ -48,6 +32,22 @@ const ProjectBox = ({ handelModalOpen }: ProjectBoxProps) => {
       >
         <ProjectImage image={<Todo className="icon" />} />
         <ProjectContent id="todo" />
+      </styles.Project>
+
+      <styles.Project
+        className={menuBar}
+        onClick={() => handelModalOpen("sagopasam")}
+      >
+        <ProjectImage image={<Sagopasam className="icon" />} />
+        <ProjectContent id="sagopasam" />
+      </styles.Project>
+
+      <styles.Project
+        className={menuBar}
+        onClick={() => handelModalOpen("deunbung")}
+      >
+        <ProjectImage image={<Deunbung className="icon" />} />
+        <ProjectContent id="deunbung" />
       </styles.Project>
     </styles.ProjectBox>
   );
