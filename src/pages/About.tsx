@@ -1,4 +1,4 @@
-import AboutLayout from "../components/about/AboutLayout";
+import AboutLayout from "../components/about/about-layout/AboutLayout";
 
 const About = () => {
   return <AboutLayout />;
