@@ -10,12 +10,14 @@ import AppStoreImage6 from "../../../assets/image/project/deunbung/Deunbung_AppS
 import AppStoreImage7 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage7.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import React, { Dispatch, SetStateAction } from "react";
 
 interface ProjectModalProps {
   id: string;
+  setIsModalOpen: React.Dispatch<SetStateAction<boolean>>;
 }
 
-const ProjectModal = ({ id }: ProjectModalProps) => {
+const ProjectModal = ({ id, setIsModalOpen }: ProjectModalProps) => {
   const { tag, title, contentTitle, content } = projectModalData[id] || {
     tag: "",
     title: "",
@@ -44,8 +46,12 @@ const ProjectModal = ({ id }: ProjectModalProps) => {
     loop: true,
   };
 
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <styles.ModalWrapper>
+    <styles.ModalWrapper onClick={handleModalClose}>
       <styles.ModalContainer>
         <styles.ModalBox>
           <ProjectTag text={tag} />

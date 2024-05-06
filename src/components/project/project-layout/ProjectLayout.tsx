@@ -20,12 +20,20 @@ const ProjectLayout = () => {
     setModalId(id);
   };
 
+  if (isModalOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
   return (
     <styles.Container id="project">
       <ProjectBox handelModalOpen={handelModalOpen} />
       <ProjectScrollDown onClick={scrollToContact} />
 
-      {isModalOpen && <ProjectModal id={modalId} />}
+      {isModalOpen && (
+        <ProjectModal id={modalId} setIsModalOpen={setIsModalOpen} />
+      )}
     </styles.Container>
   );
 };
