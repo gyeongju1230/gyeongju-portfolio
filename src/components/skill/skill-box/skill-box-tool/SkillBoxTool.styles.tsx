@@ -13,27 +13,12 @@ const floatingAnimation = keyframes`
 
 export const Container = styled.div`
   width: 60%;
+  height: 80%;
   margin-top: 90px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
-  .icon-git {
-    //margin-top: -50px;
-  }
-
-  .icon-github {
-    //margin-bottom: -50px;
-  }
-
-  .icon-confluence {
-    //margin-top: -50px;
-  }
-
-  .icon-notion {
-    //margin-top: -50px;
-  }
 
   @media (max-width: ${smallViewport}) {
     width: 100%;
@@ -59,14 +44,14 @@ export const Container = styled.div`
 `;
 
 export const IconBox = styled.div`
-  width: 160px;
-  height: 144px;
+  width: 130px;
+  height: 134px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  margin-right: 40px;
+  margin-right: 30px;
   animation: ${floatingAnimation} 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     infinite;
 
@@ -87,8 +72,8 @@ export const IconBox = styled.div`
 
 export const Icon = styled.div`
   display: flex;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
 
   .icon {
     width: 100%;
