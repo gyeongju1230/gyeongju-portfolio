@@ -29,9 +29,7 @@ export const AboutTitle = styled.div`
   font-size: 21px;
   font-weight: bold;
   line-height: 40px;
-  font-family:
-    Noto Sans KR,
-    sans-serif;
+  font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     border-bottom: 0.3px solid #a07d5a;
@@ -52,9 +50,7 @@ export const AboutContent = styled.div`
   font-size: 19px;
   font-weight: bold;
   line-height: 35px;
-  font-family:
-    Noto Sans KR,
-    sans-serif;
+  font-family: GmarketSans, sans-serif;
   //background-color: pink;
 
   @media (max-width: ${smallViewport}) {
@@ -93,9 +89,7 @@ export const AboutSkills = styled.div`
   color: #787878;
   font-size: 18px;
   font-weight: bold;
-  font-family:
-    Noto Sans KR,
-    sans-serif;
+  font-family: Pretendard, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     height: 30px;
@@ -125,9 +119,7 @@ export const AboutLink = styled.div`
   color: #787878;
   font-size: 18px;
   font-weight: bold;
-  font-family:
-    Noto Sans KR,
-    sans-serif;
+  font-family: Pretendard, sans-serif;
 
   .icon {
     width: 45px;
