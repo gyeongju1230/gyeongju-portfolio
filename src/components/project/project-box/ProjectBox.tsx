@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { MenuContext } from "../../../context/MenuContext";
 import ProjectImage from "../../project/project-box/project-image/ProjectImage";
 import { ReactComponent as Deunbung } from "../../../assets/image/project/deunbung/Deunbung_Loge.svg";
-import { ReactComponent as Sagopasam } from "../../../assets/image/project/Sagopasam_Logo.svg";
+import { ReactComponent as Sagopasam } from "../../../assets/image/project/sagopasam/Sagopasam_Logo.svg";
 import { ReactComponent as Portfolio } from "../../../assets/image/project/Portfolio_Logo.svg";
 import { ReactComponent as Todo } from "../../../assets/image/project/Todo_Logo.svg";
 import ProjectContent from "./project-content/ProjectContent";
