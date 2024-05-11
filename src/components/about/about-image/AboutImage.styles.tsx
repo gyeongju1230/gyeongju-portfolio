@@ -3,7 +3,7 @@ import styled from "styled-components";
 const smallViewport = "62rem";
 
 export const ImageBox = styled.div`
-  width: 35%;
+  width: 30%;
   height: 70%;
   display: flex;
   justify-content: center;

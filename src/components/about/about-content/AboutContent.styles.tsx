@@ -3,7 +3,7 @@ import styled from "styled-components";
 const smallViewport = "62rem";
 
 export const AboutBox = styled.div`
-  width: 60%;
+  width: 65%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ export const AboutBox = styled.div`
 
     &.none-menu {
       width: 100%;
-      height: 60%;
+      height: 65%;
     }
   }
 `;
@@ -33,7 +33,7 @@ export const AboutTitle = styled.div`
 
   @media (max-width: ${smallViewport}) {
     border-bottom: 0.3px solid #a07d5a;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
   }
 `;
@@ -47,7 +47,7 @@ export const AboutContent = styled.div`
 
   text-align: left;
   color: #787878;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: bold;
   line-height: 35px;
   font-family: GmarketSans, sans-serif;
@@ -55,7 +55,7 @@ export const AboutContent = styled.div`
 
   @media (max-width: ${smallViewport}) {
     border-bottom: 0.3px solid #a07d5a;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 400;
     line-height: 22px;
   }
@@ -87,13 +87,13 @@ export const AboutSkills = styled.div`
 
   text-align: center;
   color: #787878;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   font-family: Pretendard, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     height: 30px;
-    font-size: 12px;
+    font-size: 10px;
   }
 `;
 
@@ -111,13 +111,17 @@ export const AboutLinkBox = styled.div`
   }
 `;
 
-export const AboutLink = styled.div`
+export const AboutLink = styled.button`
   display: flex;
   align-items: center;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  background-color: transparent;
 
   text-align: center;
   color: #787878;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   font-family: Pretendard, sans-serif;
 
@@ -127,7 +131,7 @@ export const AboutLink = styled.div`
   }
 
   @media (max-width: ${smallViewport}) {
-    font-size: 12px;
+    font-size: 10px;
     .icon {
       width: 25px;
       height: 25px;

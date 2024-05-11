@@ -42,7 +42,7 @@ export const Title = styled.div`
 `;
 
 export const AboutContainer = styled.div`
-  width: 70%;
+  width: 85%;
   height: 60%;
   display: flex;
   flex-direction: row;
@@ -50,13 +50,13 @@ export const AboutContainer = styled.div`
   justify-content: space-between;
 
   @media (max-width: ${smallViewport}) {
-    width: 80%;
+    width: 90%;
     height: 40%;
     flex-direction: column;
     justify-content: center;
 
     &.none-menu {
-      width: 80%;
+      width: 90%;
       height: 65%;
       flex-direction: column;
       justify-content: space-between;
