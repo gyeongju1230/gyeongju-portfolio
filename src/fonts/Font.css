@@ -1,20 +1,20 @@
 @font-face {
-    font-family: "WavvePADO";
-    font-style: normal;
-    font-weight: normal;
-    src: url("WavvePADO-Regular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "SUITE";
-    font-style: normal;
-    font-weight: 400;
-    src: url("SUITE-Variable.woff2") format("woff2");
-}
-
-@font-face {
     font-family: "Pretendard";
     font-style: normal;
     font-weight: normal;
     src: url("Pretendard-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Sagak";
+    font-style: normal;
+    font-weight: normal;
+    src: url("Sagak-sagak.woff") format("woff");
+}
+
+@font-face {
+    font-family: "GmarketSans";
+    font-style: normal;
+    font-weight: normal;
+    src: url("GmarketSansTTFMedium.woff") format("woff");
 }
