@@ -18,7 +18,7 @@ const AboutLayout = () => {
 
   return (
     <styles.Container id="about" className={menuBar}>
-      <styles.Title className={menuBar}>About</styles.Title>
+      <styles.Title className={menuBar}>ABOUT</styles.Title>
       <styles.AboutContainer className={menuBar}>
         <AboutImage />
         <AboutContent />
