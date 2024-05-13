@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 
 const smallViewport = "62rem";
 
-export const ContentBox = styled.div`
+export const ContentContainer = styled.div`
   position: relative;
   width: 52%;
   height: 90%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin-right: 10px;
 
@@ -31,7 +32,6 @@ export const Title = styled(motion.button)`
   outline: none;
   border: 0;
 
-  margin-top: 30px;
   text-align: center;
   color: #787878;
   font-size: 22px;
@@ -60,7 +60,7 @@ export const Title = styled(motion.button)`
 `;
 
 export const Content = styled.div`
-  margin-top: 20px;
+  height: auto;
   text-align: center;
   white-space: pre-line;
   color: #787878;

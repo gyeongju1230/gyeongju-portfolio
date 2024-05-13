@@ -20,7 +20,7 @@ const ProjectContent = ({ id }: ProjectContentProps) => {
   };
 
   return (
-    <styles.ContentBox className={menuBar}>
+    <styles.ContentContainer className={menuBar}>
       <ProjectTag text={tag} />
       <styles.Title
         className={menuBar}
@@ -29,9 +29,12 @@ const ProjectContent = ({ id }: ProjectContentProps) => {
       >
         {title}
       </styles.Title>
-      <styles.Content className="hide-description">{content}</styles.Content>
-      <SkillTag />
-    </styles.ContentBox>
+      <styles.Content
+        className="hide-description"
+        dangerouslySetInnerHTML={{ __html: content }}
+      />
+      <SkillTag id={id} />
+    </styles.ContentContainer>
   );
 };
 
