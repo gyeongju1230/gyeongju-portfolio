@@ -4,13 +4,13 @@ const projectSkillData = {
       "React",
       "TypeScript",
       "Aws Amplify",
-      "Styled-Component",
       "Framer Motion",
+      "Styled-Component",
       "Figma",
     ],
   },
   todo: {
-    skills: ["React", "TypeScript", "Aws Amplify", "Styled-Component", "Figma"],
+    skills: ["React", "Aws Amplify", "CSS", "Styled-Component", "Figma"],
   },
   sagopasam: {
     skills: [
