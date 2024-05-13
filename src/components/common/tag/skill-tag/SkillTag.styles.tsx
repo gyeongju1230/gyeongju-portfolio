@@ -7,9 +7,8 @@ interface SkillTagProps {
 }
 
 export const TagContainer = styled.div`
-  position: absolute;
   width: 90%;
-  height: 58px;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -28,7 +27,8 @@ export const TagBox = styled.div<SkillTagProps>`
   padding: 2px 10px;
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 3%;
+  margin-bottom: 2%;
   border-radius: 3px;
 
   ${({ getRandomColor }) => css`
