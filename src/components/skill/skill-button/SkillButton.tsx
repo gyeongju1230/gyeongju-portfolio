@@ -21,6 +21,8 @@ const SkillButton = ({
                 <styles.Button
                   onClick={() => handleButtonClick(index)}
                   className={selectedButtonIndex === index ? "selected" : ""}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
                 >
                   <styles.ButtonBox
                     initial={{ opacity: 0, scale: 0 }}
@@ -40,6 +42,8 @@ const SkillButton = ({
               <styles.Button
                 onClick={() => handleButtonClick(index)}
                 className={selectedButtonIndex === index ? "selected" : ""}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
               >
                 <styles.ButtonBox className={menuBar}>
                   {index === 0 ? "FE" : index === 1 ? "BE" : "TOOL"}

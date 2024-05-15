@@ -87,7 +87,7 @@ export const ButtonBox = styled(motion.div)`
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled(motion.button)`
   cursor: pointer;
   outline: none;
   border: 0;
