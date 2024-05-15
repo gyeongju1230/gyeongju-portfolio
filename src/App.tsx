@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Skill from "./pages/Skill";
 import { MenuProvider } from "./context/MenuContext";
 import Project from "./pages/Project";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <About />
         <Skill />
         <Project />
+        <Contact />
       </MenuProvider>
     </>
   );
