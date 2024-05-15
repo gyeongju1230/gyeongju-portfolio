@@ -8,7 +8,7 @@ export const ImageBox = styled.div`
   display: flex;
   justify-content: center;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #fffbf5;
   box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
   overflow: hidden;
 
