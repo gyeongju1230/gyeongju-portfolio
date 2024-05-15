@@ -1,14 +1,11 @@
 import * as styles from "./ProjectImage.styles";
-import React, { useContext } from "react";
-import { MenuContext } from "../../../../context/MenuContext";
+import React from "react";
 
 interface ProjectImageProps {
   image: React.ReactNode;
+  menuBar: string;
 }
-const ProjectImage = ({ image }: ProjectImageProps) => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
-
+const ProjectImage = ({ image, menuBar }: ProjectImageProps) => {
   return (
     <styles.ImageBox
       className={menuBar}

@@ -10,7 +10,7 @@ import AppStoreImage6 from "../../../assets/image/project/deunbung/Deunbung_AppS
 import AppStoreImage7 from "../../../assets/image/project/deunbung/Deunbung_AppStoreImage7.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import React, { Dispatch, SetStateAction } from "react";
+import React, { SetStateAction } from "react";
 
 interface ProjectModalProps {
   id: string;

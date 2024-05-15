@@ -1,15 +1,16 @@
 import * as styles from "./SkillLayout.styles";
-import { useContext, useState } from "react";
-import { MenuContext } from "../../../context/MenuContext";
+import { useState } from "react";
 import SkillButton from "../skill-button/SkillButton";
 import SkillBoxFrontend from "../skill-box/skill-box-frontend/SkillBoxFrontend";
 import SkillBoxBackend from "../skill-box/skill-box-backend/SkillBoxBackend";
 import SkillBoxTool from "../skill-box/skill-box-tool/SkillBoxTool";
 import SkillScrollDown from "../../common/scroll/scroll-down/ScrollDown";
 
-const SkillLayout = () => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+interface SkillLayoutProps {
+  menuBar: string;
+}
+
+const SkillLayout = ({ menuBar }: SkillLayoutProps) => {
   const [selectedButtonIndex, setSelectedButtonIndex] = useState(0);
 
   const handleButtonClick = (index: number) => {
@@ -27,12 +28,13 @@ const SkillLayout = () => {
     <styles.Container id="skill" className={menuBar}>
       <styles.ContentBox>
         <SkillButton
+          menuBar={menuBar}
           selectedButtonIndex={selectedButtonIndex}
           handleButtonClick={handleButtonClick}
         />
-        {selectedButtonIndex === 0 && <SkillBoxFrontend />}
-        {selectedButtonIndex === 1 && <SkillBoxBackend />}
-        {selectedButtonIndex === 2 && <SkillBoxTool />}
+        {selectedButtonIndex === 0 && <SkillBoxFrontend menuBar={menuBar} />}
+        {selectedButtonIndex === 1 && <SkillBoxBackend menuBar={menuBar} />}
+        {selectedButtonIndex === 2 && <SkillBoxTool menuBar={menuBar} />}
       </styles.ContentBox>
       <SkillScrollDown onClick={scrollToProject} />
     </styles.Container>

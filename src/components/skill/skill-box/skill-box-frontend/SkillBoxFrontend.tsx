@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { MenuContext } from "../../../../context/MenuContext";
 import * as styles from "./SkillBoxFrontend.styles";
 import { ReactComponent as React } from "../../../../assets/icon/skill/React.svg";
 import { ReactComponent as Next } from "../../../../assets/icon/skill/Next.svg";
@@ -12,10 +10,11 @@ import { ReactComponent as StyledComponents } from "../../../../assets/icon/skil
 import { ReactComponent as ESLint } from "../../../../assets/icon/skill/ESLint.svg";
 import { ReactComponent as Prettier } from "../../../../assets/icon/skill/Prettier.svg";
 
-const SkillBoxFrontend = () => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+interface SkillBoxFrontendProps {
+  menuBar: string;
+}
 
+const SkillBoxFrontend = ({ menuBar }: SkillBoxFrontendProps) => {
   return (
     <styles.Container>
       <styles.IconBox className={`icon-react ${menuBar}`}>

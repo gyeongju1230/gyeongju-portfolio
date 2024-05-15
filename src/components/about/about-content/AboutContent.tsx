@@ -1,13 +1,13 @@
 import * as styles from "./AboutContent.styles";
 import Typewriter from "typewriter-effect";
-import { useContext } from "react";
-import { MenuContext } from "../../../context/MenuContext";
 import { ReactComponent as Github } from "../../../assets/icon/skill/GitHub.svg";
 import { ReactComponent as Notion } from "../../../assets/icon/skill/Notion.svg";
 
-const AboutContent = () => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+interface AboutContentProps {
+  menuBar: string;
+}
+
+const AboutContent = ({ menuBar }: AboutContentProps) => {
   const githubUrl = "https://github.com/gyeongju1230";
   const notionUrl = "https://bit.ly/4cUYb0S";
 

@@ -1,14 +1,13 @@
 import * as styles from "./AboutLayout.styles";
 import AboutScrollDown from "../../common/scroll/scroll-down/ScrollDown";
-import { useContext } from "react";
-import { MenuContext } from "../../../context/MenuContext";
 import AboutContent from "../about-content/AboutContent";
 import AboutImage from "../about-image/AboutImage";
 
-const AboutLayout = () => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+interface AboutLayoutProps {
+  menuBar: string;
+}
 
+const AboutLayout = ({ menuBar }: AboutLayoutProps) => {
   const scrollToSkill = () => {
     window.scrollTo({
       top: document.getElementById("skill")?.offsetTop || 0,
@@ -20,8 +19,8 @@ const AboutLayout = () => {
     <styles.Container id="about" className={menuBar}>
       <styles.Title className={menuBar}>ABOUT</styles.Title>
       <styles.AboutContainer className={menuBar}>
-        <AboutImage />
-        <AboutContent />
+        <AboutImage menuBar={menuBar} />
+        <AboutContent menuBar={menuBar} />
       </styles.AboutContainer>
       <AboutScrollDown onClick={scrollToSkill} />
     </styles.Container>

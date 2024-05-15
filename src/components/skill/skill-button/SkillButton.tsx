@@ -1,18 +1,16 @@
 import * as styles from "./SkillButton.styles";
-import { Fragment, useContext } from "react";
-import { MenuContext } from "../../../context/MenuContext";
+import { Fragment } from "react";
 
 interface SkillButtonProps {
+  menuBar: string;
   selectedButtonIndex: number;
   handleButtonClick: (index: number) => void;
 }
 const SkillButton = ({
+  menuBar,
   selectedButtonIndex,
   handleButtonClick,
 }: SkillButtonProps) => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
-
   return (
     <styles.Container className={menuBar}>
       <styles.Box className={menuBar}>

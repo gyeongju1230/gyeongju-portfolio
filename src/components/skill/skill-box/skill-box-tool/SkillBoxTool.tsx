@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { MenuContext } from "../../../../context/MenuContext";
 import * as styles from "./SkillBoxTool.styles";
 import { ReactComponent as AWSAmplify } from "../../../../assets/icon/skill/AwsAmplify.svg";
 import { ReactComponent as Git } from "../../../../assets/icon/skill/Git.svg";
@@ -13,10 +11,11 @@ import { ReactComponent as Confluence } from "../../../../assets/icon/skill/Conf
 import { ReactComponent as Slack } from "../../../../assets/icon/skill/Slack.svg";
 import { ReactComponent as Notion } from "../../../../assets/icon/skill/Notion.svg";
 
-const SkillBoxTool = () => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+interface SkillBoxToolProps {
+  menuBar: string;
+}
 
+const SkillBoxTool = ({ menuBar }: SkillBoxToolProps) => {
   return (
     <styles.Container className={menuBar}>
       <styles.IconBox className={`icon-aws-amplify ${menuBar}`}>

@@ -1,18 +1,14 @@
 import * as styles from "./ProjectContent.styles";
 import ProjectTag from "../../../common/tag/project-tag/ProjectTag";
 import projectData from "../../../../data/ProjectData";
-import { useContext } from "react";
-import { MenuContext } from "../../../../context/MenuContext";
 import SkillTag from "../../../common/tag/skill-tag/SkillTag";
 
 interface ProjectContentProps {
   id: string;
+  menuBar: string;
 }
 
-const ProjectContent = ({ id }: ProjectContentProps) => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
-
+const ProjectContent = ({ id, menuBar }: ProjectContentProps) => {
   const { tag, title, content } = projectData[id] || {
     tag: "",
     title: "",

@@ -4,7 +4,11 @@ import ProjectBox from "../project-box/ProjectBox";
 import { useState } from "react";
 import ProjectModal from "../project-modal/ProjectModal";
 
-const ProjectLayout = () => {
+interface ProjectLayoutProps {
+  menuBar: string;
+}
+
+const ProjectLayout = ({ menuBar }: ProjectLayoutProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalId, setModalId] = useState("");
 
@@ -28,7 +32,7 @@ const ProjectLayout = () => {
 
   return (
     <styles.Container id="project">
-      <ProjectBox handelModalOpen={handelModalOpen} />
+      <ProjectBox menuBar={menuBar} handelModalOpen={handelModalOpen} />
       <ProjectScrollDown onClick={scrollToContact} />
 
       {isModalOpen && (

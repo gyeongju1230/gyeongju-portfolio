@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import { MenuContext } from "../../../../context/MenuContext";
 import * as styles from "./SkillBoxBackend.styles";
 import { ReactComponent as PHP } from "../../../../assets/icon/skill/Php.svg";
 import { ReactComponent as Spring } from "../../../../assets/icon/skill/Spring.svg";
@@ -7,10 +5,11 @@ import { ReactComponent as Java } from "../../../../assets/icon/skill/Java.svg";
 import { ReactComponent as JSP } from "../../../../assets/icon/skill/Jsp.svg";
 import { ReactComponent as MySql } from "../../../../assets/icon/skill/MySql.svg";
 
-const SkillBoxBackend = () => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+interface SkillBoxBackendProps {
+  menuBar: string;
+}
 
+const SkillBoxBackend = ({ menuBar }: SkillBoxBackendProps) => {
   return (
     <styles.Container className={menuBar}>
       <styles.IconBox className={`icon-php ${menuBar}`}>

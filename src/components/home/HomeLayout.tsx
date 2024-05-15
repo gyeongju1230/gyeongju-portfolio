@@ -1,12 +1,11 @@
 import * as styles from "./HomeLayout.styles";
 import HomeScrollDown from "../common/scroll/scroll-down/ScrollDown";
-import { useContext } from "react";
-import { MenuContext } from "../../context/MenuContext";
 
-const HomeLayout = () => {
-  const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+interface HomeLayoutProps {
+  menuBar: string;
+}
 
+const HomeLayout = ({ menuBar }: HomeLayoutProps) => {
   const scrollToAbout = () => {
     window.scrollTo({
       top: document.getElementById("about")?.offsetTop || 0,
