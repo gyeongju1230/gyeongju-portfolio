@@ -36,6 +36,14 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const scrollToContact = () => {
+    window.scrollTo({
+      top: document.getElementById("contact")?.offsetTop || 0,
+      behavior: "smooth",
+    });
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <styles.Header className={menuBar}>
       <styles.LogoContainer>
@@ -76,7 +84,13 @@ const Navbar = () => {
           </styles.Button>
         </styles.MenuItem>
         <styles.MenuItem>
-          <styles.Button>&lt; CONTACT /&gt;</styles.Button>
+          <styles.Button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            onClick={scrollToContact}
+          >
+            &lt; CONTACT /&gt;
+          </styles.Button>
         </styles.MenuItem>
       </styles.Menu>
     </styles.Header>
