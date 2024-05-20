@@ -1,10 +1,10 @@
-import * as styles from "./SkillLayout.styles";
-import { useState } from "react";
-import SkillButton from "../skill-button/SkillButton";
-import SkillBoxFrontend from "../skill-box/skill-box-frontend/SkillBoxFrontend";
-import SkillBoxBackend from "../skill-box/skill-box-backend/SkillBoxBackend";
-import SkillBoxTool from "../skill-box/skill-box-tool/SkillBoxTool";
-import SkillScrollDown from "../../common/scroll/scroll-down/ScrollDown";
+import * as styles from './SkillLayout.styles';
+import { useState } from 'react';
+import SkillButton from '@components/skill/skill-button/SkillButton';
+import SkillBoxFrontend from '@components/skill/skill-box/skill-box-frontend/SkillBoxFrontend';
+import SkillBoxBackend from '@components/skill/skill-box/skill-box-backend/SkillBoxBackend';
+import SkillBoxTool from '@components/skill/skill-box/skill-box-tool/SkillBoxTool';
+import SkillScrollDown from '@components/common/scroll/scroll-down/ScrollDown';
 
 interface SkillLayoutProps {
   menuBar: string;
@@ -19,8 +19,8 @@ const SkillLayout = ({ menuBar }: SkillLayoutProps) => {
 
   const scrollToProject = () => {
     window.scrollTo({
-      top: document.getElementById("project")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('project')?.offsetTop || 0,
+      behavior: 'smooth',
     });
   };
 

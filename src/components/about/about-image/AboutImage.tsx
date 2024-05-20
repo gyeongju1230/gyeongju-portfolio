@@ -1,5 +1,5 @@
 import * as styles from "./AboutImage.styles";
-import MyImage from "../../../assets/image/Image.png";
+import MyImage from "@assets/images/Image.png";
 
 interface AboutImageProps {
   menuBar: string;

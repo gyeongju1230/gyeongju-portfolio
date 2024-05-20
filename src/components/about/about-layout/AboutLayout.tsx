@@ -1,7 +1,7 @@
-import * as styles from "./AboutLayout.styles";
-import AboutScrollDown from "../../common/scroll/scroll-down/ScrollDown";
-import AboutContent from "../about-content/AboutContent";
-import AboutImage from "../about-image/AboutImage";
+import * as styles from './AboutLayout.styles';
+import AboutScrollDown from '@components/common/scroll/scroll-down/ScrollDown';
+import AboutContent from '@components/about/about-content/AboutContent';
+import AboutImage from '@components/about/about-image/AboutImage';
 
 interface AboutLayoutProps {
   menuBar: string;
@@ -10,8 +10,8 @@ interface AboutLayoutProps {
 const AboutLayout = ({ menuBar }: AboutLayoutProps) => {
   const scrollToSkill = () => {
     window.scrollTo({
-      top: document.getElementById("skill")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('skill')?.offsetTop || 0,
+      behavior: 'smooth',
     });
   };
 

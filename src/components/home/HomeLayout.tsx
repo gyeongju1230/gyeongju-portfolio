@@ -1,5 +1,5 @@
-import * as styles from "./HomeLayout.styles";
-import HomeScrollDown from "../common/scroll/scroll-down/ScrollDown";
+import * as styles from './HomeLayout.styles';
+import HomeScrollDown from '@components/common/scroll/scroll-down/ScrollDown';
 
 interface HomeLayoutProps {
   menuBar: string;
@@ -8,8 +8,8 @@ interface HomeLayoutProps {
 const HomeLayout = ({ menuBar }: HomeLayoutProps) => {
   const scrollToAbout = () => {
     window.scrollTo({
-      top: document.getElementById("about")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('about')?.offsetTop || 0,
+      behavior: 'smooth',
     });
   };
 

@@ -1,15 +1,15 @@
-import * as styles from "./AboutContent.styles";
-import Typewriter from "typewriter-effect";
-import { ReactComponent as Github } from "../../../assets/icon/skill/GitHub.svg";
-import { ReactComponent as Notion } from "../../../assets/icon/skill/Notion.svg";
+import * as styles from './AboutContent.styles';
+import Typewriter from 'typewriter-effect';
+import { ReactComponent as Github } from '@assets/icons/skill/GitHub.svg';
+import { ReactComponent as Notion } from '@assets/icons/skill/Notion.svg';
 
 interface AboutContentProps {
   menuBar: string;
 }
 
 const AboutContent = ({ menuBar }: AboutContentProps) => {
-  const githubUrl = "https://github.com/gyeongju1230";
-  const notionUrl = "https://bit.ly/4cUYb0S";
+  const githubUrl = 'https://github.com/gyeongju1230';
+  const notionUrl = 'https://bit.ly/4cUYb0S';
 
   return (
     <styles.AboutBox className={menuBar}>
@@ -17,13 +17,13 @@ const AboutContent = ({ menuBar }: AboutContentProps) => {
         <Typewriter
           options={{
             strings: [
-              "안녕하세요 :)<br />" + "프론트엔드 개발자 정경주입니다.",
+              '안녕하세요 :)<br />' + '프론트엔드 개발자 정경주입니다.',
             ],
             autoStart: true,
             loop: true,
             delay: 50,
             deleteSpeed: 50,
-            wrapperClassName: "typewriter",
+            wrapperClassName: 'typewriter',
           }}
         />
       </styles.AboutTitle>

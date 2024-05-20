@@ -1,9 +1,9 @@
 import * as styles from "./SkillBoxBackend.styles";
-import { ReactComponent as PHP } from "../../../../assets/icon/skill/Php.svg";
-import { ReactComponent as Spring } from "../../../../assets/icon/skill/Spring.svg";
-import { ReactComponent as Java } from "../../../../assets/icon/skill/Java.svg";
-import { ReactComponent as JSP } from "../../../../assets/icon/skill/Jsp.svg";
-import { ReactComponent as MySql } from "../../../../assets/icon/skill/MySql.svg";
+import { ReactComponent as PHP } from "@assets/icons/skill/Php.svg";
+import { ReactComponent as Spring } from "@assets/icons/skill/Spring.svg";
+import { ReactComponent as Java } from "@assets/icons/skill/Java.svg";
+import { ReactComponent as JSP } from "@assets/icons/skill/Jsp.svg";
+import { ReactComponent as MySql } from "@assets/icons/skill/MySql.svg";
 
 interface SkillBoxBackendProps {
   menuBar: string;

@@ -1,13 +1,13 @@
-import * as styles from "./SkillTag.styles";
-import projectSkillData from "../../../../data/ProjectSkillData";
+import * as styles from './SkillTag.styles';
+import projectSkillData from '@data/ProjectSkillData';
 
 const colors = [
-  "#FBE5D8",
-  "#D8EAFB",
-  "#FBF5D8",
-  "#FBD8FA",
-  "#FBDAD8",
-  "#EEFBD8",
+  '#FBE5D8',
+  '#D8EAFB',
+  '#FBF5D8',
+  '#FBD8FA',
+  '#FBDAD8',
+  '#EEFBD8',
 ];
 
 interface SkillTagProps {

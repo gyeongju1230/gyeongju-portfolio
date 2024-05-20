@@ -20,6 +20,9 @@
     "import/resolver": {
       "typescript": {
         "project": "./tsconfig.json"
+      },
+      "alias": {
+        "map": [["@assets", "./src/assets"]]
       }
     }
   },

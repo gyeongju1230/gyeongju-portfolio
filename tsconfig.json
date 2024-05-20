@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "sourceMap": true,
-    "strictNullChecks": true,
+    "strictNullChecks": false,
     "module": "es6",
     "jsx": "react-jsx",
     "target": "es5",
@@ -10,13 +10,9 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"],
-      "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"],
-      "@assets/*": ["assets/*"]
-    }
+    "baseUrl": "src",
   },
-  "include": ["src/components", "custom.d.ts"]
+  "include": ["src/components", "custom.d.ts"],
+  "extends": "./tsconfig.paths.json"
+
 }

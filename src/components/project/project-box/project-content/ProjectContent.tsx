@@ -1,7 +1,7 @@
-import * as styles from "./ProjectContent.styles";
-import ProjectTag from "../../../common/tag/project-tag/ProjectTag";
-import projectData from "../../../../data/ProjectData";
-import SkillTag from "../../../common/tag/skill-tag/SkillTag";
+import * as styles from './ProjectContent.styles';
+import ProjectTag from '@components/common/tag/project-tag/ProjectTag';
+import projectData from '@data/ProjectData';
+import SkillTag from '@components/common/tag/skill-tag/SkillTag';
 
 interface ProjectContentProps {
   id: string;
@@ -10,9 +10,9 @@ interface ProjectContentProps {
 
 const ProjectContent = ({ id, menuBar }: ProjectContentProps) => {
   const { tag, title, content } = projectData[id] || {
-    tag: "",
-    title: "",
-    content: "",
+    tag: '',
+    title: '',
+    content: '',
   };
 
   return (

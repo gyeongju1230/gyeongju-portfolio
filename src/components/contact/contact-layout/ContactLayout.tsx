@@ -1,6 +1,6 @@
-import * as styles from "./ContactLayout.styles";
-import ContactContent from "../contact-content/ContactContent";
-import ProjectScrollUp from "../../common/scroll/scroll-up/ScrollUp";
+import * as styles from './ContactLayout.styles';
+import ContactContent from '@components/contact/contact-content/ContactContent';
+import ProjectScrollUp from '@components/common/scroll/scroll-up/ScrollUp';
 
 interface ContactLayoutProps {
   menuBar: string;
@@ -9,8 +9,8 @@ interface ContactLayoutProps {
 const ContactLayout = ({ menuBar }: ContactLayoutProps) => {
   const scrollToHome = () => {
     window.scrollTo({
-      top: document.getElementById("home")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('home')?.offsetTop || 0,
+      behavior: 'smooth',
     });
   };
 

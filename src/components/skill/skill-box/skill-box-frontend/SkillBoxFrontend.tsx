@@ -1,14 +1,14 @@
 import * as styles from "./SkillBoxFrontend.styles";
-import { ReactComponent as React } from "../../../../assets/icon/skill/React.svg";
-import { ReactComponent as Next } from "../../../../assets/icon/skill/Next.svg";
-import { ReactComponent as JavaScript } from "../../../../assets/icon/skill/JavaScript.svg";
-import { ReactComponent as TypeScript } from "../../../../assets/icon/skill/Typescript.svg";
-import { ReactComponent as Axios } from "../../../../assets/icon/skill/Axios.svg";
-import { ReactComponent as Recoil } from "../../../../assets/icon/skill/Recoil.svg";
-import { ReactComponent as FramerMotion } from "../../../../assets/icon/skill/FramerMotion.svg";
-import { ReactComponent as StyledComponents } from "../../../../assets/icon/skill/StyledComponents.svg";
-import { ReactComponent as ESLint } from "../../../../assets/icon/skill/ESLint.svg";
-import { ReactComponent as Prettier } from "../../../../assets/icon/skill/Prettier.svg";
+import { ReactComponent as React } from "@assets/icons/skill/React.svg";
+import { ReactComponent as Next } from "@assets/icons/skill/Next.svg";
+import { ReactComponent as JavaScript } from "@assets/icons/skill/JavaScript.svg";
+import { ReactComponent as TypeScript } from "@assets/icons/skill/Typescript.svg";
+import { ReactComponent as Axios } from "@assets/icons/skill/Axios.svg";
+import { ReactComponent as Recoil } from "@assets/icons/skill/Recoil.svg";
+import { ReactComponent as FramerMotion } from "@assets/icons/skill/FramerMotion.svg";
+import { ReactComponent as StyledComponents } from "@assets/icons/skill/StyledComponents.svg";
+import { ReactComponent as ESLint } from "@assets/icons/skill/ESLint.svg";
+import { ReactComponent as Prettier } from "@assets/icons/skill/Prettier.svg";
 
 interface SkillBoxFrontendProps {
   menuBar: string;

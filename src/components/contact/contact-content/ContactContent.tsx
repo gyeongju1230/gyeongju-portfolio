@@ -1,7 +1,7 @@
 import * as styles from "./ContactContent.styles";
-import { ReactComponent as Github } from "../../../assets/icon/contact/Github.svg";
-import { ReactComponent as Gmail } from "../../../assets/icon/contact/Gmail.svg";
-import { ReactComponent as Copy } from "../../../assets/icon/contact/CopyIcon.svg";
+import { ReactComponent as Github } from "@assets/icons/contact/Github.svg";
+import { ReactComponent as Gmail } from "@assets/icons/contact/Gmail.svg";
+import { ReactComponent as Copy } from "@assets/icons/contact/CopyIcon.svg";
 
 interface ContactContentProps {
   menuBar: string;

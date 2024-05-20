@@ -1,8 +1,8 @@
-import * as styles from "./ProjectLayout.styles";
-import ProjectScrollDown from "../../common/scroll/scroll-down/ScrollDown";
-import ProjectBox from "../project-box/ProjectBox";
-import { useState } from "react";
-import ProjectModal from "../project-modal/ProjectModal";
+import * as styles from './ProjectLayout.styles';
+import ProjectScrollDown from '@components/common/scroll/scroll-down/ScrollDown';
+import ProjectBox from '@components/project/project-box/ProjectBox';
+import { useState } from 'react';
+import ProjectModal from '@components/project/project-modal/ProjectModal';
 
 interface ProjectLayoutProps {
   menuBar: string;
@@ -10,12 +10,12 @@ interface ProjectLayoutProps {
 
 const ProjectLayout = ({ menuBar }: ProjectLayoutProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalId, setModalId] = useState("");
+  const [modalId, setModalId] = useState('');
 
   const scrollToContact = () => {
     window.scrollTo({
-      top: document.getElementById("contact")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('contact')?.offsetTop || 0,
+      behavior: 'smooth',
     });
   };
 
@@ -25,9 +25,9 @@ const ProjectLayout = ({ menuBar }: ProjectLayoutProps) => {
   };
 
   if (isModalOpen) {
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
   } else {
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = 'auto';
   }
 
   return (

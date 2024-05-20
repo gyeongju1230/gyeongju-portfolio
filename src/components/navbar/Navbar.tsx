@@ -1,12 +1,12 @@
-import * as styles from "./Navbar.styles";
-import { ReactComponent as Logo } from "../../assets/image/Logo.svg";
-import { ReactComponent as More } from "../../assets/icon/MoreButton.svg";
-import { useContext } from "react";
-import { MenuContext } from "../../context/MenuContext";
+import * as styles from './Navbar.styles';
+import { ReactComponent as Logo } from '@assets/images/Logo.svg';
+import { ReactComponent as More } from '@assets/icons/MoreButton.svg';
+import { useContext } from 'react';
+import { MenuContext } from '@context/MenuContext';
 
 const Navbar = () => {
   const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+  const menuBar = isMenuOpen ? '' : 'none-menu';
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -14,32 +14,32 @@ const Navbar = () => {
 
   const scrollToAbout = () => {
     window.scrollTo({
-      top: document.getElementById("about")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('about')?.offsetTop || 0,
+      behavior: 'smooth',
     });
     setIsMenuOpen(!isMenuOpen);
   };
 
   const scrollToSkill = () => {
     window.scrollTo({
-      top: document.getElementById("skill")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('skill')?.offsetTop || 0,
+      behavior: 'smooth',
     });
     setIsMenuOpen(!isMenuOpen);
   };
 
   const scrollToProject = () => {
     window.scrollTo({
-      top: document.getElementById("project")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('project')?.offsetTop || 0,
+      behavior: 'smooth',
     });
     setIsMenuOpen(!isMenuOpen);
   };
 
   const scrollToContact = () => {
     window.scrollTo({
-      top: document.getElementById("contact")?.offsetTop || 0,
-      behavior: "smooth",
+      top: document.getElementById('contact')?.offsetTop || 0,
+      behavior: 'smooth',
     });
     setIsMenuOpen(!isMenuOpen);
   };

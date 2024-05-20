@@ -1,6 +1,6 @@
-import * as styles from "./ScrollUp.styles";
-import Lottie from "lottie-react";
-import ScrollUpLottie from "../../../../assets/lottie/Lottie_scroll_up.json";
+import * as styles from './ScrollUp.styles';
+import Lottie from 'lottie-react';
+import ScrollUpLottie from '@assets/lottie/Lottie_scroll_up.json';
 
 interface ScrollUpProps {
   onClick: () => void;

@@ -1,15 +1,15 @@
 import * as styles from "./SkillBoxTool.styles";
-import { ReactComponent as AWSAmplify } from "../../../../assets/icon/skill/AwsAmplify.svg";
-import { ReactComponent as Git } from "../../../../assets/icon/skill/Git.svg";
-import { ReactComponent as GitHub } from "../../../../assets/icon/skill/GitHub.svg";
-import { ReactComponent as PostMan } from "../../../../assets/icon/skill/PostMan.svg";
-import { ReactComponent as Figma } from "../../../../assets/icon/skill/Figma.svg";
-import { ReactComponent as Photoshop } from "../../../../assets/icon/skill/Photoshop.svg";
-import { ReactComponent as Jira } from "../../../../assets/icon/skill/Jira.svg";
-import { ReactComponent as Jandi } from "../../../../assets/icon/skill/Jandi.svg";
-import { ReactComponent as Confluence } from "../../../../assets/icon/skill/Confluence.svg";
-import { ReactComponent as Slack } from "../../../../assets/icon/skill/Slack.svg";
-import { ReactComponent as Notion } from "../../../../assets/icon/skill/Notion.svg";
+import { ReactComponent as AWSAmplify } from "@assets/icons/skill/AwsAmplify.svg";
+import { ReactComponent as Git } from "@assets/icons/skill/Git.svg";
+import { ReactComponent as GitHub } from "@assets/icons/skill/GitHub.svg";
+import { ReactComponent as PostMan } from "@assets/icons/skill/PostMan.svg";
+import { ReactComponent as Figma } from "@assets/icons/skill/Figma.svg";
+import { ReactComponent as Photoshop } from "@assets/icons/skill/Photoshop.svg";
+import { ReactComponent as Jira } from "@assets/icons/skill/Jira.svg";
+import { ReactComponent as Jandi } from "@assets/icons/skill/Jandi.svg";
+import { ReactComponent as Confluence } from "@assets/icons/skill/Confluence.svg";
+import { ReactComponent as Slack } from "@assets/icons/skill/Slack.svg";
+import { ReactComponent as Notion } from "@assets/icons/skill/Notion.svg";
 
 interface SkillBoxToolProps {
   menuBar: string;
