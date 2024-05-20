@@ -36,7 +36,6 @@ export const ModalBox = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
-  //background-color: beige;
 `;
 
 export const Title = styled.div`
@@ -66,13 +65,10 @@ export const AppStoreImageContainer = styled.div`
   width: 100%;
   height: 440px;
   display: flex;
-  //gap: 10px;
   margin-top: 15px;
-  border: 1px solid #dbdbdb;
   border-radius: 10px;
 
-  @media (max-width: ${smallViewport}) {
-    height: 420px;
-    margin-top: 7.5px;
+  .swiper-pagination-bullet-active {
+    background-color: #a07d5a;
   }
 `;
