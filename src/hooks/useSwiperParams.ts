@@ -4,7 +4,7 @@ import { Pagination } from 'swiper/modules';
 const useSwiperParams = () => {
   const [swiperParams, setSwiperParams] = useState({
     slidesPerView: 4.5,
-    spaceBetween: 3,
+    spaceBetween: 10,
     pagination: {
       clickable: true,
     },
@@ -25,7 +25,7 @@ const useSwiperParams = () => {
       } else {
         setSwiperParams({
           slidesPerView: 4.5,
-          spaceBetween: 3,
+          spaceBetween: 10,
           pagination: {
             clickable: true,
           },
