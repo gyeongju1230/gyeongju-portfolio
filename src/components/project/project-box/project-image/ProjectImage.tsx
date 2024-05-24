@@ -1,18 +1,19 @@
-import * as styles from "./ProjectImage.styles";
-import React from "react";
+import * as styles from './ProjectImage.styles';
+import React from 'react';
 
 interface ProjectImageProps {
+  id: string;
+  handelModalOpen: (id: string) => void;
   image: React.ReactNode;
-  menuBar: string;
 }
-const ProjectImage = ({ image, menuBar }: ProjectImageProps) => {
+const ProjectImage = ({ id, handelModalOpen, image }: ProjectImageProps) => {
   return (
     <styles.ImageBox
-      className={menuBar}
-      whileHover={{ scale: 1.04 }}
+      onClick={() => handelModalOpen(id)}
+      whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.94 }}
     >
-      <styles.Image className={menuBar}>{image}</styles.Image>
+      <styles.Image>{image}</styles.Image>
     </styles.ImageBox>
   );
 };

@@ -1,11 +1,11 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 export const ContentContainer = styled.div`
   position: relative;
-  width: 52%;
+  width: 42%;
   height: 90%;
   display: flex;
   flex-direction: column;
@@ -15,42 +15,31 @@ export const ContentContainer = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 90%;
-    height: 20%;
+    height: 15%;
     margin-right: 0;
-
-    &.none-menu {
-      width: 90%;
-      height: 25%;
-      margin-right: 0;
-    }
   }
 `;
 
 export const Title = styled(motion.button)`
-  background-color: transparent;
   cursor: pointer;
   outline: none;
   border: 0;
 
-  text-align: center;
+  width: 100%;
+  height: 20%;
+  background-color: transparent;
+
   color: #787878;
+  text-align: center;
   font-size: 22px;
   font-weight: bold;
   line-height: 18px;
-  font-family:
-    Noto Sans KR,
-    sans-serif;
+  font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    margin-top: 5px;
-    font-size: 14px;
-    line-height: 10px;
-
-    &.none-menu {
-      margin-top: 10px;
-      font-size: 16px;
-      line-height: 18px;
-    }
+    height: 100%;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   &:hover {
@@ -60,17 +49,45 @@ export const Title = styled(motion.button)`
 `;
 
 export const Content = styled.div`
-  height: auto;
+  width: 100%;
+  height: 20%;
   text-align: center;
   white-space: pre-line;
   color: #787878;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+  line-height: 30px;
+  font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     &.hide-description {
       display: none;
     }
   }
+`;
+
+export const LinkBox = styled.div`
+  height: 30%;
+
+  @media (max-width: ${smallViewport}) {
+    &.hide-link {
+      display: none;
+    }
+  }
+`;
+
+export const Link = styled.div`
+  height: 50%;
+  text-align: center;
+  color: #787878;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: GmarketSans, sans-serif;
+`;
+
+export const LinkTitle = styled.div`
+  color: #a07d5a;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: GmarketSans, sans-serif;
 `;

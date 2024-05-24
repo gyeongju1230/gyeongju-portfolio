@@ -1,21 +1,23 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 interface SkillTagProps {
   getRandomColor: string;
 }
 
 export const TagContainer = styled.div`
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 15%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   bottom: 0;
 
   @media (max-width: ${smallViewport}) {
-    &.hide-description {
+    &.hide-tag {
       display: none;
     }
   }
@@ -23,12 +25,12 @@ export const TagContainer = styled.div`
 
 export const TagBox = styled.div<SkillTagProps>`
   width: auto;
-  height: 18px;
+  height: 22px;
   padding: 2px 10px;
   display: flex;
   align-items: center;
-  margin-right: 3%;
-  margin-bottom: 2%;
+  margin-right: 10px;
+  margin-bottom: 2px;
   border-radius: 3px;
 
   ${({ getRandomColor }) => css`
@@ -37,10 +39,8 @@ export const TagBox = styled.div<SkillTagProps>`
 
   text-align: center;
   color: #787878;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 10px;
-  font-family:
-    Noto Sans KR,
-    sans-serif;
+  font-family: GmarketSans, sans-serif;
 `;
