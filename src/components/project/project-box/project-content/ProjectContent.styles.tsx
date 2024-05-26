@@ -26,10 +26,10 @@ export const Title = styled(motion.button)`
   border: 0;
 
   width: 100%;
-  height: 20%;
+  height: 15%;
   background-color: transparent;
 
-  color: #787878;
+  color: #a07d5a;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
@@ -43,14 +43,22 @@ export const Title = styled(motion.button)`
   }
 
   &:hover {
-    color: #a07d5a;
     opacity: 0.8;
+  }
+
+  span {
+    border-radius: 3px;
+    padding: 8px 16px;
+    background-color: #fff5ef;
   }
 `;
 
 export const Content = styled.div`
   width: 100%;
-  height: 20%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   white-space: pre-line;
   color: #787878;
@@ -66,7 +74,12 @@ export const Content = styled.div`
 `;
 
 export const LinkBox = styled.div`
+  width: 100%;
   height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
   @media (max-width: ${smallViewport}) {
     &.hide-link {
@@ -75,16 +88,23 @@ export const LinkBox = styled.div`
   }
 `;
 
-export const Link = styled.div`
+export const Link = styled.button`
   height: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+
   text-align: center;
   color: #787878;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 34px;
   font-family: GmarketSans, sans-serif;
 `;
 
 export const LinkTitle = styled.div`
+  border-radius: 3px;
+  background-color: #fff5ef;
   color: #a07d5a;
   font-size: 14px;
   font-weight: 600;
@@ -107,4 +127,14 @@ export const TagContainer = styled.div`
       display: none;
     }
   }
+`;
+
+export const UrlBox = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+
+  text-align: center;
 `;

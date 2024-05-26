@@ -14,11 +14,11 @@ const ProjectContent = ({
   handelModalOpen,
   menuBar,
 }: ProjectContentProps) => {
-  const { tag, title, content, demo, github } = projectData[id] || {
+  const { tag, title, content, url, github } = projectData[id] || {
     tag: '',
     title: '',
     content: '',
-    demo: '',
+    url: [],
     github: '',
   };
 
@@ -30,20 +30,33 @@ const ProjectContent = ({
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        {title}
+        <span>{title}</span>
       </styles.Title>
       <styles.Content
         className="hide-description"
         dangerouslySetInnerHTML={{ __html: content }}
       />
       <styles.LinkBox className="hide-link">
-        <styles.Link>
-          <styles.LinkTitle>
-            Demo <br />
-          </styles.LinkTitle>
-          {demo}
-        </styles.Link>
-        <styles.Link>
+        <styles.UrlBox>
+          {url.map(({ title, link, label }, index: number) => (
+            <styles.Link
+              key={index}
+              onClick={() => {
+                window.open(link);
+              }}
+            >
+              <styles.LinkTitle>
+                {title} <br />
+              </styles.LinkTitle>
+              {label}
+            </styles.Link>
+          ))}
+        </styles.UrlBox>
+        <styles.Link
+          onClick={() => {
+            window.open(github);
+          }}
+        >
           <styles.LinkTitle>
             Github <br />
           </styles.LinkTitle>
