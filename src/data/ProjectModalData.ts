@@ -1,3 +1,5 @@
+// TODO: 배포 시 포트폴리오 배포 링크 추가 필요
+
 const ProjectModalData = {
   portfolio: {
     tag: 'Solo Project',
@@ -26,6 +28,15 @@ const ProjectModalData = {
           '○ Scroll up/down',
       },
     ],
+    url: 'URL',
+    urlLink: [
+      {
+        link: '배포링크추가필요',
+        label: '🔗 배포 사이트로 이동하기',
+      },
+    ],
+    github: 'Github',
+    githubLink: 'https://zrr.kr/vhGMB',
     figma: 'Figma',
     figmaLink: 'https://zrr.kr/ZM9j',
     notion: 'Notion',
@@ -54,6 +65,15 @@ const ProjectModalData = {
           '○ Dark Mode',
       },
     ],
+    url: 'URL',
+    urlLink: [
+      {
+        link: 'https://gyeongju-todo-service.com',
+        label: '🔗 배포 사이트로 이동하기',
+      },
+    ],
+    github: 'Github',
+    githubLink: 'https://zrr.kr/h6Y9',
     figma: 'Figma',
     figmaLink: 'https://zrr.kr/O0vW',
     notion: 'Notion',
@@ -102,7 +122,7 @@ const ProjectModalData = {
         position: 'Front-End',
         note: '사용자 App 개발',
       },
-      { image: 'Member3', name: '박재완', position: 'Back-End' },
+      { image: 'Member3', name: '박재완', position: 'Full-stack' },
       { image: 'Member4', name: '김민진', position: 'Back-End' },
     ],
     role: '역할',
@@ -111,6 +131,7 @@ const ProjectModalData = {
       {
         image: 'SagopasamGif',
         content:
+          '\n' +
           '○ 회원가입/회원정보수정/회원탈퇴 \n' +
           '○ 로그인/로그아웃/비밀번호 찾기 \n' +
           '○ 전공서적 판매글 생성 \n' +
@@ -121,10 +142,23 @@ const ProjectModalData = {
           '○ 챗봇 거래 (구매 수락/거절, 입금확인, 사물함 선택, 사물함 비밀번호 설정, 서적 배치 완료, 거래 완료) \n' +
           '○ 도움말 \n' +
           '○ 전공서적 검색 \n' +
-          '○ 나의 거래 (구매 내역/판매 내역) \n' +
+          '○ 나의 거래 (구매내역/판매내역) \n' +
           '○ 공지사항 (홈 화면에서 공지 배너 확인/공지사항 페이지로 이동 가능) \n',
       },
     ],
+    url: 'URL',
+    urlLink: [
+      {
+        link: 'https://apps.apple.com/kr/app/%EC%82%AC%EA%B3%A0%ED%8C%8C%EC%82%BC/id6477531087',
+        label: '🔗 AppStore 로 이동하기',
+      },
+      {
+        link: 'GooglePlay URL',
+        label: '🔗 GooglePlay 로 이동하기 (⚒️ 베타테스트 중입니다.)',
+      },
+    ],
+    github: 'Github',
+    githubLink: 'https://zrr.kr/8RUK',
     figma: 'Figma',
     figmaLink: 'https://zrr.kr/ewSW',
     notion: 'Notion',
@@ -182,7 +216,7 @@ const ProjectModalData = {
         position: 'Front-End',
         note: 'Admin page 개발',
       },
-      { image: 'Member3', name: '박재완', position: 'Back-End' },
+      { image: 'Member3', name: '박재완', position: 'Full-stack' },
       { image: 'Member4', name: '김민진', position: 'Back-End' },
     ],
     role: '역할',
@@ -192,12 +226,13 @@ const ProjectModalData = {
         image: 'DeunbungGif',
         title: '💡 사용자 App',
         content:
+          '\n' +
           '○ 회원가입/회원정보수정/회원탈퇴 \n' +
           '○ 로그인/로그아웃/비밀번호 찾기 \n' +
           '○ 영업 여부 \n' +
           '○ 예상 대기시간 \n' +
           '○ 붕어빵 미리 주문하기 \n' +
-          '○ 붕어빵 미리 결제하기 (토스 pg사) \n' +
+          '○ 붕어빵 미리 결제하기 (토스페이먼츠) \n' +
           '○ 주문상태 (주문 대기중/조리중/조리 완료/픽업 완료/주문 지연) \n' +
           '○ 과거 주문 내역 \n' +
           '○ 붕어빵 캘린더 (붕어빵을 구매한 날짜에 붕어 배지가 생겨요!) \n' +
@@ -217,6 +252,19 @@ const ProjectModalData = {
           '○ 회원 관리 \n',
       },
     ],
+    url: 'URL',
+    urlLink: [
+      {
+        link: 'https://apps.apple.com/kr/app/%EB%93%A0%EB%B6%95%EC%9D%B4/id6471925416',
+        label: '🔗 AppStore 로 이동하기',
+      },
+      {
+        link: 'https://play.google.com/store/apps/details?id=com.reliablekkufront&pcampaignid=web_share',
+        label: '🔗 GooglePlay 로 이동하기',
+      },
+    ],
+    github: 'Github',
+    githubLink: 'https://zrr.kr/PuSn',
     figma: 'Figma',
     figmaLink: 'https://zrr.kr/8pFj',
     notion: 'Notion',

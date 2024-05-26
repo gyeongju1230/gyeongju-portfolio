@@ -28,6 +28,10 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
     role,
     features,
     featuresContent,
+    url,
+    urlLink,
+    github,
+    githubLink,
     figma,
     figmaLink,
     notion,
@@ -47,6 +51,10 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
     role: '',
     features: '',
     featuresContent: '',
+    url: '',
+    urlLink: [],
+    github: '',
+    githubLink: '',
     figma: '',
     figmaLink: '',
     notion: '',
@@ -96,6 +104,31 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
       <styles.ContentTitle>{features}</styles.ContentTitle>
       <styles.Content>
         <FeaturesContent featuresContent={featuresContent} />
+      </styles.Content>
+
+      <styles.ContentTitle>{url}</styles.ContentTitle>
+      <styles.Content>
+        {urlLink.map(({ link, label }, index: number) => (
+          <styles.Button
+            key={index}
+            onClick={() => {
+              window.open(link);
+            }}
+          >
+            {label}
+          </styles.Button>
+        ))}
+      </styles.Content>
+
+      <styles.ContentTitle>{github}</styles.ContentTitle>
+      <styles.Content>
+        <styles.Button
+          onClick={() => {
+            window.open(githubLink);
+          }}
+        >
+          🔗 {githubLink}
+        </styles.Button>
       </styles.Content>
 
       <styles.ContentTitle>{figma}</styles.ContentTitle>

@@ -74,8 +74,8 @@ export const Content = styled.div`
 `;
 
 export const Button = styled.button`
-  width: 100%;
   background-color: transparent;
+  margin-right: 10px;
   cursor: pointer;
   outline: none;
   border: 0;

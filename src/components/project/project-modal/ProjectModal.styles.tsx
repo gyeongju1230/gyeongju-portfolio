@@ -28,5 +28,6 @@ export const ModalContainer = styled.div`
   overflow-y: auto;
   display: flex;
   justify-content: center;
+  border-radius: 10px;
   background-color: #fffbf5;
 `;
