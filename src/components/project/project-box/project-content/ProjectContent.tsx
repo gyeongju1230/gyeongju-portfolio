@@ -60,7 +60,7 @@ const ProjectContent = ({
           <styles.LinkTitle>
             Github <br />
           </styles.LinkTitle>
-          {github}
+          🔗 Github 로 이동하기
         </styles.Link>
       </styles.LinkBox>
       <styles.TagContainer className="hide-tag">

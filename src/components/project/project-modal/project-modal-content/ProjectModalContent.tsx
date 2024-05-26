@@ -127,7 +127,7 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
             window.open(githubLink);
           }}
         >
-          🔗 {githubLink}
+          🔗 Github 로 이동하기
         </styles.Button>
       </styles.Content>
 
@@ -138,7 +138,7 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
             window.open(figmaLink);
           }}
         >
-          🔗 {figmaLink}
+          🔗 Figma 로 이동하기
         </styles.Button>
       </styles.Content>
 
@@ -149,7 +149,7 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
             window.open(notionLink);
           }}
         >
-          🔗 {notionLink}
+          🔗 Notion 으로 이동하기
         </styles.Button>
       </styles.Content>
     </styles.ModalBox>
