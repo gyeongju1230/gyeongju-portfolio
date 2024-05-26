@@ -2,11 +2,11 @@ import styled, { css } from 'styled-components';
 
 const smallViewport = '62rem';
 
-interface SkillTagProps {
+interface RoleTagProps {
   getRandomColor: string;
 }
 
-export const TagBox = styled.div<SkillTagProps>`
+export const TagBox = styled.div<RoleTagProps>`
   width: auto;
   height: 22px;
   padding: 2px 10px;

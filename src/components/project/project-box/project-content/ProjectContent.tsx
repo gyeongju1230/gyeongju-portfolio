@@ -50,7 +50,9 @@ const ProjectContent = ({
           {github}
         </styles.Link>
       </styles.LinkBox>
-      <SkillTag id={id} />
+      <styles.TagContainer className="hide-tag">
+        <SkillTag id={id} />
+      </styles.TagContainer>
     </styles.ContentContainer>
   );
 };

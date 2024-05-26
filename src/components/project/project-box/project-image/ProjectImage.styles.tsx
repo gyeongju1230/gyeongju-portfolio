@@ -15,7 +15,7 @@ export const ImageBox = styled(motion.button)`
   align-items: center;
   margin-left: 10px;
   border-radius: 10px;
-  background-color: transparent;
+  background-color: #fff5ef;
   box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
 
   @media (max-width: ${smallViewport}) {

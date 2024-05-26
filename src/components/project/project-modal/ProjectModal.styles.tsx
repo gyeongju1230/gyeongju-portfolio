@@ -23,40 +23,10 @@ export const ModalWrapper = styled.button`
 export const ModalContainer = styled.div`
   position: absolute;
   width: 80%;
-  height: calc(90% - 60px);
-  padding-top: 60px;
+  max-height: 90%;
+  overflow: hidden;
+  overflow-y: auto;
   display: flex;
   justify-content: center;
-  overflow-y: auto;
   background-color: #fffbf5;
-`;
-
-export const ModalBox = styled.div`
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-`;
-
-export const Title = styled.div`
-  width: 100%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-
-  color: #787878;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 9px;
-  font-family:
-    Noto Sans KR,
-    sans-serif;
-
-  @media (max-width: ${smallViewport}) {
-    height: 20px;
-    margin-top: 10px;
-    font-size: 20px;
-    line-height: 7px;
-  }
 `;

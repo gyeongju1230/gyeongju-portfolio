@@ -1,8 +1,6 @@
 import * as styles from './ProjectModal.styles';
-import ProjectTag from '@components/common/tag/project-tag/ProjectTag';
-import projectModalData from '@data/ProjectModalData';
 import React, { SetStateAction } from 'react';
-import ProjectSwiper from '@components/project/project-swiper/ProjectSwiper';
+import ProjectModalContent from '@components/project/project-modal/project-modal-content/ProjectModalContent';
 
 interface ProjectModalProps {
   id: string;
@@ -10,13 +8,6 @@ interface ProjectModalProps {
 }
 
 const ProjectModal = ({ id, setIsModalOpen }: ProjectModalProps) => {
-  const { tag, title, contentTitle, content } = projectModalData[id] || {
-    tag: '',
-    title: '',
-    contentTitle: '',
-    content: '',
-  };
-
   const handleModalClose = () => {
     setIsModalOpen(false);
   };
@@ -28,11 +19,7 @@ const ProjectModal = ({ id, setIsModalOpen }: ProjectModalProps) => {
   return (
     <styles.ModalWrapper onClick={handleModalClose}>
       <styles.ModalContainer onClick={handleModalContainerClick}>
-        <styles.ModalBox>
-          <ProjectTag text={tag} />
-          <styles.Title>{title}</styles.Title>
-          <ProjectSwiper id={id} />
-        </styles.ModalBox>
+        <ProjectModalContent id={id} />
       </styles.ModalContainer>
     </styles.ModalWrapper>
   );

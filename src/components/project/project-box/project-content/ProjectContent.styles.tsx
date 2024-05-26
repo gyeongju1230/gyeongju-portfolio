@@ -91,3 +91,20 @@ export const LinkTitle = styled.div`
   line-height: 30px;
   font-family: GmarketSans, sans-serif;
 `;
+
+export const TagContainer = styled.div`
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  bottom: 0;
+
+  @media (max-width: ${smallViewport}) {
+    &.hide-tag {
+      display: none;
+    }
+  }
+`;

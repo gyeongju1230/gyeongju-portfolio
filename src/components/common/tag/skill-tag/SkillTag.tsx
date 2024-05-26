@@ -24,13 +24,13 @@ const SkillTag = ({ id }: SkillTagProps) => {
   };
 
   return (
-    <styles.TagContainer className="hide-tag">
+    <>
       {skills.map((skill: string, index: number) => (
         <styles.TagBox key={index} getRandomColor={getRandomColor(index)}>
           {skill}
         </styles.TagBox>
       ))}
-    </styles.TagContainer>
+    </>
   );
 };
 
