@@ -16,7 +16,15 @@ const FeaturesContent = ({ featuresContent }: FeaturesContentProps) => {
       {featuresContent.map((content, index) => (
         <styles.Container key={index}>
           {content.title && <styles.Title>{content.title}</styles.Title>}
-          {content.image && <styles.ImageBox></styles.ImageBox>}
+          {content.image && (
+            <styles.ImageBox>
+              <img
+                src={require(`assets/images/project/gif/${content.image}.gif`)}
+                alt="Gif"
+                className="image"
+              />
+            </styles.ImageBox>
+          )}
           <styles.Content>{content.content}</styles.Content>
         </styles.Container>
       ))}

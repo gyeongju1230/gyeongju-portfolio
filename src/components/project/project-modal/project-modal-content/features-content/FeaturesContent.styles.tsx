@@ -21,11 +21,16 @@ export const Title = styled.div`
 `;
 
 export const ImageBox = styled.div`
-  width: 300px;
-  height: 500px;
+  width: 385px;
+  height: 768px;
   display: flex;
   //align-self: center;
-  background-color: beige;
+  //background-color: beige;
+
+  .image {
+    width: 100%;
+    height: 100%;
+  }
 
   @media (max-width: ${smallViewport}) {
     width: 150px;

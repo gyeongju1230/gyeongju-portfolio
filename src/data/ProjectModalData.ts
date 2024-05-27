@@ -129,7 +129,7 @@ const ProjectModalData = {
     features: '주요 기능',
     featuresContent: [
       {
-        image: 'SagopasamGif',
+        image: 'Sagopasam_Screen',
         content:
           '\n' +
           '○ 회원가입/회원정보수정/회원탈퇴 \n' +
@@ -223,7 +223,7 @@ const ProjectModalData = {
     features: '주요 기능',
     featuresContent: [
       {
-        image: 'DeunbungGif',
+        image: 'Deunbung_Screen',
         title: '💡 사용자 App',
         content:
           '\n' +
