@@ -26,10 +26,9 @@ export const Title = styled(motion.button)`
   border: 0;
 
   width: 100%;
-  height: 15%;
+  height: 8%;
   background-color: transparent;
-
-  color: #a07d5a;
+  color: #9d928b;
   text-align: center;
   font-size: 22px;
   font-weight: bold;
@@ -43,13 +42,8 @@ export const Title = styled(motion.button)`
   }
 
   &:hover {
+    color: #a07d5a;
     opacity: 0.8;
-  }
-
-  span {
-    border-radius: 3px;
-    padding: 8px 16px;
-    background-color: #fff5ef;
   }
 `;
 

@@ -30,7 +30,7 @@ const ProjectContent = ({
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
-        <span>{title}</span>
+        {title}
       </styles.Title>
       <styles.Content
         className="hide-description"
