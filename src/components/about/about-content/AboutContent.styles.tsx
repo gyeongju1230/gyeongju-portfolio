@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 export const AboutBox = styled.div`
   width: 65%;
@@ -27,7 +27,8 @@ export const AboutTitle = styled.div`
   text-align: left;
   color: #787878;
   font-size: 21px;
-  font-weight: bold;
+  //font-weight: bold;
+  font-weight: 500;
   line-height: 40px;
   font-family: GmarketSans, sans-serif;
 
@@ -48,7 +49,8 @@ export const AboutContent = styled.div`
   text-align: left;
   color: #787878;
   font-size: 17px;
-  font-weight: bold;
+  //font-weight: bold;
+  font-weight: 400;
   line-height: 35px;
   font-family: GmarketSans, sans-serif;
   //background-color: pink;
@@ -88,7 +90,8 @@ export const AboutSkills = styled.div`
   text-align: center;
   color: #787878;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
+  //font-weight: bold;
   font-family: Pretendard, sans-serif;
 
   @media (max-width: ${smallViewport}) {
@@ -122,7 +125,8 @@ export const AboutLink = styled.button`
   text-align: center;
   color: #787878;
   font-size: 16px;
-  font-weight: bold;
+  //font-weight: bold;
+  font-weight: 400;
   font-family: Pretendard, sans-serif;
 
   .icon {
