@@ -15,7 +15,7 @@ const FeaturesContent = ({ featuresContent }: FeaturesContentProps) => {
     <>
       {featuresContent.map((content, index) => (
         <styles.Container key={index}>
-          {content.title && <styles.Title>{content.title}</styles.Title>}
+          <styles.Content>{content.content}</styles.Content>
           {content.image && (
             <styles.ImageBox>
               <img
@@ -25,7 +25,6 @@ const FeaturesContent = ({ featuresContent }: FeaturesContentProps) => {
               />
             </styles.ImageBox>
           )}
-          <styles.Content>{content.content}</styles.Content>
         </styles.Container>
       ))}
     </>
