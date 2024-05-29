@@ -11,7 +11,7 @@ export const AboutBox = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 100%;
-    height: 95%;
+    height: 100%;
 
     &.none-menu {
       width: 100%;
