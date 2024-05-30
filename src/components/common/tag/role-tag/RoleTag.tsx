@@ -1,5 +1,5 @@
 import * as styles from './RoleTag.styles';
-import projectRoleData from '@data/ProjectRoleData';
+import projectRoleData from '../../../../data/ProjectRoleData';
 
 const colors = ['#FFECE1', '#FBDAD8', '#FFB6C1'];
 

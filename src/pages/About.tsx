@@ -1,10 +1,10 @@
-import AboutLayout from "../components/about/about-layout/AboutLayout";
-import { useContext } from "react";
-import { MenuContext } from "../context/MenuContext";
+import AboutLayout from '../components/about/about-layout/AboutLayout';
+import { useContext } from 'react';
+import { MenuContext } from '../contexts/MenuContext';
 
 const About = () => {
   const { isMenuOpen } = useContext(MenuContext);
-  const menuBar = isMenuOpen ? "" : "none-menu";
+  const menuBar = isMenuOpen ? '' : 'none-menu';
 
   return <AboutLayout menuBar={menuBar} />;
 };

@@ -2,7 +2,7 @@ import * as styles from './Navbar.styles';
 import { ReactComponent as Logo } from '@assets/images/Logo.svg';
 import { ReactComponent as More } from '@assets/icons/MoreButton.svg';
 import { useContext } from 'react';
-import { MenuContext } from '@context/MenuContext';
+import { MenuContext } from '@contexts/MenuContext';
 
 const Navbar = () => {
   const { isMenuOpen, setIsMenuOpen } = useContext(MenuContext);

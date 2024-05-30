@@ -1,5 +1,5 @@
 import * as styles from './SkillTag.styles';
-import projectSkillData from '@data/ProjectSkillData';
+import projectSkillData from '../../../../data/ProjectSkillData';
 
 const colors = [
   '#FBE5D8',

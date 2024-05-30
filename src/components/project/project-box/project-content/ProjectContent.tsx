@@ -1,6 +1,6 @@
 import * as styles from './ProjectContent.styles';
 import ProjectTag from '@components/common/tag/project-tag/ProjectTag';
-import projectData from '@data/ProjectData';
+import projectData from '../../../../data/ProjectData';
 import SkillTag from '@components/common/tag/skill-tag/SkillTag';
 
 interface ProjectContentProps {

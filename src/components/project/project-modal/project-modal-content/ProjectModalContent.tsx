@@ -3,7 +3,7 @@ import ProjectTag from '@components/common/tag/project-tag/ProjectTag';
 import ProjectSwiper from '@components/project/project-swiper/ProjectSwiper';
 import SkillTag from '@components/common/tag/skill-tag/SkillTag';
 import React from 'react';
-import projectModalData from '@data/ProjectModalData';
+import projectModalData from '../../../../data/ProjectModalData';
 import RoleTag from '@components/common/tag/role-tag/RoleTag';
 import TeamIntroductionContent from '@components/project/project-modal/project-modal-content/team-introduction-content/TeamIntroductionContent';
 import FeaturesContent from '@components/project/project-modal/project-modal-content/features-content/FeaturesContent';
