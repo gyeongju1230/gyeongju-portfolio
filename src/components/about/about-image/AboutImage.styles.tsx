@@ -3,8 +3,8 @@ import styled from 'styled-components';
 const smallViewport = '62rem';
 
 export const ImageContainer = styled.div`
-  width: 30%;
-  height: 70%;
+  width: 35%;
+  height: 80%;
   display: flex;
 
   @media (max-width: ${smallViewport}) {
@@ -12,8 +12,8 @@ export const ImageContainer = styled.div`
 
     &.none-menu {
       display: flex;
-      width: 50%;
-      height: 35%;
+      width: 65%;
+      height: 45%;
     }
   }
 `;

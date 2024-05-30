@@ -1,7 +1,10 @@
+// TODO. 이력서 PDF 완성되면 배포 전 추가 필요
+
 import * as styles from './AboutContent.styles';
 import Typewriter from 'typewriter-effect';
-import { ReactComponent as Github } from '@assets/icons/skill/GitHub.svg';
-import { ReactComponent as Notion } from '@assets/icons/skill/Notion.svg';
+import { ReactComponent as Download } from '@assets/icons/about/DownloadIcon.svg';
+import { ReactComponent as Github } from '@assets/icons/about/GitHubIcon.svg';
+import { ReactComponent as Notion } from '@assets/icons/about/NotionIcon.svg';
 
 interface AboutContentProps {
   menuBar: string;
@@ -9,7 +12,16 @@ interface AboutContentProps {
 
 const AboutContent = ({ menuBar }: AboutContentProps) => {
   const githubUrl = 'https://github.com/gyeongju1230';
-  const notionUrl = 'https://bit.ly/4cUYb0S';
+  const notionUrl =
+    'https://www.notion.so/GyeongJu-Notion-46837ac388704c5f8c18da20054a9943?pvs=4';
+  const handleResumeDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/pdf/Sample_pdf.pdf';
+    link.download = 'Sample_pdf.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <styles.AboutBox className={menuBar}>
@@ -28,28 +40,31 @@ const AboutContent = ({ menuBar }: AboutContentProps) => {
         />
       </styles.AboutTitle>
       <styles.AboutContent>
-        ✔️ 끊임없는 성장을 추구하며, 배움을 즐깁니다.
-        <br />
-        ✔️ 새로운 도전에 열려 있는 성격으로 항상 더 나은 개발자로 거듭나기 위해
-        노력합니다.
-        <br />
-        ✔️ 저는 강한 책임감을 가지고 프로젝트에 최선을 다하며, 팀원들과 협력하여
-        목표 달성을 위해 노력합니다.
-        <br />
+        <styles.Content>
+          ⎷ 끊임없는 성장을 추구하며, 배움을 즐깁니다.
+        </styles.Content>
+        <styles.Content>
+          ⎷ 새로운 도전에 열려 있는 성격으로 항상 더 나은 개발자로 거듭나기 위해
+          노력합니다.
+        </styles.Content>
+        <styles.Content>
+          ⎷ 저는 강한 책임감을 가지고 프로젝트에 최선을 다하며, 팀원들과
+          협력하여 목표 달성을 위해 노력합니다.
+        </styles.Content>
       </styles.AboutContent>
-      <styles.AboutSkillBox>
-        <styles.AboutSkills>👩🏻‍💻 Frontend-Devloper</styles.AboutSkills>
-        <styles.AboutSkills>React Native</styles.AboutSkills>
-        <styles.AboutSkills>React.js</styles.AboutSkills>
-      </styles.AboutSkillBox>
+
       <styles.AboutLinkBox>
+        <styles.AboutLink onClick={handleResumeDownload}>
+          <Download className="icon" />
+          이력서 다운로드
+        </styles.AboutLink>
         <styles.AboutLink
           onClick={() => {
             window.open(githubUrl);
           }}
         >
           <Github className="icon" />
-          https://github.com/gyeongju1230
+          Github
         </styles.AboutLink>
         <styles.AboutLink
           onClick={() => {
@@ -57,7 +72,7 @@ const AboutContent = ({ menuBar }: AboutContentProps) => {
           }}
         >
           <Notion className="icon" />
-          https://bit.ly/4cUYb0S
+          Notion
         </styles.AboutLink>
       </styles.AboutLinkBox>
     </styles.AboutBox>

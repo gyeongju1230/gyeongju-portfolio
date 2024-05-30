@@ -8,41 +8,31 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
   justify-content: center;
-
-  @media (max-width: ${smallViewport}) {
-    height: 100vh;
-
-    &.none-menu {
-      height: 100vh;
-    }
-  }
 `;
 
 export const Title = styled.div`
-  margin-bottom: 30px;
   text-align: center;
   color: #a07d5a;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   font-family: Pretendard, serif;
 
   @media (max-width: ${smallViewport}) {
     margin-top: 240px;
-    margin-bottom: 6px;
-    font-size: 26px;
+    font-size: 22px;
 
     &.none-menu {
       margin-top: 77px;
-      margin-bottom: 10px;
-      font-size: 30px;
+      font-size: 22px;
     }
   }
 `;
 
 export const AboutContainer = styled.div`
-  width: 85%;
+  width: 80%;
   height: 60%;
   display: flex;
   flex-direction: row;
@@ -51,13 +41,13 @@ export const AboutContainer = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 90%;
-    height: 40%;
+    height: 50%;
     flex-direction: column;
     justify-content: center;
 
     &.none-menu {
       width: 90%;
-      height: 65%;
+      height: 70%;
       flex-direction: column;
       justify-content: space-between;
     }
