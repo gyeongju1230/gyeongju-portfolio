@@ -3,13 +3,13 @@ import React from 'react';
 
 interface ProjectImageProps {
   id: string;
-  handelModalOpen: (id: string) => void;
+  handleModalOpen: (id: string) => void;
   image: React.ReactNode;
 }
-const ProjectImage = ({ id, handelModalOpen, image }: ProjectImageProps) => {
+const ProjectImage = ({ id, handleModalOpen, image }: ProjectImageProps) => {
   return (
     <styles.ImageBox
-      onClick={() => handelModalOpen(id)}
+      onClick={() => handleModalOpen(id)}
       whileHover={{ scale: 1.01 }}
       whileTap={{ scale: 0.94 }}
     >

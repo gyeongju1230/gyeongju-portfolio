@@ -19,7 +19,7 @@ const ProjectLayout = ({ menuBar }: ProjectLayoutProps) => {
     });
   };
 
-  const handelModalOpen = (id: string) => {
+  const handleModalOpen = (id: string) => {
     setIsModalOpen(!isModalOpen);
     setModalId(id);
   };
@@ -32,7 +32,7 @@ const ProjectLayout = ({ menuBar }: ProjectLayoutProps) => {
 
   return (
     <styles.Container id="project">
-      <ProjectBox menuBar={menuBar} handelModalOpen={handelModalOpen} />
+      <ProjectBox menuBar={menuBar} handleModalOpen={handleModalOpen} />
       <ProjectScrollDown onClick={scrollToContact} />
 
       {isModalOpen && (

@@ -12,10 +12,10 @@ import { Pagination } from 'swiper/modules';
 
 interface ProjectBoxProps {
   menuBar: string;
-  handelModalOpen: (id: string) => void;
+  handleModalOpen: (id: string) => void;
 }
 
-const ProjectBox = ({ menuBar, handelModalOpen }: ProjectBoxProps) => {
+const ProjectBox = ({ menuBar, handleModalOpen }: ProjectBoxProps) => {
   return (
     <styles.ProjectBox className={menuBar}>
       <Swiper
@@ -30,12 +30,12 @@ const ProjectBox = ({ menuBar, handelModalOpen }: ProjectBoxProps) => {
           <styles.Project>
             <ProjectImage
               id="portfolio"
-              handelModalOpen={handelModalOpen}
+              handleModalOpen={handleModalOpen}
               image={<Portfolio className="icon" />}
             />
             <ProjectContent
               id="portfolio"
-              handelModalOpen={handelModalOpen}
+              handleModalOpen={handleModalOpen}
               menuBar={menuBar}
             />
           </styles.Project>
@@ -45,12 +45,12 @@ const ProjectBox = ({ menuBar, handelModalOpen }: ProjectBoxProps) => {
           <styles.Project>
             <ProjectImage
               id="todo"
-              handelModalOpen={handelModalOpen}
+              handleModalOpen={handleModalOpen}
               image={<Todo className="icon" />}
             />
             <ProjectContent
               id="todo"
-              handelModalOpen={handelModalOpen}
+              handleModalOpen={handleModalOpen}
               menuBar={menuBar}
             />
           </styles.Project>
@@ -60,12 +60,12 @@ const ProjectBox = ({ menuBar, handelModalOpen }: ProjectBoxProps) => {
           <styles.Project>
             <ProjectImage
               id="sagopasam"
-              handelModalOpen={handelModalOpen}
+              handleModalOpen={handleModalOpen}
               image={<Sagopasam className="icon" />}
             />
             <ProjectContent
               id="sagopasam"
-              handelModalOpen={handelModalOpen}
+              handleModalOpen={handleModalOpen}
               menuBar={menuBar}
             />
           </styles.Project>
@@ -75,12 +75,12 @@ const ProjectBox = ({ menuBar, handelModalOpen }: ProjectBoxProps) => {
           <styles.Project>
             <ProjectImage
               id="deunbung"
-              handelModalOpen={handelModalOpen}
+              handleModalOpen={handleModalOpen}
               image={<Deunbung className="icon" />}
             />
             <ProjectContent
               id="deunbung"
-              handelModalOpen={handelModalOpen}
+              handleModalOpen={handleModalOpen}
               menuBar={menuBar}
             />
           </styles.Project>

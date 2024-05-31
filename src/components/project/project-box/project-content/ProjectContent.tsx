@@ -5,13 +5,13 @@ import SkillTag from '@components/common/tag/skill-tag/SkillTag';
 
 interface ProjectContentProps {
   id: string;
-  handelModalOpen: (id: string) => void;
+  handleModalOpen: (id: string) => void;
   menuBar: string;
 }
 
 const ProjectContent = ({
   id,
-  handelModalOpen,
+  handleModalOpen,
   menuBar,
 }: ProjectContentProps) => {
   const { tag, title, content, url, github } = projectData[id] || {
@@ -26,7 +26,7 @@ const ProjectContent = ({
     <styles.ContentContainer>
       <ProjectTag text={tag} />
       <styles.Title
-        onClick={() => handelModalOpen(id)}
+        onClick={() => handleModalOpen(id)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
       >
