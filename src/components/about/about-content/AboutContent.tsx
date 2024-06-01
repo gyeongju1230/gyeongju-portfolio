@@ -1,8 +1,5 @@
-// TODO. 이력서 PDF 완성되면 배포 전 추가 필요
-
 import * as styles from './AboutContent.styles';
 import Typewriter from 'typewriter-effect';
-import { ReactComponent as Download } from '@assets/icons/about/DownloadIcon.svg';
 import { ReactComponent as Github } from '@assets/icons/about/GitHubIcon.svg';
 import { ReactComponent as Notion } from '@assets/icons/about/NotionIcon.svg';
 
