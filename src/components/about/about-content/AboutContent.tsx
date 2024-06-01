@@ -14,14 +14,6 @@ const AboutContent = ({ menuBar }: AboutContentProps) => {
   const githubUrl = 'https://github.com/gyeongju1230';
   const notionUrl =
     'https://www.notion.so/GyeongJu-Notion-46837ac388704c5f8c18da20054a9943?pvs=4';
-  const handleResumeDownload = () => {
-    const link = document.createElement('a');
-    link.href = '/assets/pdf/Sample_pdf.pdf';
-    link.download = 'Sample_pdf.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <styles.AboutBox className={menuBar}>
@@ -54,10 +46,6 @@ const AboutContent = ({ menuBar }: AboutContentProps) => {
       </styles.AboutContent>
 
       <styles.AboutLinkBox>
-        <styles.AboutLink onClick={handleResumeDownload}>
-          <Download className="icon" />
-          이력서 다운로드
-        </styles.AboutLink>
         <styles.AboutLink
           onClick={() => {
             window.open(githubUrl);
