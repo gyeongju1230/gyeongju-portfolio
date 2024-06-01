@@ -50,7 +50,7 @@ const projectData = {
       },
       {
         title: 'GooglePlay',
-        link: 'GooglePlay URL',
+        link: '',
         label: '⚒️ 베타테스트 중입니다.',
       },
     ],

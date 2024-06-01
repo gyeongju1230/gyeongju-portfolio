@@ -162,7 +162,7 @@ const ProjectModalData = {
         label: '🔗 AppStore 로 이동하기',
       },
       {
-        link: 'GooglePlay URL',
+        link: '',
         label: '🔗 GooglePlay 로 이동하기 (⚒️ 베타테스트 중입니다.)',
       },
     ],

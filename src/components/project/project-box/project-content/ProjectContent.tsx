@@ -42,7 +42,9 @@ const ProjectContent = ({
             <styles.Link
               key={index}
               onClick={() => {
-                window.open(link);
+                if (link) {
+                  window.open(link);
+                }
               }}
             >
               <styles.LinkTitle>
