@@ -1,5 +1,3 @@
-// TODO: 배포 시 포트폴리오 배포 링크 추가 필요
-
 const ProjectModalData = {
   portfolio: {
     tag: 'Solo Project',
@@ -31,7 +29,7 @@ const ProjectModalData = {
     url: 'URL',
     urlLink: [
       {
-        link: '배포링크추가필요',
+        link: 'https://portfolio.jung-gyeongju.com',
         label: '🔗 배포 사이트로 이동하기',
       },
     ],
@@ -68,7 +66,7 @@ const ProjectModalData = {
     url: 'URL',
     urlLink: [
       {
-        link: 'https://gyeongju-todo-service.com',
+        link: 'https://todo.jung-gyeongju.com',
         label: '🔗 배포 사이트로 이동하기',
       },
     ],

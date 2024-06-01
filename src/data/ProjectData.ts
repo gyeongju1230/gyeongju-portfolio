@@ -9,7 +9,7 @@ const projectData = {
     url: [
       {
         title: 'URL',
-        link: '배포 링크 추가',
+        link: 'https://portfolio.jung-gyeongju.com',
         label: '🔗 배포 사이트로 이동하기',
       },
     ],
@@ -27,7 +27,7 @@ const projectData = {
     url: [
       {
         title: 'URL',
-        link: 'https://gyeongju-todo-service.com',
+        link: 'https://todo.jung-gyeongju.com',
         label: '🔗 배포 사이트로 이동하기',
       },
     ],
