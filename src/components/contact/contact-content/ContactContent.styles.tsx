@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 export const ContactContainer = styled.div`
   width: 60%;
@@ -69,15 +69,15 @@ export const IconBox = styled(motion.button)`
 `;
 
 export const Title = styled.div`
-  color: #787878;
+  color: #9d928b;
   text-align: center;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 40px;
+  line-height: 42px;
   font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    font-size: 14px;
+    font-size: 11px;
     line-height: 30px;
   }
 `;
@@ -86,7 +86,7 @@ export const Content = styled(motion.button)`
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #787878;
+  color: #9d928b;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -98,9 +98,19 @@ export const Content = styled(motion.button)`
   outline: none;
   border: 0;
 
+  .copy-icon {
+    width: 25px;
+    height: 25px;
+  }
+
   @media (max-width: ${smallViewport}) {
     gap: 3px;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 30px;
+
+    .copy-icon {
+      width: 18px;
+      height: 18px;
+    }
   }
 `;

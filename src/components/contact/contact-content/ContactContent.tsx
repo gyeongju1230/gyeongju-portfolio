@@ -1,15 +1,15 @@
-import * as styles from "./ContactContent.styles";
-import { ReactComponent as Github } from "@assets/icons/contact/Github.svg";
-import { ReactComponent as Gmail } from "@assets/icons/contact/Gmail.svg";
-import { ReactComponent as Copy } from "@assets/icons/contact/CopyIcon.svg";
+import * as styles from './ContactContent.styles';
+import { ReactComponent as Github } from '@assets/icons/contact/Github.svg';
+import { ReactComponent as Gmail } from '@assets/icons/contact/Gmail.svg';
+import { ReactComponent as Copy } from '@assets/icons/contact/CopyIcon.svg';
 
 interface ContactContentProps {
   menuBar: string;
 }
 
 const ContactContent = ({ menuBar }: ContactContentProps) => {
-  const githubUrl = "https://github.com/gyeongju1230";
-  const email = "jkj01230@gmail.com";
+  const githubUrl = 'https://github.com/gyeongju1230';
+  const email = 'jkj01230@gmail.com';
   const mailUrl = `mailto:${email}`;
 
   const copyToClipboard = (text: string) => {
@@ -34,11 +34,11 @@ const ContactContent = ({ menuBar }: ContactContentProps) => {
         </styles.IconBox>
         <styles.Title>USER NAME</styles.Title>
         <styles.Content
-          onClick={() => copyToClipboard("gyeongju1230")}
+          onClick={() => copyToClipboard('gyeongju1230')}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Copy /> gyeongju1230
+          <Copy className="copy-icon" /> gyeongju1230
         </styles.Content>
       </styles.Container>
 
@@ -55,11 +55,11 @@ const ContactContent = ({ menuBar }: ContactContentProps) => {
         </styles.IconBox>
         <styles.Title>GMAIL</styles.Title>
         <styles.Content
-          onClick={() => copyToClipboard("jkj01230@gmail.com")}
+          onClick={() => copyToClipboard('jkj01230@gmail.com')}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Copy /> jkj01230@gmail.com
+          <Copy className="copy-icon" /> jkj01230@gmail.com
         </styles.Content>
       </styles.Container>
     </styles.ContactContainer>
