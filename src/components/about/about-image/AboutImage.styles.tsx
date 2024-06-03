@@ -6,6 +6,8 @@ export const ImageContainer = styled.div`
   width: 35%;
   height: 80%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 
   @media (max-width: ${smallViewport}) {
     display: none;
@@ -19,8 +21,8 @@ export const ImageContainer = styled.div`
 `;
 
 export const ImageBox = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 413px;
+  height: 398px;
   display: flex;
   justify-content: center;
   border-radius: 50%;
@@ -31,5 +33,10 @@ export const ImageBox = styled.div`
   .image {
     width: auto;
     height: auto;
+  }
+
+  @media (max-width: ${smallViewport}) {
+    width: 218px;
+    height: 209px;
   }
 `;
