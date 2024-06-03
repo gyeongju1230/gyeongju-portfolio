@@ -13,8 +13,3 @@ export const AppStoreImageContainer = styled.div`
     background-color: #a07d5a;
   }
 `;
-
-export const SwiperImage = styled.img`
-  border-radius: 10px;
-  box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
-`;

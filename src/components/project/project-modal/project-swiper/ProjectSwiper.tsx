@@ -24,9 +24,14 @@ const ProjectSwiper = ({ id }: ProjectSwiperProps) => {
         modules={modules}
         className="mySwiper"
       >
-        {selectedImages.map((image, index) => (
+        {selectedImages.map((ImageComponent, index) => (
           <SwiperSlide key={index}>
-            <styles.SwiperImage src={image} alt={`image ${index}`} />
+            <ImageComponent
+              style={{
+                borderRadius: '10px',
+                boxShadow: '1px 2px 9px rgba(45, 45, 45, 0.3)',
+              }}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
