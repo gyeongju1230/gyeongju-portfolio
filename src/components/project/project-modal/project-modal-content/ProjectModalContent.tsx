@@ -28,6 +28,8 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
     role,
     features,
     featuresContent,
+    realizations,
+    realizationsContent,
     url,
     urlLink,
     github,
@@ -51,6 +53,8 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
     role: '',
     features: '',
     featuresContent: '',
+    realizations: '',
+    realizationsContent: '',
     url: '',
     urlLink: [],
     github: '',
@@ -106,7 +110,15 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
         <FeaturesContent featuresContent={featuresContent} />
       </styles.Content>
 
+      <styles.ContentTitle>{realizations}</styles.ContentTitle>
+      <styles.Content>{realizationsContent}</styles.Content>
+
       <styles.ContentTitle>{url}</styles.ContentTitle>
+      {id === 'deunbung' && (
+        <styles.Text>
+          ⚠️ 현재 든붕이는 카페 이전 문제로 인해 서버가 중단되었습니다.
+        </styles.Text>
+      )}
       <styles.Content>
         {urlLink.map(({ link, label }, index: number) => (
           <styles.Button

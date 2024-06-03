@@ -36,7 +36,7 @@ export const ContentTitle = styled.div`
   height: auto;
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 25px;
 
   color: #787878;
   font-size: 20px;
@@ -45,7 +45,7 @@ export const ContentTitle = styled.div`
 
   @media (max-width: ${smallViewport}) {
     height: 20px;
-    margin-top: 10px;
+    margin-top: 13px;
     font-size: 14px;
   }
 `;
@@ -69,6 +69,29 @@ export const Content = styled.div`
   @media (max-width: ${smallViewport}) {
     margin-top: 5px;
     font-size: 11px;
+    line-height: 20px;
+  }
+`;
+
+export const Text = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  white-space: pre-line;
+  margin-top: 10px;
+
+  text-align: left;
+  color: #787878;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  font-family: GmarketSans, sans-serif;
+
+  @media (max-width: ${smallViewport}) {
+    margin-top: 5px;
+    font-size: 10px;
     line-height: 20px;
   }
 `;
