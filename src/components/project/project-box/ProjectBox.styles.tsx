@@ -24,6 +24,16 @@ export const ProjectBox = styled.div`
     background-color: #a07d5a;
   }
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #a07d5a;
+    z-index: 3;
+
+    &::after {
+      font-size: 24px;
+    }
+  }
+
   @media (max-width: ${smallViewport}) {
     width: 90%;
     height: 60%;

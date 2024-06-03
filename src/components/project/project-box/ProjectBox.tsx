@@ -7,8 +7,9 @@ import { ReactComponent as Portfolio } from '@assets/images/project/portfolio/Po
 import ProjectContent from '@components/project/project-box/project-content/ProjectContent';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 
 interface ProjectBoxProps {
   menuBar: string;
@@ -20,10 +21,12 @@ const ProjectBox = ({ menuBar, handleModalOpen }: ProjectBoxProps) => {
     <styles.ProjectBox className={menuBar}>
       <Swiper
         slidesPerView={1}
+        navigation={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        keyboard={true}
+        modules={[Navigation, Pagination]}
         className="mySwiper"
       >
         <SwiperSlide>
