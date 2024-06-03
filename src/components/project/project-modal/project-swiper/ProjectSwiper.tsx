@@ -1,5 +1,5 @@
 import * as styles from './ProjectSwiper.styles';
-import images from '@components/project/project-swiper/project-images/ProjectImags';
+import images from '@components/project/project-modal/project-swiper/project-images/ProjectImags';
 import useSwiperParams from '@hooks/useSwiperParams';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

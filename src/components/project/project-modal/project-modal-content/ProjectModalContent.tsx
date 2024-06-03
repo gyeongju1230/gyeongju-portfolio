@@ -1,6 +1,6 @@
 import * as styles from './ProjectModalContent.styles';
 import ProjectTag from '@components/common/tag/project-tag/ProjectTag';
-import ProjectSwiper from '@components/project/project-swiper/ProjectSwiper';
+import ProjectSwiper from '@components/project/project-modal/project-swiper/ProjectSwiper';
 import SkillTag from '@components/common/tag/skill-tag/SkillTag';
 import React from 'react';
 import projectModalData from '../../../../data/ProjectModalData';
