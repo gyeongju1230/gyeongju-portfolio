@@ -10,7 +10,7 @@ interface AboutContentProps {
 const AboutContent = ({ menuBar }: AboutContentProps) => {
   const githubUrl = 'https://github.com/gyeongju1230';
   const notionUrl =
-    'https://www.notion.so/GyeongJu-Notion-46837ac388704c5f8c18da20054a9943?pvs=4';
+    'https://www.notion.so/gyeongju/GyeongJu-Notion-46837ac388704c5f8c18da20054a9943?pvs=4';
 
   return (
     <styles.AboutBox className={menuBar}>
@@ -37,8 +37,8 @@ const AboutContent = ({ menuBar }: AboutContentProps) => {
           노력합니다.
         </styles.Content>
         <styles.Content>
-          ⎷ 저는 강한 책임감을 가지고 프로젝트에 최선을 다하며, 팀원들과
-          협력하여 목표 달성을 위해 노력합니다.
+          ⎷ 강한 책임감을 가지고 맡은 일에 최선을 다하며, 팀원들과 협력하여 목표
+          달성을 위해 노력합니다.
         </styles.Content>
       </styles.AboutContent>
 
