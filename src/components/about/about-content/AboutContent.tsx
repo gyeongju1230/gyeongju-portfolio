@@ -10,7 +10,7 @@ interface AboutContentProps {
 const AboutContent = ({ menuBar }: AboutContentProps) => {
   const githubUrl = 'https://github.com/gyeongju1230';
   const notionUrl =
-    'https://www.notion.so/gyeongju/GyeongJu-Notion-46837ac388704c5f8c18da20054a9943?pvs=4';
+    'https://www.notion.so/gyeongju/Gyeongju-46837ac388704c5f8c18da20054a9943?pvs=4';
 
   return (
     <styles.AboutBox className={menuBar}>
