@@ -33,8 +33,8 @@ export const AboutTitle = styled.div`
   @media (max-width: ${smallViewport}) {
     height: 25%;
     border-bottom: 0.3px solid #a07d5a;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 11px;
+    line-height: 22px;
   }
 `;
 
@@ -59,7 +59,7 @@ export const Content = styled.div`
   font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    font-size: 11px;
+    font-size: 10px;
     line-height: 22px;
   }
 `;

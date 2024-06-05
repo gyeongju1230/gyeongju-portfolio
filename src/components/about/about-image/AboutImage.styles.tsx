@@ -21,11 +21,11 @@ export const ImageContainer = styled.div`
 `;
 
 export const ImageBox = styled.div`
-  width: 413px;
-  height: 398px;
+  width: 400px;
+  height: 400px;
   display: flex;
   justify-content: center;
-  border-radius: 50%;
+  border-radius: 20px;
   background-color: #fffbf5;
   box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
   overflow: hidden;
@@ -36,7 +36,7 @@ export const ImageBox = styled.div`
   }
 
   @media (max-width: ${smallViewport}) {
-    width: 218px;
-    height: 209px;
+    width: 200px;
+    height: 200px;
   }
 `;
