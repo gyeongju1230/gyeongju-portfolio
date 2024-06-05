@@ -2,7 +2,6 @@ import * as styles from './AboutContent.styles';
 import Typewriter from 'typewriter-effect';
 import { ReactComponent as Github } from '@assets/icons/about/GitHubIcon.svg';
 import { ReactComponent as Notion } from '@assets/icons/about/NotionIcon.svg';
-import { ReactComponent as Download } from '@assets/icons/about/Download.svg';
 
 interface AboutContentProps {
   menuBar: string;
@@ -12,16 +11,6 @@ const AboutContent = ({ menuBar }: AboutContentProps) => {
   const githubUrl = 'https://github.com/gyeongju1230';
   const notionUrl =
     'https://www.notion.so/gyeongju/Gyeongju-46837ac388704c5f8c18da20054a9943?pvs=4';
-
-  const handleDownloadResume = () => {
-    const pdfUrl = '/assets/정경주_이력서.pdf';
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.setAttribute('정경주_이력서', '정경주_이력서.pdf');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <styles.AboutBox className={menuBar}>
@@ -59,10 +48,6 @@ const AboutContent = ({ menuBar }: AboutContentProps) => {
       </styles.AboutContent>
 
       <styles.AboutLinkBox>
-        <styles.AboutLink onClick={handleDownloadResume}>
-          <Download className="icon" />
-          이력서 다운로드
-        </styles.AboutLink>
         <styles.AboutLink
           onClick={() => {
             window.open(githubUrl);
