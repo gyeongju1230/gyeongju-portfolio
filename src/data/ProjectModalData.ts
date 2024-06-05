@@ -9,21 +9,18 @@ const ProjectModalData = {
     period: '프로젝트 진행기간',
     periodContent: '2024.04.02 - 2024.05.31',
     role: '역할',
-    features: '주요 기능',
+    features: '구현한 기능',
     featuresContent: [
       {
         content:
-          '∙ Main page \n' +
-          '→ 프로젝트 Main page \n' +
-          '∙ About page \n' +
-          '→ 소개 page \n' +
-          '∙ Skill page \n' +
-          '→ 보유 기술스택 소개 페이지 \n' +
-          '∙ Project page \n' +
-          '→ 진행한 프로젝트 소개 페이지 \n' +
-          '∙ Contact page \n' +
-          '→ Github/Gmail 링크 연결, User Name/Mail copy \n' +
-          '∙ Scroll up/down',
+          '∙ Main page UI \n' +
+          '∙ About page UI \n' +
+          '∙ Skill page UI \n' +
+          '∙ Project page UI \n' +
+          '→ Swiper 를 사용하여 이미지 슬라이더 개발 \n' +
+          '∙ Contact page UI\n' +
+          '→ mailto: 프로토콜을 사용하여 Gmail 아이콘 클릭 시 새 이메일 작성 창이 열리도록 구현 \n' +
+          '→ copyToClipboard 함수를 사용하여 User Name, Gmail 클릭 시 클립보드에 복사되도록 구현',
       },
     ],
     realizations: '✨ 프로젝트 후기',
@@ -69,16 +66,10 @@ const ProjectModalData = {
     period: '프로젝트 진행기간',
     periodContent: '2024.03.12 - 2024.03.30',
     role: '역할',
-    features: '주요 기능',
+    features: '구현한 기능',
     featuresContent: [
       {
-        content:
-          '∙ Todo 생성 \n' +
-          '∙ Todo 보기 \n' +
-          '∙ Todo 수정 \n' +
-          '∙ Todo 삭제 \n' +
-          '∙ Todo Filtering \n' +
-          '∙ Dark Mode',
+        content: '∙ Todo CRUD \n' + '∙ Todo Filtering \n' + '∙ Dark Mode',
       },
     ],
     realizations: '✨ 프로젝트 후기',
@@ -159,32 +150,24 @@ const ProjectModalData = {
       { image: 'Member4', name: '김민진', position: 'Back-End' },
     ],
     role: '역할',
-    features: '주요 기능',
+    features: '구현한 기능',
     featuresContent: [
       {
         image: 'Sagopasam_Screen',
         content:
-          '💡 사용자 App \n' +
-          '∙ 회원가입/회원정보수정/회원탈퇴 \n' +
-          '∙ 로그인/로그아웃/비밀번호 찾기 \n' +
-          '∙ 전공서적 판매글 생성 \n' +
-          '∙ 전공서적 판매글 보기 \n' +
-          '∙ 전공서적 판매글 수정 \n' +
-          '∙ 전공서적 판매글 삭제 \n' +
-          '∙ 관심 카테고리 (관심 단과대/학과 설정) \n' +
-          '∙ 챗봇 거래 (구매 수락/거절, 입금확인, 사물함 선택, 사물함 비밀번호 설정, 서적 배치 완료, 거래 완료) \n' +
-          '∙ 도움말 \n' +
-          '∙ 전공서적 검색 \n' +
-          '∙ 나의 거래 (구매내역/판매내역) \n' +
-          '∙ 공지사항 (홈 화면에서 공지 배너 확인/공지사항 페이지로 이동 가능) \n' +
           '\n' +
-          '💡 Admin page \n' +
-          '∙ 로그인/로그아웃 \n' +
-          '∙ 회원 관리 \n' +
-          '∙ 판매 관리 (전체 판매글 목록/판매상태 관리) \n' +
-          '∙ 거래 관리 (전체 채팅 목록/사물함 사용 현황/거래상태 관리) \n' +
-          '∙ 수수료 관리 \n' +
-          '∙ 공지사항 및 배너 등록/수정/삭제 \n' +
+          '💡 사용자 App \n' +
+          '\n' +
+          '∙ 유저관련 페이지 \n' +
+          '→ 회원가입, 로그인, 회원정보수정, 마이페이지, 도움말 \n' +
+          '∙ 전공서적 판매글 CRUD \n' +
+          '∙ Short Polling 을 활용한 챗봇 거래 시스템, 챗봇 페이지 \n' +
+          '→ 판매자/구매자별 채팅, 사물함 설정 \n' +
+          '→ setInterval 을 사용하여 7초마다 서버에 안읽은 메시지 조회 요청, 새로운 메시지가 있을 경우 상태를 업데이트 \n' +
+          '→ useEffect 와 useCallback 을 활용하여 포커스될 때마다 채팅을 최신 상태로 유지 \n' +
+          '∙ 공지사항 페이지 \n' +
+          '→ 메인 배너와 연결 \n' +
+          '∙ 전체 UI 구현 \n' +
           '\n',
       },
     ],
@@ -206,11 +189,11 @@ const ProjectModalData = {
     urlLink: [
       {
         link: 'https://apps.apple.com/kr/app/%EC%82%AC%EA%B3%A0%ED%8C%8C%EC%82%BC/id6477531087',
-        label: '🔗 AppStore 로 이동하기',
+        label: '🔗 App Store 로 이동하기',
       },
       {
         link: '',
-        label: '🔗 GooglePlay 로 이동하기 (⚒️ 베타 테스트 중입니다.)',
+        label: '🔗 Google Play 로 이동하기 (⚒️ 베타 테스트 중입니다.)',
       },
     ],
     github: 'Github',
@@ -278,33 +261,23 @@ const ProjectModalData = {
       { image: 'Member4', name: '김민진', position: 'Back-End' },
     ],
     role: '역할',
-    features: '주요 기능',
+    features: '구현한 기능',
     featuresContent: [
       {
         image: 'Deunbung_Screen',
         content:
-          '💡 사용자 App \n' +
-          '∙ 회원가입/회원정보수정/회원탈퇴 \n' +
-          '∙ 로그인/로그아웃/비밀번호 찾기 \n' +
-          '∙ 영업 여부 \n' +
-          '∙ 예상 대기시간 \n' +
-          '∙ 붕어빵 미리 주문하기 \n' +
-          '∙ 붕어빵 미리 결제하기 (토스페이먼츠) \n' +
-          '∙ 주문상태 (주문 대기중/조리중/조리 완료/픽업 완료/주문 지연) \n' +
-          '∙ 과거 주문 내역 \n' +
-          '∙ 붕어빵 캘린더 (붕어빵을 구매한 날짜에 붕어 배지가 생겨요!) \n' +
-          '∙ 붕레벨 (배지 개수 5개를 달성할 때마다 레벨이 올라가요!) \n' +
-          '∙ 푸시알림 \n' +
           '\n' +
-          '💡 Admin page \n' +
-          '∙ 로그인/로그아웃 \n' +
-          '∙ 주문 접수/취소/환불/픽업 요청 \n' +
-          '∙ 예상소요시간 설정 \n' +
-          '∙ 영업 관리 \n' +
-          '∙ 재고 관리 (품절여부/메뉴 추가, 삭제) \n' +
-          '∙ 매출 관리 \n' +
-          '∙ 회원 관리 \n' +
-          '\n',
+          '💡 사용자 App \n' +
+          '\n' +
+          '∙ 유저관련 페이지 \n' +
+          '→ 회원가입, 로그인, 회원정보수정, 마이페이지, 과거 주문 내역 \n' +
+          '∙ 영업여부와 예상 대기시간을 보여주는 페이지 \n' +
+          '∙ 붕어빵 미리 주문 시스템, 주문 페이지 \n' +
+          '∙ 붕어빵 간편 결제, 결제 페이지 \n' +
+          '→ 토스페이먼츠 연결 \n' +
+          '∙ 실시간 주문 상태 업데이트 페이지 \n' +
+          '→ EventSource 를 사용하여 서버에서 보내주는 SSE 데이터를 통해 실시간으로 주문 상태 업데이트 \n' +
+          '∙ 전체 UI 구현 \n',
       },
     ],
     realizations: '✨ 프로젝트 후기',
@@ -325,11 +298,11 @@ const ProjectModalData = {
     urlLink: [
       {
         link: 'https://apps.apple.com/kr/app/%EB%93%A0%EB%B6%95%EC%9D%B4/id6471925416',
-        label: '🔗 AppStore 로 이동하기',
+        label: '🔗 App Store 로 이동하기',
       },
       {
         link: 'https://play.google.com/store/apps/details?id=com.reliablekkufront&pcampaignid=web_share',
-        label: '🔗 GooglePlay 로 이동하기',
+        label: '🔗 Google Play 로 이동하기',
       },
     ],
     github: 'Github',

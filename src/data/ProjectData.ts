@@ -44,12 +44,12 @@ const projectData = {
       '"내가 원하는 날짜와 시간"에 책을 사고 팔 수 있어요!',
     url: [
       {
-        title: 'AppStore',
+        title: 'App Store',
         link: 'https://apps.apple.com/kr/app/%EC%82%AC%EA%B3%A0%ED%8C%8C%EC%82%BC/id6477531087',
-        label: '🔗 AppStore 로 이동하기',
+        label: '🔗 App Store 로 이동하기',
       },
       {
-        title: 'GooglePlay',
+        title: 'Google Play',
         link: '',
         label: '⚒️ 베타 테스트 중입니다.',
       },
@@ -67,14 +67,14 @@ const projectData = {
       '긴 대기 시간을 절약할 수 있어요!',
     url: [
       {
-        title: 'AppStore',
+        title: 'App Store',
         link: 'https://apps.apple.com/kr/app/%EB%93%A0%EB%B6%95%EC%9D%B4/id6471925416',
-        label: '🔗 AppStore 로 이동하기',
+        label: '🔗 App Store 로 이동하기',
       },
       {
-        title: 'GooglePlay',
+        title: 'Google Play',
         link: 'https://play.google.com/store/apps/details?id=com.reliablekkufront&pcampaignid=web_share',
-        label: '🔗 GooglePlay 로 이동하기',
+        label: '🔗 Google Play 로 이동하기',
       },
     ],
     github: 'https://github.com/gyeongju1230/reliable-kku-user',
