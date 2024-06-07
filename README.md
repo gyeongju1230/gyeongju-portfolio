@@ -3,6 +3,8 @@
 
 ### 프로젝트 소개
 
+![](https://github.com/gyeongju1230/gyeongju-portfolio/assets/127480050/73898aaf-43d6-4b22-b3d5-8c8a71298d25)
+
 > **Gyeongju Portfolio** 는 개인 Portfolio 용도로 제작한 반응형 웹사이트입니다.   
 > Solo Project 로, 기획과 디자인 그리고 개발까지 모두 혼자 진행하였습니다.
 
@@ -19,21 +21,30 @@
 
 ### 기술 스택
 
-- React, TypeScript, AWS Amplify, Framer Motion, Lottie, Swiper, Styled-component, Figma
+- ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+  ![AWSAmplify](https://img.shields.io/badge/Aws%20Amplify-FF9900?style=flat&logo=awsamplify&logoColor=white)
+  ![FramerMotion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat&logo=framer&logoColor=white)
+  ![Lottie](https://img.shields.io/badge/Lottie-FFEB99?style=flat&logo=&logoColor=white)
+  ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat&logo=Swiper&logoColor=white)
+  ![Styled-component](https://img.shields.io/badge/styled%20components-DB7093?style=flat&logo=styledcomponents&logoColor=white)
+  ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white)
 
-### 주요 기능
+### 구현한 기능
 
 - Main page UI
 - About page UI
 - Skill page UI
-- Project page UI, 이미지 슬라이드(Swiper 사용)
-- Contact page UI, 링크 이동, 텍스트 클릭 시 클립보드에 복사되는 기능
+- Project page UI
+  - `Swiper` 를 사용하여 이미지 슬라이더 개발
+- Contact page UI
+  - `mailto:`프로토콜을 사용하여 Gmail 아이콘 클릭 시 새 이메일 작성 창이 열리도록 구현
+  - `copyToClipboard` 함수를 사용하여 User Name, Gmail 클릭 시 클립보드에 복사되도록 구현
 
 ### 배포 링크
 
 - [🔗 배포 사이트로 이동하기](https://portfolio.jung-gyeongju.com)
 
-![](https://github.com/gyeongju1230/gyeongju-portfolio/assets/127480050/73898aaf-43d6-4b22-b3d5-8c8a71298d25)
 
 ### 프로젝트 후기 🙇🏻‍♀️
 

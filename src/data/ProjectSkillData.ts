@@ -3,7 +3,7 @@ const projectSkillData = {
     skills: [
       'React',
       'TypeScript',
-      'Aws Amplify',
+      'AWS Amplify',
       'Framer Motion',
       'Lottie',
       'Swiper',
@@ -12,7 +12,7 @@ const projectSkillData = {
     ],
   },
   todo: {
-    skills: ['React', 'Aws Amplify', 'CSS', 'Styled-Component', 'Figma'],
+    skills: ['React', 'AWS Amplify', 'CSS', 'Styled-Component', 'Figma'],
   },
   sagopasam: {
     skills: [
