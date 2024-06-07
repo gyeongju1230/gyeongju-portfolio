@@ -1,9 +1,8 @@
 # Gyeongju Portfolio
 
-
 ### 프로젝트 소개
 
-![](https://github.com/gyeongju1230/gyeongju-portfolio/assets/127480050/73898aaf-43d6-4b22-b3d5-8c8a71298d25)
+<img src="./src/assets/images/readme/Portfolio.png" alt="project-image" height="250">
 
 > **Gyeongju Portfolio** 는 개인 Portfolio 용도로 제작한 반응형 웹사이트입니다.   
 > Solo Project 로, 기획과 디자인 그리고 개발까지 모두 혼자 진행하였습니다.
@@ -31,6 +30,8 @@
   ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white)
 
 ### 구현한 기능
+
+![](https://github.com/gyeongju1230/gyeongju-portfolio/assets/127480050/73898aaf-43d6-4b22-b3d5-8c8a71298d25)
 
 - Main page UI
 - About page UI
