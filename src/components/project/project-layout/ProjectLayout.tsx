@@ -1,8 +1,11 @@
 import * as styles from './ProjectLayout.styles';
 import ProjectScrollDown from '@components/common/scroll/scroll-down/ScrollDown';
 import ProjectBox from '@components/project/project-box/ProjectBox';
-import { useState } from 'react';
-import ProjectModal from '@components/project/project-modal/ProjectModal';
+import { lazy, useState } from 'react';
+// import ProjectModal from '@components/project/project-modal/ProjectModal';
+const ProjectModal = lazy(
+  () => import('@components/project/project-modal/ProjectModal'),
+);
 
 interface ProjectLayoutProps {
   menuBar: string;

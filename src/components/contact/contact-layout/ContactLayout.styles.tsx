@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 export const Container = styled.div`
   position: relative;
@@ -24,9 +24,9 @@ export const Title = styled.div`
   margin-bottom: 30px;
   text-align: center;
   color: #a07d5a;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
-  font-family: Pretendard, serif;
+  font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     margin-top: 240px;

@@ -4,8 +4,10 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Skill from './pages/Skill';
 import { MenuProvider } from './contexts/MenuContext';
-import Project from './pages/Project';
 import Contact from './pages/Contact';
+import { lazy } from 'react';
+
+const Project = lazy(() => import('./pages/Project'));
 
 function App() {
   return (

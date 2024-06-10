@@ -1,18 +1,4 @@
 @font-face {
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
-    src: url("Pretendard-Bold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Sagak";
-    font-style: normal;
-    font-weight: normal;
-    src: url("Sagak-sagak.woff") format("woff");
-}
-
-@font-face {
     font-family: "GmarketSans";
     font-style: normal;
     font-weight: normal;

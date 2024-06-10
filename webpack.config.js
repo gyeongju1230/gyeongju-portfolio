@@ -28,7 +28,11 @@ module.exports = (env, argv) => {
       rules: [
         {
           test: /\.tsx?$/,
-          use: ['babel-loader', 'ts-loader'],
+          loader: 'esbuild-loader',
+          options: {
+            loader: 'tsx',
+            target: 'esnext',
+          },
         },
         {
           test: /\.(png|jpg|svg|gif)$/,
@@ -60,5 +64,11 @@ module.exports = (env, argv) => {
       }),
       new CleanWebpackPlugin(),
     ],
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+      },
+      runtimeChunk: true,
+    },
   };
 };

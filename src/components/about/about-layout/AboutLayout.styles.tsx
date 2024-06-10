@@ -18,7 +18,7 @@ export const Title = styled.div`
   color: #a07d5a;
   font-size: 40px;
   font-weight: bold;
-  font-family: Pretendard, serif;
+  font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     margin-top: 240px;
