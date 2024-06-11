@@ -5,27 +5,17 @@ const projectSkillData = {
       'TypeScript',
       'AWS Amplify',
       'Framer Motion',
-      'Lottie',
-      'Swiper',
       'Styled-Component',
-      'Figma',
     ],
   },
   todo: {
-    skills: ['React', 'AWS Amplify', 'CSS', 'Styled-Component', 'Figma'],
+    skills: ['React', 'AWS Amplify', 'CSS', 'Styled-Component'],
   },
   sagopasam: {
-    skills: [
-      'React Native',
-      'Short Polling',
-      'Axios',
-      'Recoil',
-      'Swiper',
-      'Styled-Component',
-    ],
+    skills: ['React Native', 'Axios', 'Recoil', 'Styled-Component'],
   },
   deunbung: {
-    skills: ['React Native', 'TypeScript', 'SSE', 'Axios', 'Styled-Component'],
+    skills: ['React Native', 'TypeScript', 'Axios', 'Styled-Component'],
   },
 };
 
