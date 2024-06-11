@@ -84,14 +84,14 @@ export const Text = styled.div`
 
   text-align: left;
   color: #787878;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   line-height: 30px;
   font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     margin-top: 5px;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 20px;
   }
 `;
