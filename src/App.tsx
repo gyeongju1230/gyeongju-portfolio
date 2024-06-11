@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Skill from './pages/Skill';
 import { MenuProvider } from './contexts/MenuContext';
 import Contact from './pages/Contact';
-import { lazy } from 'react';
+import {lazy, Suspense} from 'react';
 
 const Project = lazy(() => import('./pages/Project'));
 
@@ -17,7 +17,9 @@ function App() {
         <Home />
         <About />
         <Skill />
-        <Project />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Project />
+        </Suspense>
         <Contact />
       </MenuProvider>
     </>
