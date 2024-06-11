@@ -34,7 +34,6 @@ export const Container = styled.div`
 export const Title = styled.div`
   position: relative;
   margin-top: -45px;
-  z-index: 2;
   text-align: center;
   color: #fffbf5;
   font-size: 145px;
