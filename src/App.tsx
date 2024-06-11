@@ -5,9 +5,10 @@ import Home from './pages/Home';
 import Skill from './pages/Skill';
 import { MenuProvider } from './contexts/MenuContext';
 import Contact from './pages/Contact';
-import {lazy, Suspense} from 'react';
+import React, { Suspense } from 'react';
 
-const Project = lazy(() => import('./pages/Project'));
+const projectPromise = import('./pages/Project');
+const Project = React.lazy(() => projectPromise);
 
 function App() {
   return (

@@ -2,8 +2,8 @@ import * as styles from './ProjectModalContent.styles';
 import ProjectTag from '@components/common/tag/project-tag/ProjectTag';
 import ProjectSwiper from '@components/project/project-modal/project-swiper/ProjectSwiper';
 import SkillTag from '@components/common/tag/skill-tag/SkillTag';
-import React from 'react';
-import projectModalData from '../../../../data/ProjectModalData';
+import React, {memo} from 'react';
+import projectModalData from '@data/ProjectModalData';
 import RoleTag from '@components/common/tag/role-tag/RoleTag';
 import TeamIntroductionContent from '@components/project/project-modal/project-modal-content/team-introduction-content/TeamIntroductionContent';
 import FeaturesContent from '@components/project/project-modal/project-modal-content/features-content/FeaturesContent';
@@ -12,7 +12,7 @@ interface ProjectModalContentProps {
   id: string;
 }
 
-const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
+const ProjectModalContent = memo(({ id }: ProjectModalContentProps) => {
   const {
     tag,
     title,
@@ -168,6 +168,6 @@ const ProjectModalContent = ({ id }: ProjectModalContentProps) => {
       </styles.Content>
     </styles.ModalBox>
   );
-};
+});
 
 export default ProjectModalContent;

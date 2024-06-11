@@ -1,30 +1,29 @@
-import React from 'react';
-import { ReactComponent as AppStoreImagePortfolio1 } from '@assets/images/project/portfolio/Portfolio_AppStoreImage1.svg';
-import { ReactComponent as AppStoreImagePortfolio2 } from '@assets/images/project/portfolio/Portfolio_AppStoreImage2.svg';
-import { ReactComponent as AppStoreImagePortfolio3 } from '@assets/images/project/portfolio/Portfolio_AppStoreImage3.svg';
-import { ReactComponent as AppStoreImagePortfolio4 } from '@assets/images/project/portfolio/Portfolio_AppStoreImage4.svg';
-import { ReactComponent as AppStoreImagePortfolio5 } from '@assets/images/project/portfolio/Portfolio_AppStoreImage5.svg';
-import { ReactComponent as AppStoreImageTodo1 } from '@assets/images/project/todo/Todo_AppStoreImage1.svg';
-import { ReactComponent as AppStoreImageTodo2 } from '@assets/images/project/todo/Todo_AppStoreImage2.svg';
-import { ReactComponent as AppStoreImageTodo3 } from '@assets/images/project/todo/Todo_AppStoreImage3.svg';
-import { ReactComponent as AppStoreImageTodo4 } from '@assets/images/project/todo/Todo_AppStoreImage4.svg';
-import { ReactComponent as AppStoreImageTodo5 } from '@assets/images/project/todo/Todo_AppStoreImage5.svg';
-import { ReactComponent as AppStoreImageSagopasam1 } from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage1.svg';
-import { ReactComponent as AppStoreImageSagopasam2 } from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage2.svg';
-import { ReactComponent as AppStoreImageSagopasam3 } from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage3.svg';
-import { ReactComponent as AppStoreImageSagopasam4 } from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage4.svg';
-import { ReactComponent as AppStoreImageSagopasam5 } from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage5.svg';
-import { ReactComponent as AppStoreImageSagopasam6 } from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage6.svg';
-import { ReactComponent as AppStoreImageDeunbung1 } from '@assets/images/project/deunbung/Deunbung_AppStoreImage1.svg';
-import { ReactComponent as AppStoreImageDeunbung2 } from '@assets/images/project/deunbung/Deunbung_AppStoreImage2.svg';
-import { ReactComponent as AppStoreImageDeunbung3 } from '@assets/images/project/deunbung/Deunbung_AppStoreImage3.svg';
-import { ReactComponent as AppStoreImageDeunbung4 } from '@assets/images/project/deunbung/Deunbung_AppStoreImage4.svg';
-import { ReactComponent as AppStoreImageDeunbung5 } from '@assets/images/project/deunbung/Deunbung_AppStoreImage5.svg';
-import { ReactComponent as AppStoreImageDeunbung6 } from '@assets/images/project/deunbung/Deunbung_AppStoreImage6.svg';
-import { ReactComponent as AppStoreImageDeunbung7 } from '@assets/images/project/deunbung/Deunbung_AppStoreImage7.svg';
+import AppStoreImagePortfolio1 from '@assets/images/project/portfolio/Portfolio_AppStoreImage1.webp';
+import AppStoreImagePortfolio2 from '@assets/images/project/portfolio/Portfolio_AppStoreImage2.webp';
+import AppStoreImagePortfolio3 from '@assets/images/project/portfolio/Portfolio_AppStoreImage3.webp';
+import AppStoreImagePortfolio4 from '@assets/images/project/portfolio/Portfolio_AppStoreImage4.webp';
+import AppStoreImagePortfolio5 from '@assets/images/project/portfolio/Portfolio_AppStoreImage5.webp';
+import AppStoreImageTodo1 from '@assets/images/project/todo/Todo_AppStoreImage1.webp';
+import AppStoreImageTodo2 from '@assets/images/project/todo/Todo_AppStoreImage2.webp';
+import AppStoreImageTodo3 from '@assets/images/project/todo/Todo_AppStoreImage3.webp';
+import AppStoreImageTodo4 from '@assets/images/project/todo/Todo_AppStoreImage4.webp';
+import AppStoreImageTodo5 from '@assets/images/project/todo/Todo_AppStoreImage5.webp';
+import AppStoreImageSagopasam1 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage1.webp';
+import AppStoreImageSagopasam2 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage2.webp';
+import AppStoreImageSagopasam3 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage3.webp';
+import AppStoreImageSagopasam4 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage4.webp';
+import AppStoreImageSagopasam5 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage5.webp';
+import AppStoreImageSagopasam6 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage6.webp';
+import AppStoreImageDeunbung1 from '@assets/images/project/deunbung/Deunbung_AppStoreImage1.webp';
+import AppStoreImageDeunbung2 from '@assets/images/project/deunbung/Deunbung_AppStoreImage2.webp';
+import AppStoreImageDeunbung3 from '@assets/images/project/deunbung/Deunbung_AppStoreImage3.webp';
+import AppStoreImageDeunbung4 from '@assets/images/project/deunbung/Deunbung_AppStoreImage4.webp';
+import AppStoreImageDeunbung5 from '@assets/images/project/deunbung/Deunbung_AppStoreImage5.webp';
+import AppStoreImageDeunbung6 from '@assets/images/project/deunbung/Deunbung_AppStoreImage6.webp';
+import AppStoreImageDeunbung7 from '@assets/images/project/deunbung/Deunbung_AppStoreImage7.webp';
 
 interface Images {
-  [key: string]: React.FunctionComponent<React.SVGProps<SVGSVGElement>>[];
+  [key: string]: string[];
 }
 
 const images: Images = {

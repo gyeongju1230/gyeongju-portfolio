@@ -24,16 +24,15 @@ const ProjectSwiper = ({ id }: ProjectSwiperProps) => {
         modules={modules}
         className="mySwiper"
       >
-        {selectedImages.map((ImageComponent, index) => (
-          <SwiperSlide key={index}>
-            <ImageComponent
-              style={{
-                borderRadius: '10px',
-                boxShadow: '1px 2px 9px rgba(45, 45, 45, 0.3)',
-              }}
-            />
-          </SwiperSlide>
-        ))}
+          {selectedImages.map((imageSrc, index) => (
+              <SwiperSlide key={index}>
+                  <img src={imageSrc} alt={`Slide ${index}`}
+                       style={{
+                      borderRadius: '10px',
+                      boxShadow: '1px 2px 9px rgba(45, 45, 45, 0.3)',
+                  }}/>
+              </SwiperSlide>
+          ))}
       </Swiper>
     </styles.AppStoreImageContainer>
   );
