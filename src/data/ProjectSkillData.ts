@@ -9,7 +9,7 @@ const projectSkillData = {
     ],
   },
   todo: {
-    skills: ['React', 'AWS Amplify', 'CSS', 'Styled-Component'],
+    skills: ['React', 'CSS', 'AWS Amplify', 'Styled-Component'],
   },
   sagopasam: {
     skills: ['React Native', 'Axios', 'Recoil', 'Styled-Component'],
