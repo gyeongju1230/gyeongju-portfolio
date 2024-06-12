@@ -10,13 +10,9 @@ export const ImageContainer = styled.div`
   justify-content: center;
 
   @media (max-width: ${smallViewport}) {
-    display: none;
-
-    &.none-menu {
-      display: flex;
-      width: 65%;
-      height: 45%;
-    }
+    display: flex;
+    width: 65%;
+    height: 45%;
   }
 `;
 

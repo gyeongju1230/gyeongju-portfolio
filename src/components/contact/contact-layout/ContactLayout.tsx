@@ -2,11 +2,7 @@ import * as styles from './ContactLayout.styles';
 import ContactContent from '@components/contact/contact-content/ContactContent';
 import ProjectScrollUp from '@components/common/scroll/scroll-up/ScrollUp';
 
-interface ContactLayoutProps {
-  menuBar: string;
-}
-
-const ContactLayout = ({ menuBar }: ContactLayoutProps) => {
+const ContactLayout = () => {
   const scrollToHome = () => {
     window.scrollTo({
       top: document.getElementById('home')?.offsetTop || 0,
@@ -15,9 +11,9 @@ const ContactLayout = ({ menuBar }: ContactLayoutProps) => {
   };
 
   return (
-    <styles.Container id="contact" className={menuBar}>
-      <styles.Title className={menuBar}>CONTACT</styles.Title>
-      <ContactContent menuBar={menuBar} />
+    <styles.Container id="contact">
+      <styles.Title>CONTACT</styles.Title>
+      <ContactContent />
       <ProjectScrollUp onClick={scrollToHome} />
     </styles.Container>
   );

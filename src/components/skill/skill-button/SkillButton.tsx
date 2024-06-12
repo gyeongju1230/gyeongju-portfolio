@@ -4,18 +4,16 @@ import Lottie from 'lottie-react';
 import ArrowLottie from '@assets/lottie/Lottie_arrow.json';
 
 interface SkillButtonProps {
-  menuBar: string;
   selectedButtonIndex: number;
   handleButtonClick: (index: number) => void;
 }
 const SkillButton = ({
-  menuBar,
   selectedButtonIndex,
   handleButtonClick,
 }: SkillButtonProps) => {
   return (
-    <styles.Container className={menuBar}>
-      <styles.Box className={menuBar}>
+    <styles.Container>
+      <styles.Box>
         {Array.from(Array(3).keys()).map(index => (
           <Fragment key={index}>
             {selectedButtonIndex === index ? (
@@ -34,7 +32,6 @@ const SkillButton = ({
                       stiffness: 260,
                       damping: 20,
                     }}
-                    className={menuBar}
                   >
                     {index === 0 ? 'FE' : index === 1 ? 'BE' : 'TOOL'}
                   </styles.ButtonBox>
@@ -47,7 +44,7 @@ const SkillButton = ({
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <styles.ButtonBox className={menuBar}>
+                <styles.ButtonBox>
                   {index === 0 ? 'FE' : index === 1 ? 'BE' : 'TOOL'}
                 </styles.ButtonBox>
               </styles.Button>

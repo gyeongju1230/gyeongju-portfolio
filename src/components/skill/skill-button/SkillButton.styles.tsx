@@ -14,19 +14,13 @@ export const Container = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 100%;
-    height: 20%;
-    margin-top: 240px;
+    height: 30%;
+    margin-top: 77px;
     flex-direction: column;
     justify-content: center;
 
     .arrow {
       display: none;
-    }
-
-    &.none-menu {
-      width: 100%;
-      height: 30%;
-      margin-top: 77px;
     }
   }
 `;
@@ -42,15 +36,9 @@ export const Box = styled.div`
   align-items: flex-end;
 
   @media (max-width: ${smallViewport}) {
-    width: 170px;
-    height: 138px;
-    gap: 10px;
+    height: 148px;
+    gap: 20px;
     flex-direction: row;
-
-    &.none-menu {
-      height: 148px;
-      gap: 20px;
-    }
   }
 `;
 
@@ -80,15 +68,9 @@ export const ButtonBox = styled(motion.div)`
   font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    width: 55px;
-    height: 55px;
-    font-size: 12px;
-
-    &.none-menu {
-      width: 64px;
-      height: 64px;
-      font-size: 14px;
-    }
+    width: 64px;
+    height: 64px;
+    font-size: 14px;
   }
 `;
 

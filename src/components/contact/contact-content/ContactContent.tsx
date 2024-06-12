@@ -3,11 +3,7 @@ import { ReactComponent as Github } from '@assets/icons/contact/Github.svg';
 import { ReactComponent as Gmail } from '@assets/icons/contact/Gmail.svg';
 import { ReactComponent as Copy } from '@assets/icons/contact/CopyIcon.svg';
 
-interface ContactContentProps {
-  menuBar: string;
-}
-
-const ContactContent = ({ menuBar }: ContactContentProps) => {
+const ContactContent = () => {
   const githubUrl = 'https://github.com/gyeongju1230';
   const email = 'jkj01230@gmail.com';
   const mailUrl = `mailto:${email}`;
@@ -20,10 +16,9 @@ const ContactContent = ({ menuBar }: ContactContentProps) => {
   };
 
   return (
-    <styles.ContactContainer className={menuBar}>
+    <styles.ContactContainer>
       <styles.Container>
         <styles.IconBox
-          className={menuBar}
           onClick={() => {
             window.open(githubUrl);
           }}
@@ -44,7 +39,6 @@ const ContactContent = ({ menuBar }: ContactContentProps) => {
 
       <styles.Container>
         <styles.IconBox
-          className={menuBar}
           onClick={() => {
             window.open(mailUrl);
           }}

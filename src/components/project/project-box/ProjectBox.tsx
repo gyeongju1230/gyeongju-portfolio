@@ -12,13 +12,12 @@ import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 
 interface ProjectBoxProps {
-  menuBar: string;
   handleModalOpen: (id: string) => void;
 }
 
-const ProjectBox = ({ menuBar, handleModalOpen }: ProjectBoxProps) => {
+const ProjectBox = ({ handleModalOpen }: ProjectBoxProps) => {
   return (
-    <styles.ProjectBox className={menuBar}>
+    <styles.ProjectBox>
       <Swiper
         slidesPerView={1}
         navigation={true}
@@ -36,11 +35,7 @@ const ProjectBox = ({ menuBar, handleModalOpen }: ProjectBoxProps) => {
               handleModalOpen={handleModalOpen}
               image={<Deunbung className="icon" />}
             />
-            <ProjectContent
-              id="deunbung"
-              handleModalOpen={handleModalOpen}
-              menuBar={menuBar}
-            />
+            <ProjectContent id="deunbung" handleModalOpen={handleModalOpen} />
           </styles.Project>
         </SwiperSlide>
 
@@ -51,11 +46,7 @@ const ProjectBox = ({ menuBar, handleModalOpen }: ProjectBoxProps) => {
               handleModalOpen={handleModalOpen}
               image={<Sagopasam className="icon" />}
             />
-            <ProjectContent
-              id="sagopasam"
-              handleModalOpen={handleModalOpen}
-              menuBar={menuBar}
-            />
+            <ProjectContent id="sagopasam" handleModalOpen={handleModalOpen} />
           </styles.Project>
         </SwiperSlide>
 
@@ -66,11 +57,7 @@ const ProjectBox = ({ menuBar, handleModalOpen }: ProjectBoxProps) => {
               handleModalOpen={handleModalOpen}
               image={<Todo className="icon" />}
             />
-            <ProjectContent
-              id="todo"
-              handleModalOpen={handleModalOpen}
-              menuBar={menuBar}
-            />
+            <ProjectContent id="todo" handleModalOpen={handleModalOpen} />
           </styles.Project>
         </SwiperSlide>
 
@@ -81,11 +68,7 @@ const ProjectBox = ({ menuBar, handleModalOpen }: ProjectBoxProps) => {
               handleModalOpen={handleModalOpen}
               image={<Portfolio className="icon" />}
             />
-            <ProjectContent
-              id="portfolio"
-              handleModalOpen={handleModalOpen}
-              menuBar={menuBar}
-            />
+            <ProjectContent id="portfolio" handleModalOpen={handleModalOpen} />
           </styles.Project>
         </SwiperSlide>
       </Swiper>

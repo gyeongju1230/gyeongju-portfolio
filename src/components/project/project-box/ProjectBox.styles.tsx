@@ -36,14 +36,8 @@ export const ProjectBox = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 90%;
-    height: 60%;
-    margin-top: 240px;
-
-    &.none-menu {
-      width: 90%;
-      height: 75%;
-      margin-top: 50px;
-    }
+    height: 75%;
+    margin-top: 50px;
   }
 `;
 

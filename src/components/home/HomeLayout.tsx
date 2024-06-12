@@ -1,25 +1,14 @@
 import * as styles from './HomeLayout.styles';
 import HomeScrollDown from '@components/common/scroll/scroll-down/ScrollDown';
 
-interface HomeLayoutProps {
-  menuBar: string;
-}
-
-const HomeLayout = ({ menuBar }: HomeLayoutProps) => {
-  const scrollToAbout = () => {
-    window.scrollTo({
-      top: document.getElementById('about')?.offsetTop || 0,
-      behavior: 'smooth',
-    });
-  };
-
+const HomeLayout = () => {
   return (
-    <styles.Container className={menuBar}>
+    <styles.Container>
       <styles.Title>
-        Frontend <br />
+        Gyeongju <br />
         Portfolio
       </styles.Title>
-      <HomeScrollDown onClick={scrollToAbout} />
+      <HomeScrollDown />
     </styles.Container>
   );
 };

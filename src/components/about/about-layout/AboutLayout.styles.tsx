@@ -21,13 +21,8 @@ export const Title = styled.div`
   font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    margin-top: 240px;
+    margin-top: 77px;
     font-size: 22px;
-
-    &.none-menu {
-      margin-top: 77px;
-      font-size: 22px;
-    }
   }
 `;
 
@@ -41,15 +36,8 @@ export const AboutContainer = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 90%;
-    height: 50%;
+    height: 70%;
     flex-direction: column;
-    justify-content: center;
-
-    &.none-menu {
-      width: 90%;
-      height: 70%;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    justify-content: space-between;
   }
 `;

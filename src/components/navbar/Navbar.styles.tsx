@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 export const Header = styled.header`
   position: fixed;
@@ -13,17 +13,32 @@ export const Header = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: #fffbf5;
 
   @media (max-width: ${smallViewport}) {
-    height: 240px;
+    height: 300px;
     flex-direction: column;
+    box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
 
     &.none-menu {
       height: 77px;
+      box-shadow: none;
     }
   }
+`;
+
+export const BackgroundOpacity = styled.div`
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 `;
 
 export const Logo = styled.a`
@@ -44,8 +59,9 @@ export const Menu = styled.nav`
   padding-right: 20px;
 
   @media (max-width: ${smallViewport}) {
+    width: 100%;
+    height: 100%;
     flex-direction: column;
-    padding-top: 5px;
     padding-left: 0;
     padding-right: 0;
     margin: 0;
@@ -61,6 +77,8 @@ export const MenuItem = styled.li`
   padding: 0 5px;
 
   @media (max-width: ${smallViewport}) {
+    width: 100%;
+    height: 25%;
     text-align: center;
     padding: 5px 0;
   }
@@ -81,6 +99,7 @@ export const Button = styled(motion.button)`
     sans-serif;
 
   @media (max-width: ${smallViewport}) {
+    width: 100%;
     font-size: 16px;
   }
 

@@ -6,14 +6,9 @@ import SkillTag from '@components/common/tag/skill-tag/SkillTag';
 interface ProjectContentProps {
   id: string;
   handleModalOpen: (id: string) => void;
-  menuBar: string;
 }
 
-const ProjectContent = ({
-  id,
-  handleModalOpen,
-  menuBar,
-}: ProjectContentProps) => {
+const ProjectContent = ({ id, handleModalOpen }: ProjectContentProps) => {
   const { tag, title, content, url, github } = projectData[id] || {
     tag: '',
     title: '',

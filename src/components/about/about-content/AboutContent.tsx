@@ -3,17 +3,13 @@ import Typewriter from 'typewriter-effect';
 import { ReactComponent as Github } from '@assets/icons/about/GitHubIcon.svg';
 import { ReactComponent as Notion } from '@assets/icons/about/NotionIcon.svg';
 
-interface AboutContentProps {
-  menuBar: string;
-}
-
-const AboutContent = ({ menuBar }: AboutContentProps) => {
+const AboutContent = () => {
   const githubUrl = 'https://github.com/gyeongju1230';
   const notionUrl =
     'https://www.notion.so/gyeongju/Gyeongju-46837ac388704c5f8c18da20054a9943?pvs=4';
 
   return (
-    <styles.AboutBox className={menuBar}>
+    <styles.AboutBox>
       <styles.AboutTitle>
         <Typewriter
           options={{

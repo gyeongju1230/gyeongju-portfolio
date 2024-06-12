@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 const waveAnimation = keyframes`
   0%, 100% {
@@ -21,13 +21,8 @@ export const Container = styled.div`
   margin-top: 90px;
 
   @media (max-width: ${smallViewport}) {
-    height: calc(100vh - 240px);
-    margin-top: 240px;
-
-    &.none-menu {
-      height: calc(100vh - 77px);
-      margin-top: 77px;
-    }
+    height: calc(100vh - 77px);
+    margin-top: 77px;
   }
 `;
 
@@ -60,7 +55,7 @@ export const Title = styled.div`
   }
 
   &:before {
-    content: "Frontend Portfolio";
+    content: 'Gyeongju Portfolio';
     position: absolute;
     width: 100%;
     height: 100%;

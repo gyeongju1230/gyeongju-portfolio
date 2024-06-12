@@ -13,10 +13,6 @@ export const Container = styled.div`
 
   @media (max-width: ${smallViewport}) {
     height: 100vh;
-
-    &.none-menu {
-      height: 100vh;
-    }
   }
 `;
 
@@ -29,14 +25,8 @@ export const Title = styled.div`
   font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    margin-top: 240px;
-    margin-bottom: 6px;
-    font-size: 26px;
-
-    &.none-menu {
-      margin-top: 77px;
-      margin-bottom: 10px;
-      font-size: 30px;
-    }
+    margin-top: 77px;
+    margin-bottom: 10px;
+    font-size: 30px;
   }
 `;

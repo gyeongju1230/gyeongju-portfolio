@@ -1,7 +1,7 @@
 import * as styles from './Navbar.styles';
 import { ReactComponent as Logo } from '@assets/images/Logo.svg';
 import { ReactComponent as More } from '@assets/icons/MoreButton.svg';
-import { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { MenuContext } from '@contexts/MenuContext';
 
 const Navbar = () => {
@@ -12,12 +12,23 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isMenuOpen]);
+
   const scrollToAbout = () => {
     window.scrollTo({
       top: document.getElementById('about')?.offsetTop || 0,
       behavior: 'smooth',
     });
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(false);
   };
 
   const scrollToSkill = () => {
@@ -25,7 +36,7 @@ const Navbar = () => {
       top: document.getElementById('skill')?.offsetTop || 0,
       behavior: 'smooth',
     });
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(false);
   };
 
   const scrollToProject = () => {
@@ -33,7 +44,7 @@ const Navbar = () => {
       top: document.getElementById('project')?.offsetTop || 0,
       behavior: 'smooth',
     });
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(false);
   };
 
   const scrollToContact = () => {
@@ -41,11 +52,19 @@ const Navbar = () => {
       top: document.getElementById('contact')?.offsetTop || 0,
       behavior: 'smooth',
     });
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(false);
   };
 
-  return (
-    <styles.Header className={menuBar}>
+  const handleMenubarClose = () => {
+    setIsMenuOpen(false);
+  };
+
+  const handleHeaderContainerClick = (event: React.MouseEvent) => {
+    event.stopPropagation();
+  };
+
+  const NavbarContent = (
+    <styles.Header className={menuBar} onClick={handleHeaderContainerClick}>
       <styles.LogoContainer>
         <styles.Logo href="/">
           <Logo />
@@ -94,6 +113,18 @@ const Navbar = () => {
         </styles.MenuItem>
       </styles.Menu>
     </styles.Header>
+  );
+
+  return (
+    <>
+      {isMenuOpen ? (
+        <styles.BackgroundOpacity onClick={() => setIsMenuOpen(false)}>
+          {NavbarContent}
+        </styles.BackgroundOpacity>
+      ) : (
+        NavbarContent
+      )}
+    </>
   );
 };
 

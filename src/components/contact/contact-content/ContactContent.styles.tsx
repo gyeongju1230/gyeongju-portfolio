@@ -13,14 +13,8 @@ export const ContactContainer = styled.div`
 
   @media (max-width: ${smallViewport}) {
     width: 60%;
-    height: 45%;
+    height: 55%;
     flex-direction: column;
-
-    &.none-menu {
-      width: 60%;
-      height: 55%;
-      flex-direction: column;
-    }
   }
 `;
 
@@ -58,13 +52,8 @@ export const IconBox = styled(motion.button)`
   }
 
   @media (max-width: ${smallViewport}) {
-    width: 80px;
-    height: 80px;
-
-    &.none-menu {
-      width: 113px;
-      height: 113px;
-    }
+    width: 113px;
+    height: 113px;
   }
 `;
 

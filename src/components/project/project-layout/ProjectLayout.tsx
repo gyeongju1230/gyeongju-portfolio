@@ -1,23 +1,11 @@
 import * as styles from './ProjectLayout.styles';
-import ProjectScrollDown from '@components/common/scroll/scroll-down/ScrollDown';
 import ProjectBox from '@components/project/project-box/ProjectBox';
 import { useState } from 'react';
 import ProjectModal from '@components/project/project-modal/ProjectModal';
 
-interface ProjectLayoutProps {
-  menuBar: string;
-}
-
-const ProjectLayout = ({ menuBar }: ProjectLayoutProps) => {
+const ProjectLayout = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalId, setModalId] = useState('');
-
-  const scrollToContact = () => {
-    window.scrollTo({
-      top: document.getElementById('contact')?.offsetTop || 0,
-      behavior: 'smooth',
-    });
-  };
 
   const handleModalOpen = (id: string) => {
     setIsModalOpen(!isModalOpen);
@@ -32,8 +20,7 @@ const ProjectLayout = ({ menuBar }: ProjectLayoutProps) => {
 
   return (
     <styles.Container id="project">
-      <ProjectBox menuBar={menuBar} handleModalOpen={handleModalOpen} />
-      <ProjectScrollDown onClick={scrollToContact} />
+      <ProjectBox handleModalOpen={handleModalOpen} />
 
       {isModalOpen && (
         <ProjectModal id={modalId} setIsModalOpen={setIsModalOpen} />

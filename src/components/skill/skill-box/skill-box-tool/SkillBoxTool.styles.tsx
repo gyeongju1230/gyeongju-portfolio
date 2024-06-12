@@ -1,6 +1,6 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 const floatingAnimation = keyframes`
   0%, 100% {
@@ -24,22 +24,6 @@ export const Container = styled.div`
     width: 100%;
     height: 60%;
     margin-top: 0;
-
-    .icon-git {
-      margin-top: 0;
-    }
-
-    .icon-github {
-      margin-bottom: 0;
-    }
-
-    .icon-confluence {
-      margin-top: 0;
-    }
-
-    .icon-notion {
-      margin-top: 0;
-    }
   }
 `;
 
@@ -56,17 +40,10 @@ export const IconBox = styled.div`
     infinite;
 
   @media (max-width: ${smallViewport}) {
-    width: 80px;
-    height: 52px;
+    width: 100px;
+    height: 62px;
     padding: 0;
-    margin-right: 7.5px;
-
-    &.none-menu {
-      width: 100px;
-      height: 62px;
-      padding: 0;
-      margin-right: 15px;
-    }
+    margin-right: 15px;
   }
 `;
 
@@ -81,13 +58,8 @@ export const Icon = styled.div`
   }
 
   @media (max-width: ${smallViewport}) {
-    width: 30px;
-    height: 30px;
-
-    &.none-menu {
-      width: 50px;
-      height: 50px;
-    }
+    width: 50px;
+    height: 50px;
   }
 `;
 

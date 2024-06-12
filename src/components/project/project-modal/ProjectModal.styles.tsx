@@ -11,7 +11,7 @@ export const ModalWrapper = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 3;
   overflow: hidden;
   background: rgba(54, 51, 46, 0.5);
 

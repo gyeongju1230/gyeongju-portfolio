@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-const smallViewport = "62rem";
+const smallViewport = '62rem';
 
 export const Container = styled.div`
   position: relative;
@@ -13,10 +13,6 @@ export const Container = styled.div`
 
   @media (max-width: ${smallViewport}) {
     height: 100vh;
-
-    &.none-menu {
-      height: 100vh;
-    }
   }
 `;
 
