@@ -21,6 +21,13 @@ function App() {
   const [currentPage, setCurrentPage] = useState(0);
 
   const sectionRefs = [homeRef, aboutRef, skillRef, projectRef, contactRef];
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalId, setModalId] = useState('');
+
+  const handleModalOpen = (id: string) => {
+    setIsModalOpen(!isModalOpen);
+    setModalId(id);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,14 +62,24 @@ function App() {
           <Home />
         </div>
         <div ref={aboutRef}>
-          <About />
+          <About
+            isModalOpen={isModalOpen}
+            setIsModalOpen={setIsModalOpen}
+            id={modalId}
+            handleModalOpen={handleModalOpen}
+          />
         </div>
         <div ref={skillRef}>
           <Skill />
         </div>
         <div ref={projectRef}>
           <Suspense fallback={<div>Loading...</div>}>
-            <Project />
+            <Project
+              isModalOpen={isModalOpen}
+              setIsModalOpen={setIsModalOpen}
+              id={modalId}
+              handleModalOpen={handleModalOpen}
+            />
           </Suspense>
         </div>
         <div ref={contactRef}>

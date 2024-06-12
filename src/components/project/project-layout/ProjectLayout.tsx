@@ -1,17 +1,21 @@
 import * as styles from './ProjectLayout.styles';
 import ProjectBox from '@components/project/project-box/ProjectBox';
-import { useState } from 'react';
+import React, { SetStateAction, useState } from 'react';
 import ProjectModal from '@components/project/project-modal/ProjectModal';
 
-const ProjectLayout = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalId, setModalId] = useState('');
+interface ProjectLayoutProps {
+  isModalOpen: boolean;
+  setIsModalOpen: React.Dispatch<SetStateAction<boolean>>;
+  id: string;
+  handleModalOpen: (id: string) => void;
+}
 
-  const handleModalOpen = (id: string) => {
-    setIsModalOpen(!isModalOpen);
-    setModalId(id);
-  };
-
+const ProjectLayout = ({
+  isModalOpen,
+  setIsModalOpen,
+  id,
+  handleModalOpen,
+}: ProjectLayoutProps) => {
   if (isModalOpen) {
     document.body.style.overflow = 'hidden';
   } else {
@@ -22,9 +26,7 @@ const ProjectLayout = () => {
     <styles.Container id="project">
       <ProjectBox handleModalOpen={handleModalOpen} />
 
-      {isModalOpen && (
-        <ProjectModal id={modalId} setIsModalOpen={setIsModalOpen} />
-      )}
+      {isModalOpen && <ProjectModal id={id} setIsModalOpen={setIsModalOpen} />}
     </styles.Container>
   );
 };

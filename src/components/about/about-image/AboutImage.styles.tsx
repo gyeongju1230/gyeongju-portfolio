@@ -11,8 +11,8 @@ export const ImageContainer = styled.div`
 
   @media (max-width: ${smallViewport}) {
     display: flex;
-    width: 65%;
-    height: 45%;
+    width: 55%;
+    height: 35%;
   }
 `;
 
@@ -32,7 +32,7 @@ export const ImageBox = styled.div`
   }
 
   @media (max-width: ${smallViewport}) {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
   }
 `;

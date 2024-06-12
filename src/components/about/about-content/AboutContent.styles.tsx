@@ -4,29 +4,32 @@ const smallViewport = '62rem';
 
 export const AboutBox = styled.div`
   width: 60%;
-  height: 65%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   @media (max-width: ${smallViewport}) {
     width: 100%;
-    height: 50%;
+    height: 60%;
   }
 `;
 
 export const AboutTitle = styled.div`
-  height: 25%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-bottom: 0.5px solid #a07d5a;
 
-  text-align: left;
+  text-align: center;
   color: #787878;
   font-size: 18px;
   line-height: 35px;
   font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
-    height: 25%;
+    height: 20%;
     border-bottom: 0.3px solid #a07d5a;
     font-size: 11px;
     line-height: 22px;
@@ -34,20 +37,21 @@ export const AboutTitle = styled.div`
 `;
 
 export const AboutContent = styled.div`
-  height: 55%;
+  height: 65%;
   display: flex;
-  gap: 4px;
   flex-direction: column;
   justify-content: center;
 
   @media (max-width: ${smallViewport}) {
-    height: 65%;
     gap: 2px;
   }
 `;
 
 export const Content = styled.div`
-  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   color: #787878;
   font-size: 15px;
   line-height: 30px;
@@ -55,22 +59,22 @@ export const Content = styled.div`
 
   @media (max-width: ${smallViewport}) {
     font-size: 10px;
-    line-height: 22px;
+    line-height: 20px;
   }
 `;
 
 export const AboutLinkBox = styled.div`
-  height: 20%;
+  height: 15%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   align-items: center;
-  border-top: 0.5px solid #a07d5a;
+  justify-content: center;
+  border-top: 0.3px solid #a07d5a;
 
   @media (max-width: ${smallViewport}) {
-    height: 15%;
     gap: 5px;
-    border-top: 0.3px solid #a07d5a;
+    border-top: 0.1px solid #a07d5a;
   }
 `;
 
@@ -100,8 +104,8 @@ export const AboutLink = styled.button`
     line-height: 15px;
 
     .icon {
-      width: 15px;
-      height: 15px;
+      width: 14px;
+      height: 14px;
     }
   }
 `;
