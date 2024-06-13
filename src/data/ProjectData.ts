@@ -1,4 +1,25 @@
-const projectData = {
+interface url {
+  title: string;
+  link: string;
+  label: string;
+}
+
+interface ProjectData {
+  tag: string;
+  title: string;
+  content: string;
+  url: url[];
+  github: string;
+}
+
+interface ProjectBoxData {
+  portfolio: ProjectData;
+  todo: ProjectData;
+  sagopasam: ProjectData;
+  deunbung: ProjectData;
+}
+
+const projectData: ProjectBoxData = {
   portfolio: {
     tag: 'Solo Project',
     title: 'GyeongJu Portfolio',

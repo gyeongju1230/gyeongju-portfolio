@@ -9,13 +9,8 @@ interface ProjectContentProps {
 }
 
 const ProjectContent = ({ id, handleModalOpen }: ProjectContentProps) => {
-  const { tag, title, content, url, github } = projectData[id] || {
-    tag: '',
-    title: '',
-    content: '',
-    url: [],
-    github: '',
-  };
+  const projectBoxData = projectData[id];
+  const { tag, title, content, url, github } = projectBoxData;
 
   return (
     <styles.ContentContainer>

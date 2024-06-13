@@ -12,9 +12,8 @@ const RoleTag = ({ id }: RoleTagProps) => {
     return colors[index % colors.length];
   };
 
-  const { role } = projectRoleData[id] || {
-    role: [],
-  };
+  const roleData = projectRoleData[id];
+  const { role } = roleData;
 
   return (
     <>

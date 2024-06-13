@@ -19,9 +19,8 @@ const SkillTag = ({ id }: SkillTagProps) => {
     return colors[index % colors.length];
   };
 
-  const { skills } = projectSkillData[id] || {
-    skills: [],
-  };
+  const skillsData = projectSkillData[id];
+  const { skills } = skillsData;
 
   return (
     <>

@@ -13,6 +13,8 @@ interface ProjectModalContentProps {
 }
 
 const ProjectModalContent = memo(({ id }: ProjectModalContentProps) => {
+  const projectData = projectModalData[id];
+
   const {
     tag,
     title,
@@ -30,24 +32,7 @@ const ProjectModalContent = memo(({ id }: ProjectModalContentProps) => {
     realizationsContent,
     url,
     urlLink,
-  } = projectModalData[id] || {
-    tag: '',
-    title: '',
-    introduction: '',
-    introductionContent: '',
-    skills: '',
-    period: '',
-    periodContent: '',
-    teamIntroduction: '',
-    teamIntroductionContent: [],
-    role: '',
-    features: '',
-    featuresContent: '',
-    realizations: '',
-    realizationsContent: '',
-    url: '',
-    urlLink: [],
-  };
+  } = projectData;
 
   return (
     <styles.ModalBox>
@@ -77,7 +62,12 @@ const ProjectModalContent = memo(({ id }: ProjectModalContentProps) => {
       </styles.Content>
 
       <styles.ContentTitle>{introduction}</styles.ContentTitle>
-      <styles.Content>{introductionContent}</styles.Content>
+      {introductionContent.map(({ title, content }, index: number) => (
+        <div key={index}>
+          <styles.Content className="bold">{title}</styles.Content>
+          <styles.Content className="no-margin-top">{content}</styles.Content>
+        </div>
+      ))}
 
       <styles.ContentTitle>{skills}</styles.ContentTitle>
       <styles.Content>
@@ -109,7 +99,12 @@ const ProjectModalContent = memo(({ id }: ProjectModalContentProps) => {
       </styles.Content>
 
       <styles.ContentTitle>{realizations}</styles.ContentTitle>
-      <styles.Content>{realizationsContent}</styles.Content>
+      {realizationsContent.map(({ title, content }, index: number) => (
+        <div key={index}>
+          <styles.Content className="bold">{title}</styles.Content>
+          <styles.Content className="no-margin-top">{content}</styles.Content>
+        </div>
+      ))}
     </styles.ModalBox>
   );
 });

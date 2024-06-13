@@ -1,4 +1,19 @@
-const projectSkillData = {
+interface ProjectSkillData {
+  portfolio: {
+    skills: string[];
+  };
+  todo: {
+    skills: string[];
+  };
+  sagopasam: {
+    skills: string[];
+  };
+  deunbung: {
+    skills: string[];
+  };
+}
+
+const projectSkillData: ProjectSkillData = {
   portfolio: {
     skills: [
       'React',
