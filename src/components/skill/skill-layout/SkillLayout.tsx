@@ -1,9 +1,9 @@
 import * as styles from './SkillLayout.styles';
 import { useState } from 'react';
 import SkillButton from '@components/skill/skill-button/SkillButton';
-import SkillBoxFrontend from '@components/skill/skill-box/skill-box-frontend/SkillBoxFrontend';
-import SkillBoxBackend from '@components/skill/skill-box/skill-box-backend/SkillBoxBackend';
-import SkillBoxTool from '@components/skill/skill-box/skill-box-tool/SkillBoxTool';
+import SkillBoxHigh from '@components/skill/skill-box/skill-box-high/SkillBoxHigh';
+import SkillBoxMedium from '@components/skill/skill-box/skill-box-medium/SkillBoxMedium';
+import SkillBoxLow from '@components/skill/skill-box/skill-box-low/SkillBoxLow';
 
 const SkillLayout = () => {
   const [selectedButtonIndex, setSelectedButtonIndex] = useState(0);
@@ -19,9 +19,9 @@ const SkillLayout = () => {
           selectedButtonIndex={selectedButtonIndex}
           handleButtonClick={handleButtonClick}
         />
-        {selectedButtonIndex === 0 && <SkillBoxFrontend />}
-        {selectedButtonIndex === 1 && <SkillBoxBackend />}
-        {selectedButtonIndex === 2 && <SkillBoxTool />}
+        {selectedButtonIndex === 0 && <SkillBoxHigh />}
+        {selectedButtonIndex === 1 && <SkillBoxMedium />}
+        {selectedButtonIndex === 2 && <SkillBoxLow />}
       </styles.ContentBox>
     </styles.Container>
   );

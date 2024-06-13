@@ -27,6 +27,13 @@ export const Container = styled.div`
   }
 `;
 
+export const IconContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const IconBox = styled.div`
   width: 130px;
   height: 134px;
@@ -34,16 +41,16 @@ export const IconBox = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: 14px;
   margin-right: 30px;
   animation: ${floatingAnimation} 3s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     infinite;
 
   @media (max-width: ${smallViewport}) {
-    width: 100px;
-    height: 62px;
-    padding: 0;
-    margin-right: 15px;
+    width: 65px;
+    height: 67px;
+    padding: 7px;
+    margin-right: 10px;
   }
 `;
 
@@ -78,7 +85,7 @@ export const Name = styled.div`
 
   @media (max-width: ${smallViewport}) {
     height: 8px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 8px;
   }
 `;

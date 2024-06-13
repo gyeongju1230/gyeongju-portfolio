@@ -18,10 +18,6 @@ export const Container = styled.div`
     margin-top: 77px;
     flex-direction: column;
     justify-content: center;
-
-    .arrow {
-      display: none;
-    }
   }
 `;
 
@@ -63,14 +59,14 @@ export const ButtonBox = styled(motion.div)`
   box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
 
   color: #a07d5a;
-  font-size: 22px;
+  font-size: 14px;
   font-weight: bold;
   font-family: GmarketSans, sans-serif;
 
   @media (max-width: ${smallViewport}) {
     width: 64px;
     height: 64px;
-    font-size: 14px;
+    font-size: 7px;
   }
 `;
 
@@ -84,6 +80,9 @@ export const Button = styled(motion.button)`
     > ${ButtonBox} {
       width: 158px;
       height: 158px;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: GmarketSans, sans-serif;
     }
   }
 
@@ -92,6 +91,7 @@ export const Button = styled(motion.button)`
       > ${ButtonBox} {
         width: 79px;
         height: 79px;
+        font-size: 9px;
       }
     }
   }
@@ -113,6 +113,11 @@ export const ArrowBox = styled.div`
 export const LottieBox = styled.div`
   width: 46px;
   height: 30px;
+
+  @media (max-width: ${smallViewport}) {
+    width: 23px;
+    height: 15px;
+  }
 `;
 
 export const ArrowContent = styled.div`
@@ -121,4 +126,9 @@ export const ArrowContent = styled.div`
   font-weight: normal;
   line-height: 45px;
   font-family: GmarketSans, sans-serif;
+
+  @media (max-width: ${smallViewport}) {
+    font-size: 8px;
+    line-height: 22px;
+  }
 `;

@@ -33,7 +33,11 @@ const SkillButton = ({
                       damping: 20,
                     }}
                   >
-                    {index === 0 ? 'FE' : index === 1 ? 'BE' : 'TOOL'}
+                    {index === 0
+                      ? '편해요'
+                      : index === 1
+                        ? '사용할 수 있어요'
+                        : '사용해 봤어요'}
                   </styles.ButtonBox>
                 </styles.Button>
               </styles.SelectedButton>
@@ -45,7 +49,11 @@ const SkillButton = ({
                 whileTap={{ scale: 0.9 }}
               >
                 <styles.ButtonBox>
-                  {index === 0 ? 'FE' : index === 1 ? 'BE' : 'TOOL'}
+                  {index === 0
+                    ? '편해요'
+                    : index === 1
+                      ? '사용할 수 있어요'
+                      : '사용해 봤어요'}
                 </styles.ButtonBox>
               </styles.Button>
             )}
