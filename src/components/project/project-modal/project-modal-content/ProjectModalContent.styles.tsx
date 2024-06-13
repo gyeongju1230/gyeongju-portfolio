@@ -66,6 +66,14 @@ export const Content = styled.div`
   line-height: 30px;
   font-family: GmarketSans, sans-serif;
 
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.no-margin-top {
+    margin-top: 0;
+  }
+
   @media (max-width: ${smallViewport}) {
     margin-top: 5px;
     font-size: 11px;
