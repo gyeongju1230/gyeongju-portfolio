@@ -7,6 +7,7 @@ import { MenuProvider } from './contexts/MenuContext';
 import Contact from './pages/Contact';
 import Pagination from './components/pagination/Pagination';
 import './App.css';
+import Loading from './components/loading/Loading';
 
 const projectPromise = import('./pages/Project');
 const Project = React.lazy(() => projectPromise);
@@ -73,7 +74,7 @@ function App() {
           <Skill />
         </div>
         <div ref={projectRef}>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Loading />}>
             <Project
               isModalOpen={isModalOpen}
               setIsModalOpen={setIsModalOpen}
