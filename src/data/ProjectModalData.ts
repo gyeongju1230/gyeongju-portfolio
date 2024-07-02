@@ -46,7 +46,6 @@ interface ProjectData {
 
 interface ProjectModalData {
   portfolio: ProjectData;
-  todo: ProjectData;
   sagopasam: ProjectData;
   deunbung: ProjectData;
 }
@@ -112,63 +111,6 @@ const ProjectModalData: ProjectModalData = {
       },
       {
         link: 'https://zrr.kr/vhGMB',
-        label: '🔗 Github 로 이동하기',
-      },
-    ],
-  },
-
-  todo: {
-    tag: 'Solo Project',
-    title: 'Todo Service',
-    introduction: '프로젝트 소개',
-    introductionContent: [
-      {
-        content:
-          'Todo Service 는 직접 여러 Todo 애플리케이션을 사용해보고 느낀 불편함을 개선하여 \n' +
-          '일정 관리를 더욱 쉽고 편리하게 할 수 있도록 제작한 반응형 웹사이트입니다.',
-      },
-    ],
-    skills: 'SKILLS',
-    period: '프로젝트 진행기간',
-    periodContent: '2024.03.12 - 2024.03.30',
-    role: '역할',
-    features: '구현한 기능',
-    featuresContent: [
-      {
-        content: '∙ Todo CRUD \n' + '∙ Todo Filtering \n' + '∙ Dark Mode',
-      },
-    ],
-    realizations: '✨ 프로젝트 후기',
-    realizationsContent: [
-      {
-        title: '① 사용자 경험에 대한 이해 심화',
-        content:
-          '∙ 직접 여러 Todo 애플리케이션을 사용하며 느낀 불편함들을 개선하기 위해 노력했습니다. \n' +
-          '∙ 이러한 경험을 바탕으로 쉽고 편리하게 일정을 관리할 수 있도록 UI/UX 디자인을 최적화했습니다. \n' +
-          '∙ 간단하고 직관적인 인터페이스를 구현하기 위해 많은 고민과 테스트를 거쳤고, 이를 통해 사용자의 관점에서 생각하는 능력이 향상되었습니다.',
-      },
-      {
-        title: '② 기술 학습과 프로젝트 적용의 중요성',
-        content:
-          '∙ 예전에 이론 학습한 React 를 이번 프로젝트에 적용하면서 기술을 실제로 활용하는 중요성을 깨달았습니다. \n' +
-          '∙ React 의 기본 개념부터 다양한 기능들을 스스로 복습하고 실제 프로젝트에 적용해보는 과정에서 실전적인 학습의 효과를 경험했습니다.',
-      },
-      {
-        title: '③ 반응형 웹 디자인의 필요성',
-        content:
-          '∙ 다양한 디바이스에서 일관된 사용자 경험을 제공하기 위해 반응형 웹 디자인의 중요성을 깨달았습니다. \n' +
-          '∙ 반응형 웹을 구현하기 위해 CSS Media Queries 와 Styled-Component 를 효과적으로 활용하였고, 이를 통해 모바일 및 데스크톱 환경에서 모두 최적화된 웹사이트를 제작할 수 있었습니다. \n' +
-          '\n',
-      },
-    ],
-    url: 'URL',
-    urlLink: [
-      {
-        link: 'https://todo.jung-gyeongju.com',
-        label: '🔗 배포 사이트로 이동하기',
-      },
-      {
-        link: 'https://zrr.kr/h6Y9',
         label: '🔗 Github 로 이동하기',
       },
     ],

@@ -3,11 +3,6 @@ import AppStoreImagePortfolio2 from '@assets/images/project/portfolio/Portfolio_
 import AppStoreImagePortfolio3 from '@assets/images/project/portfolio/Portfolio_AppStoreImage3.webp';
 import AppStoreImagePortfolio4 from '@assets/images/project/portfolio/Portfolio_AppStoreImage4.webp';
 import AppStoreImagePortfolio5 from '@assets/images/project/portfolio/Portfolio_AppStoreImage5.webp';
-import AppStoreImageTodo1 from '@assets/images/project/todo/Todo_AppStoreImage1.webp';
-import AppStoreImageTodo2 from '@assets/images/project/todo/Todo_AppStoreImage2.webp';
-import AppStoreImageTodo3 from '@assets/images/project/todo/Todo_AppStoreImage3.webp';
-import AppStoreImageTodo4 from '@assets/images/project/todo/Todo_AppStoreImage4.webp';
-import AppStoreImageTodo5 from '@assets/images/project/todo/Todo_AppStoreImage5.webp';
 import AppStoreImageSagopasam1 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage1.webp';
 import AppStoreImageSagopasam2 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage2.webp';
 import AppStoreImageSagopasam3 from '@assets/images/project/sagopasam/Sagopasam_AppStoreImage3.webp';
@@ -33,13 +28,6 @@ const images: Images = {
     AppStoreImagePortfolio3,
     AppStoreImagePortfolio4,
     AppStoreImagePortfolio5,
-  ],
-  todo: [
-    AppStoreImageTodo1,
-    AppStoreImageTodo2,
-    AppStoreImageTodo3,
-    AppStoreImageTodo4,
-    AppStoreImageTodo5,
   ],
   sagopasam: [
     AppStoreImageSagopasam1,

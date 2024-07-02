@@ -14,7 +14,6 @@ interface ProjectData {
 
 interface ProjectBoxData {
   portfolio: ProjectData;
-  todo: ProjectData;
   sagopasam: ProjectData;
   deunbung: ProjectData;
 }
@@ -35,24 +34,6 @@ const projectData: ProjectBoxData = {
       },
     ],
     github: 'https://github.com/gyeongju1230/gyeongju-portfolio',
-  },
-  todo: {
-    tag: 'Solo Project',
-    title: 'Todo Service',
-    content:
-      "'Todo Service' 는 \n" +
-      '일정 관리를 더욱 쉽고 편리하게 할 수 있도록 제작한\n' +
-      '반응형 웹사이트로, \n' +
-      '간단하고 직관적인 인터페이스를 통해 \n' +
-      '효율적으로 일정 관리를 할 수 있어요!',
-    url: [
-      {
-        title: 'URL',
-        link: 'https://todo.jung-gyeongju.com',
-        label: '🔗 배포 사이트로 이동하기',
-      },
-    ],
-    github: 'https://github.com/gyeongju1230/todo-service',
   },
   sagopasam: {
     tag: 'Team Project',

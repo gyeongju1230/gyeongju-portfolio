@@ -23,11 +23,7 @@
 - ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white)
   ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
   ![AWSAmplify](https://img.shields.io/badge/Aws%20Amplify-FF9900?style=flat&logo=awsamplify&logoColor=white)
-  ![FramerMotion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat&logo=framer&logoColor=white)
-  ![Lottie](https://img.shields.io/badge/Lottie-FFEB99?style=flat&logo=&logoColor=white)
-  ![Swiper](https://img.shields.io/badge/Swiper-6332F6?style=flat&logo=Swiper&logoColor=white)
   ![Styled-component](https://img.shields.io/badge/styled%20components-DB7093?style=flat&logo=styledcomponents&logoColor=white)
-  ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white)
 
 ### 구현한 기능
 

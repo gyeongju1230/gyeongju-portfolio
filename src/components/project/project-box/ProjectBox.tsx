@@ -2,7 +2,6 @@ import * as styles from './ProjectBox.styles';
 import ProjectImage from '@components/project/project-box/project-image/ProjectImage';
 import { ReactComponent as Deunbung } from '@assets/images/project/deunbung/Deunbung_Loge.svg';
 import { ReactComponent as Sagopasam } from '@assets/images/project/sagopasam/Sagopasam_Logo.svg';
-import { ReactComponent as Todo } from '@assets/images/project/todo/Todo_Logo.svg';
 import { ReactComponent as Portfolio } from '@assets/images/project/portfolio/Portfolio_Logo.svg';
 import ProjectContent from '@components/project/project-box/project-content/ProjectContent';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -47,17 +46,6 @@ const ProjectBox = ({ handleModalOpen }: ProjectBoxProps) => {
               image={<Sagopasam className="icon" />}
             />
             <ProjectContent id="sagopasam" handleModalOpen={handleModalOpen} />
-          </styles.Project>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <styles.Project>
-            <ProjectImage
-              id="todo"
-              handleModalOpen={handleModalOpen}
-              image={<Todo className="icon" />}
-            />
-            <ProjectContent id="todo" handleModalOpen={handleModalOpen} />
           </styles.Project>
         </SwiperSlide>
 

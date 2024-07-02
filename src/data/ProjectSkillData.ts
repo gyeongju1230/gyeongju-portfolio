@@ -2,9 +2,6 @@ interface ProjectSkillData {
   portfolio: {
     skills: string[];
   };
-  todo: {
-    skills: string[];
-  };
   sagopasam: {
     skills: string[];
   };
@@ -15,22 +12,13 @@ interface ProjectSkillData {
 
 const projectSkillData: ProjectSkillData = {
   portfolio: {
-    skills: [
-      'React',
-      'TypeScript',
-      'AWS Amplify',
-      'Framer Motion',
-      'Styled-Component',
-    ],
-  },
-  todo: {
-    skills: ['React', 'CSS', 'AWS Amplify', 'Styled-Component'],
+    skills: ['React', 'TypeScript', 'AWS Amplify', 'styled-components'],
   },
   sagopasam: {
-    skills: ['React Native', 'Axios', 'Recoil', 'Styled-Component'],
+    skills: ['React Native', 'Axios', 'Recoil', 'styled-components'],
   },
   deunbung: {
-    skills: ['React Native', 'TypeScript', 'Axios', 'Styled-Component'],
+    skills: ['React Native', 'TypeScript', 'Axios', 'styled-components'],
   },
 };
 
