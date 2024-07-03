@@ -1,5 +1,6 @@
 interface FeatureContent {
-  content: string;
+  title?: string;
+  content?: string;
   image?: string;
 }
 
@@ -63,20 +64,20 @@ const ProjectModalData: ProjectModalData = {
     ],
     skills: 'SKILLS',
     period: '프로젝트 진행기간',
-    periodContent: '2024.04.02 - 2024.05.31',
+    periodContent: '2024.04.02 - ',
     role: '역할',
     features: '구현한 기능',
     featuresContent: [
       {
+        title: '∙ 초기 로딩 속도 개선 (98% 개선)',
         content:
-          '∙ Main page UI \n' +
-          '∙ About page UI \n' +
-          '∙ Skill page UI \n' +
-          '∙ Project page UI \n' +
-          '→ Swiper 를 사용하여 이미지 슬라이더 개발 \n' +
-          '∙ Contact page UI\n' +
-          '→ mailto: 프로토콜을 사용하여 Gmail 아이콘 클릭 시 새 이메일 작성 창이 열리도록 구현 \n' +
-          '→ copyToClipboard 함수를 사용하여 User Name, Gmail 클릭 시 클립보드에 복사되도록 구현',
+          '→ 많은 이미지 파일로 인해 로딩이 지연되는 컴포넌트를 React.lazy 와 Suspense 를 활용하여\n' +
+          '필요한 시점에만 로드되도록 하여 초기 로딩 속도를 개선 \n' +
+          '→ 대용량의 SVG 파일로 인한 로딩 지연 문제를 해결하기 위해 이미지 파일 형식을 WebP 로 변환하여, \n' +
+          '이미지 파일의 크기를 줄임으로써 로딩 속도 최적화',
+      },
+      {
+        title: '∙ 사용자 클라이언트 전체 페이지 개발',
       },
     ],
     realizations: '✨ 프로젝트 후기',
@@ -90,9 +91,9 @@ const ProjectModalData: ProjectModalData = {
       {
         title: '② 성능 향상',
         content:
-          '∙ 큰 용량의 SVG 파일들로 인해 빌드 시간과 웹사이트 로딩 속도가 느려지는 문제를 경험했습니다. \n' +
-          '∙ 이를 해결하기 위해 SVG 파일을 WebP 형식으로 변환하여 파일 크기를 줄였고, 빌드 속도를 향상시키기 위해 Babel-loader 대신 Esbuild-loader를 사용했습니다. \n' +
-          '∙ 이로 인해 빌드 시간이 크게 단축되었고, 웹사이트 로딩 속도 또한 눈에 띄게 향상되었습니다.',
+          '∙ 대용량의 SVG 파일들로 인해 빌드 시간과 웹사이트 로딩 속도가 느려지는 문제를 경험했습니다. \n' +
+          '∙ 이를 해결하기 위해 SVG 파일을 WebP 형식으로 변환하여 파일 크기를 줄였고, 로딩이 지연되는 컴포넌트를 React.lazy 와 Suspense 를 활용하여 필요한 시점에만 로드되도록 구현하였습니다. \n' +
+          '∙ 이로 인해 빌드 시간이 크게 단축되었고, 웹사이트 초기 로딩 속도 또한 98% 정도 개선되며 눈에 띄게 향상되었습니다.',
       },
       {
         title: '③ 데이터 파일 분리의 필요성',
@@ -163,24 +164,13 @@ const ProjectModalData: ProjectModalData = {
     role: '역할',
     features: '구현한 기능',
     featuresContent: [
+      { image: 'Sagopasam_Screen' },
       {
-        image: 'Sagopasam_Screen',
+        title: '∙ Polling 을 활용한 챗봇 거래 시스템 구현',
         content:
-          '\n' +
-          '💡 사용자 App \n' +
-          '\n' +
-          '∙ 유저관련 페이지 \n' +
-          '→ 회원가입, 로그인, 회원정보수정, 마이페이지, 도움말 \n' +
-          '∙ 전공서적 판매글 CRUD \n' +
-          '∙ Short Polling 을 활용한 챗봇 거래 시스템, 챗봇 페이지 \n' +
-          '→ 판매자/구매자별 채팅, 사물함 설정 \n' +
-          '→ setInterval 을 사용하여 7초마다 서버에 안읽은 메시지 조회 요청, 새로운 메시지가 있을 경우 상태를 업데이트 \n' +
-          '→ useEffect 와 useCallback 을 활용하여 포커스될 때마다 채팅을 최신 상태로 유지 \n' +
-          '∙ 공지사항 페이지 \n' +
-          '→ 메인 배너와 연결 \n' +
-          '∙ 전체 UI 구현 \n' +
-          '\n',
+          '→ 채팅방을 최신 상태로 유지하기위해 useEffect 와 useCallback 을 활용하여 구현',
       },
+      { title: '∙ 사용자 App 클라이언트 전체 페이지 구현' },
     ],
     realizations: '✨ 프로젝트 후기',
     realizationsContent: [
@@ -267,22 +257,12 @@ const ProjectModalData: ProjectModalData = {
     role: '역할',
     features: '구현한 기능',
     featuresContent: [
+      { image: 'Deunbung_Screen' },
       {
-        image: 'Deunbung_Screen',
-        content:
-          '\n' +
-          '💡 사용자 App \n' +
-          '\n' +
-          '∙ 유저관련 페이지 \n' +
-          '→ 회원가입, 로그인, 회원정보수정, 마이페이지, 과거 주문 내역 \n' +
-          '∙ 영업여부와 예상 대기시간을 보여주는 페이지 \n' +
-          '∙ 붕어빵 미리 주문 시스템, 주문 페이지 \n' +
-          '∙ 붕어빵 간편 결제, 결제 페이지 \n' +
-          '→ 토스페이먼츠 연결 \n' +
-          '∙ 실시간 주문 상태 업데이트 페이지 \n' +
-          '→ EventSource 를 사용하여 서버에서 보내주는 SSE 데이터를 통해 실시간으로 주문 상태 업데이트 \n' +
-          '∙ 전체 UI 구현 \n',
+        title: '∙ SSE를 이용한 실시간 주문 상태 업데이트 구현',
       },
+      { title: '∙ 토스페이먼츠 SDK 연동을 통해 간편 결제 기능을 구현' },
+      { title: '∙ 사용자 App 클라이언트 전체 페이지 구현' },
     ],
     realizations: '✨ 프로젝트 후기',
     realizationsContent: [

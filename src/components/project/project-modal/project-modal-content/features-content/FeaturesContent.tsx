@@ -15,7 +15,12 @@ const FeaturesContent = ({ featuresContent }: FeaturesContentProps) => {
     <>
       {featuresContent.map((content, index) => (
         <styles.Container key={index}>
-          <styles.Content>{content.content}</styles.Content>
+          <styles.ContentBox>
+            <styles.Content className="bold">{content.title}</styles.Content>
+            <styles.Content className="no-margin-top">
+              {content.content}
+            </styles.Content>
+          </styles.ContentBox>
           {content.image && (
             <styles.ImageBox>
               <img

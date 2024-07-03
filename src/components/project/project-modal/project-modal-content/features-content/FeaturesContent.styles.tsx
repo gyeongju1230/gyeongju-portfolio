@@ -5,8 +5,6 @@ const smallViewport = '62rem';
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 
   @media (max-width: ${smallViewport}) {
     flex-direction: column;
@@ -17,6 +15,7 @@ export const Container = styled.div`
 export const ImageBox = styled.div`
   width: 21%;
   display: flex;
+  margin-bottom: 10px;
 
   .image {
     width: 100%;
@@ -31,14 +30,25 @@ export const ImageBox = styled.div`
   }
 `;
 
+export const ContentBox = styled.div`
+  flex-direction: column;
+`;
+
 export const Content = styled.div`
-  width: 79%;
   display: flex;
+  flex-wrap: wrap;
   white-space: pre-line;
+  margin-bottom: 2px;
+
+  text-align: left;
   color: #787878;
   font-size: 15px;
   font-weight: normal;
   font-family: GmarketSans, sans-serif;
+
+  &.bold {
+    font-weight: bold;
+  }
 
   @media (max-width: ${smallViewport}) {
     width: 100%;
