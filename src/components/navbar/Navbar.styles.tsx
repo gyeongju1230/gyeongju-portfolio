@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-const smallViewport = '62rem';
+const padViewport = '1024px';
+const mobileViewport = '768px';
 
 export const Header = styled.header`
   position: fixed;
@@ -16,15 +17,14 @@ export const Header = styled.header`
   z-index: 3;
   background-color: #fffbf5;
 
-  @media (max-width: ${smallViewport}) {
-    height: 300px;
+  @media (max-width: ${padViewport}) {
+    height: 8.79vw;
     flex-direction: column;
-    box-shadow: 1px 2px 9px rgba(45, 45, 45, 0.3);
+  }
 
-    &.none-menu {
-      height: 77px;
-      box-shadow: none;
-    }
+  @media (max-width: ${mobileViewport}) {
+    height: 68px;
+    box-shadow: none;
   }
 `;
 
@@ -43,13 +43,19 @@ export const BackgroundOpacity = styled.div`
 
 export const Logo = styled.a`
   width: 223px;
+  height: 100%;
   display: flex;
   align-items: center;
   padding-left: 20px;
 
-  @media (max-width: ${smallViewport}) {
-    width: 130px;
-    padding-left: 10px;
+  @media (max-width: ${padViewport}) {
+    width: 21.78vw;
+    padding-left: 1.95vw;
+  }
+
+  @media (max-width: ${mobileViewport}) {
+    width: 167px;
+    padding-left: 15px;
   }
 `;
 
@@ -58,9 +64,9 @@ export const Menu = styled.nav`
   align-items: center;
   padding-right: 20px;
 
-  @media (max-width: ${smallViewport}) {
+  @media (max-width: ${padViewport}) {
     width: 100%;
-    height: 100%;
+    height: auto;
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
@@ -76,7 +82,7 @@ export const MenuItem = styled.li`
   list-style: none;
   padding: 0 5px;
 
-  @media (max-width: ${smallViewport}) {
+  @media (max-width: ${padViewport}) {
     width: 100%;
     height: 25%;
     text-align: center;
@@ -98,9 +104,13 @@ export const Button = styled(motion.button)`
     Noto Sans KR,
     sans-serif;
 
-  @media (max-width: ${smallViewport}) {
+  @media (max-width: ${padViewport}) {
     width: 100%;
-    font-size: 16px;
+    font-size: 1.76vw;
+  }
+
+  @media (max-width: ${mobileViewport}) {
+    font-size: 14px;
   }
 
   &:hover {
@@ -114,14 +124,16 @@ export const LogoContainer = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-export const MoreButton = styled.button`
-  padding-right: 10px;
-  cursor: pointer;
-  outline: none;
-  border: 0;
-  background-color: transparent;
 
-  @media (min-width: ${smallViewport}) {
-    display: none;
+export const MoreButton = styled.button`
+  display: none;
+
+  @media (max-width: ${padViewport}) {
+    display: block;
+    padding-right: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background-color: transparent;
   }
 `;

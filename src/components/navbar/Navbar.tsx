@@ -55,21 +55,17 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  const handleMenubarClose = () => {
-    setIsMenuOpen(false);
-  };
-
   const handleHeaderContainerClick = (event: React.MouseEvent) => {
     event.stopPropagation();
   };
 
   const NavbarContent = (
-    <styles.Header className={menuBar} onClick={handleHeaderContainerClick}>
+    <styles.Header onClick={handleHeaderContainerClick}>
       <styles.LogoContainer>
         <styles.Logo href="/">
           <Logo />
         </styles.Logo>
-        <styles.MoreButton className="mobile-only" onClick={toggleMenu}>
+        <styles.MoreButton onClick={toggleMenu}>
           <More />
         </styles.MoreButton>
       </styles.LogoContainer>
